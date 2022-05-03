@@ -84,30 +84,6 @@ def simplify_reaction(reaction_name: str) -> Dict[str, float]:
     return simplify_reagents(reaction['required_reagents'], reaction['result_amount'])
 
 
-"""
-def simplify(reaction_name: str) -> Dict[str, float]:
-    reagents = {}
-    if not is_reaction(reaction_name):
-        raise ValueError(f'{reaction_name} is not a valid reaction')
-    reaction = all_reactions[reaction_name]
-    for key, value in reaction['required_reagents'].items():
-        if is_reaction(key):
-            parts = simplify(key)
-            for k, v in parts.items():
-                if k in reagents:
-                    reagents[k] += float(v) / float(reaction['result_amount'])
-                else:
-                    reagents[k] = float(v) / float(reaction['result_amount'])
-        elif is_reagent(key):
-            if key in reagents:
-                reagents[key] += float(value) / float(reaction['result_amount'])
-            else:
-                reagents[key] = float(value) / float(reaction['result_amount'])
-        else:
-            raise ValueError('Unknown key: ', key)
-    return reagents
-"""
-
 def convert_to_units(reagents: Dict[str, float]) -> Dict[str, int]:
     lowest_amount = sorted(reagents.values())[0]
     as_units = {k: int(v / lowest_amount) for k, v in reagents.items()}
@@ -117,12 +93,15 @@ def convert_to_units(reagents: Dict[str, float]) -> Dict[str, int]:
     return as_units
 
 def as_reagent_group(reagents: Dict[str, int]) -> str:
+    log.info('Converting reagents to group')
     return ''.join([f'{k}={v};' for k, v in reagents.items()])
 
 def reaction_as_reagent_group_dict(reaction_name: str) -> Dict[str, int]:
+    log.info(f'Converting {reaction_name} to reagent group dict')
     return convert_to_units(simplify_reaction(reaction_name))
 
 def reaction_as_dispensable_group_dict(reaction_name: str) -> Dict[str, int]:
+    log.info(f'Converting {reaction_name} to dispensable group dict')
     reagent_group_contents = reaction_as_reagent_group_dict(reaction_name)
     to_remove = []
     for k, v in reagent_group_contents.items():
@@ -133,12 +112,55 @@ def reaction_as_dispensable_group_dict(reaction_name: str) -> Dict[str, int]:
     return reagent_group_contents
 
 def reaction_as_reagent_group(reaction_name: str) -> str:
-    log.info(f'Converting {reaction_name} to reagent group')
     return as_reagent_group(reaction_as_reagent_group_dict(reaction_name))
 
 def reaction_as_dispensable_group(reaction_name: str) -> str:
-    log.info(f'Converting {reaction_name} to dispensable reagent group')
     return as_reagent_group(reaction_as_dispensable_group_dict(reaction_name))
+
+
+def reagents_as_reagent_group_dict(reagents: Dict[str, int], result_amount: int = 1) -> Dict[str, int]:
+    log.info(f'Converting reagents to reagent group dict')
+    log.info(f'\tReagents: {reagents}')
+    return convert_to_units(simplify_reagents(reagents, result_amount))
+
+def reagents_as_dispensable_group_dict(reagents: Dict[str, int], result_amount: int = 1) -> Dict[str, int]:
+    log.info(f'Converting reagents to dispensable reagent group dict')
+    log.info(f'\tReagents: {reagents}')
+    reagent_group_contents = reagents_as_reagent_group_dict(reagents, result_amount)
+    to_remove = []
+    for k, v in reagent_group_contents.items():
+        if not is_dispensable(k):
+            to_remove.append(k)
+    for k in to_remove:
+        del reagent_group_contents[k]
+    return reagent_group_contents
+
+def reagents_as_reagent_group(reagents: Dict[str, int], result_amount: int = 1) -> str:
+    return as_reagent_group(reagents_as_reagent_group_dict(reagents, result_amount))
+
+def reagents_as_dispensable_group(reagents: Dict[str, int], result_amount: int = 1) -> str:
+    return as_reagent_group(reagents_as_dispensable_group_dict(reagents, result_amount))
+
+
+def get_reagent_group_dict(reaction_or_reagents: str | Dict[str, int]) -> Dict[str, int]:
+    if isinstance(reaction_or_reagents, str):
+        return reaction_as_reagent_group_dict(reaction_or_reagents)
+    return reagents_as_reagent_group_dict(reaction_or_reagents)
+
+def get_dispensable_group_dict(reaction_or_reagents: str | Dict[str, int]) -> Dict[str, int]:
+    if isinstance(reaction_or_reagents, str):
+        return reaction_as_dispensable_group_dict(reaction_or_reagents)
+    return reagents_as_dispensable_group_dict(reaction_or_reagents)
+
+def get_reagent_group(reaction_or_reagents: str | Dict[str, int]) -> str:
+    if isinstance(reaction_or_reagents, str):
+        return reaction_as_reagent_group(reaction_or_reagents)
+    return reagents_as_reagent_group(reaction_or_reagents)
+
+def get_dispensable_group(reaction_or_reagents: str | Dict[str, int]) -> str:
+    if isinstance(reaction_or_reagents, str):
+        return reaction_as_dispensable_group(reaction_or_reagents)
+    return reagents_as_dispensable_group(reaction_or_reagents)
 
 
 def analyze():
@@ -153,11 +175,11 @@ def analyze():
     ]
     for name in reactions:
         try:
-            reagent_group = reaction_as_dispensable_group(name)
+            dispensable_group = get_dispensable_group(name)
         except ValueError:
             log.warning(f'{name} is not a valid reaction')
             continue
-        log.info(f'\t{[name, reagent_group]}')
+        log.info(f'\t{[name, dispensable_group]}')
 
 
 if __name__ == '__main__':
