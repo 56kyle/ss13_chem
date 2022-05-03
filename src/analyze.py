@@ -63,6 +63,28 @@ def is_reagent(name: str) -> bool:
 def is_dispensable(name: str) -> bool:
     return name in dispensable_reagents
 
+def simplify_reagents(reagents: Dict[str, int | float], result_amount: int = 1) -> Dict[str, float]:
+    new_reagents = {}
+    for name, ratio in reagents.items():
+        if is_reaction(name):
+            for k, v in simplify_reaction(name).items():
+                if k not in new_reagents:
+                    new_reagents[k] = 0
+                new_reagents[k] += float(v) / float(result_amount)
+        elif is_reagent(name):
+            if name not in new_reagents:
+                new_reagents[name] = 0
+            new_reagents[name] += float(ratio) / float(result_amount)
+        else:
+            raise ValueError('Unknown reagent/recipe: ', name)
+    return new_reagents
+
+def simplify_reaction(reaction_name: str) -> Dict[str, float]:
+    reaction = all_reactions[reaction_name]
+    return simplify_reagents(reaction['required_reagents'], reaction['result_amount'])
+
+
+"""
 def simplify(reaction_name: str) -> Dict[str, float]:
     reagents = {}
     if not is_reaction(reaction_name):
@@ -84,6 +106,7 @@ def simplify(reaction_name: str) -> Dict[str, float]:
         else:
             raise ValueError('Unknown key: ', key)
     return reagents
+"""
 
 def convert_to_units(reagents: Dict[str, float]) -> Dict[str, int]:
     lowest_amount = sorted(reagents.values())[0]
@@ -97,7 +120,7 @@ def as_reagent_group(reagents: Dict[str, int]) -> str:
     return ''.join([f'{k}={v};' for k, v in reagents.items()])
 
 def reaction_as_reagent_group_dict(reaction_name: str) -> Dict[str, int]:
-    return convert_to_units(simplify(reaction_name))
+    return convert_to_units(simplify_reaction(reaction_name))
 
 def reaction_as_dispensable_group_dict(reaction_name: str) -> Dict[str, int]:
     reagent_group_contents = reaction_as_reagent_group_dict(reaction_name)
