@@ -63,8 +63,6 @@ def is_reagent(name: str) -> bool:
 def is_dispensable(name: str) -> bool:
     return name in dispensable_reagents
 
-#def simplify_reaction(reaction: Dict[str, int]) -> Dict[str, int]:
-
 def simplify(reaction_name: str) -> Dict[str, float]:
     reagents = {}
     if not is_reaction(reaction_name):
