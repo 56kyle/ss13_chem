@@ -1,0 +1,36 @@
+{
+    "datum": {
+        "chemicompiler_core": {
+            "var": {
+                "output": "",
+                "running": "0",
+                "errorCallback": "err",
+                "transferCallback": "transferReagents",
+                "heatCallback": "heatReagents",
+                "messageCallback": "showMessage",
+                "reservoirClickCallback": "reservoirClick",
+                "reservoirCheckCallback": "reservoirCheck",
+                "topicPermissionCheckCallback": "topicPermissionCheck",
+                "minReservoir": "1",
+                "maxReservoir": "10",
+                "heading": "don't touch!!!"
+            },
+            "testCore": {
+                "errorCallback": "err",
+                "transferCallback": "transfer",
+                "heatCallback": "heat",
+                "messageCallback": "msg",
+                "reservoirClickCallback": "reservoirClick",
+                "reservoirCheckCallback": "reservoirCheck",
+                "topicPermissionCheckCallback": "topicPermissionCheck"
+            }
+        },
+        "chemicompiler_executor": {
+            "var": {
+                "list": {
+                    "reservoirs": []
+                }
+            }
+        }
+    }
+}

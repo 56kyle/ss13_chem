@@ -1,0 +1,109 @@
+{
+    "obj": {
+        "item": {
+            "chem_grenade": {
+                "name": "metal casing",
+                "icon_state": "chemg1",
+                "icon": "icons/obj/chemical.dmi",
+                "inhand_image_icon": "icons/mob/inhand/hand_weapons.dmi",
+                "item_state": "flashbang",
+                "w_class": "2.0",
+                "force": "2.0",
+                "var": {
+                    "stage": "0",
+                    "state": "0",
+                    "list": {
+                        "beakers": []
+                    }
+                },
+                "throw_speed": "4",
+                "throw_range": "20",
+                "flags": "FPRINT | TABLEPASS | CONDUCT | ONBELT | EXTRADELAY | NOSPLASH",
+                "stamina_damage": "1",
+                "stamina_cost": "1",
+                "stamina_crit_chance": "0",
+                "metalfoam": {
+                    "name": "metal foam grenade",
+                    "desc": "Used for emergency sealing of air breaches.",
+                    "icon_state": "chemg3",
+                    "stage": "2"
+                },
+                "firefighting": {
+                    "name": "fire fighting grenade",
+                    "desc": "Can help to put out dangerous fires from a distance.",
+                    "icon_state": "chemg3",
+                    "stage": "2"
+                },
+                "cleaner": {
+                    "name": "cleaner grenade",
+                    "desc": "BLAM!-brand foaming space cleaner. In a special applicator for rapid cleaning of wide areas.",
+                    "icon_state": "chemg3",
+                    "stage": "2"
+                },
+                "fcleaner": {
+                    "name": "cleaner grenade",
+                    "desc": "BLAM!-brand foaming space cleaner. In a special applicator for rapid cleaning of wide areas.",
+                    "icon_state": "chemg3",
+                    "stage": "2"
+                },
+                "flashbang": {
+                    "name": "flashbang",
+                    "desc": "A standard stun grenade.",
+                    "icon_state": "chemg3",
+                    "stage": "2",
+                    "is_syndicate": "1",
+                    "mats": "6"
+                },
+                "cryo": {
+                    "name": "cryo grenade",
+                    "desc": "An experimental non-lethal grenade using cryogenic technologies.",
+                    "icon_state": "chemg3",
+                    "stage": "2"
+                },
+                "incendiary": {
+                    "name": "incendiary grenade",
+                    "desc": "A rather volatile grenade that creates a small fire.",
+                    "icon_state": "chemg3",
+                    "stage": "2"
+                },
+                "very_incendiary": {
+                    "name": "high range incendiary grenade",
+                    "desc": "A rather volatile grenade that creates a large fire.",
+                    "icon_state": "chemg3",
+                    "stage": "2",
+                    "vr": {
+                        "icon": "icons/effects/VR.dmi"
+                    }
+                },
+                "shock": {
+                    "name": "shock grenade",
+                    "desc": "An arc flashing grenade that shocks everyone close by.",
+                    "icon_state": "chemg3",
+                    "stage": "2"
+                },
+                "pepper": {
+                    "name": "crowd dispersal grenade",
+                    "desc": "An non-lethal grenade for use against protests, riots, vagrancy and loitering. Not to be used as a food additive.",
+                    "icon_state": "chemg3",
+                    "stage": "2"
+                },
+                "sarin": {
+                    "name": "sarin gas grenade",
+                    "desc": "A smoke grenade containing an extremely lethal nerve agent. Use of this mixture constitutes a war crime, so... try not to leave any witnesses.",
+                    "icon_state": "chemg3",
+                    "stage": "2"
+                }
+            },
+            "grenade_fuse": {
+                "name": "grenade fuse",
+                "desc": "A fuse mechanism with a safety lever.",
+                "icon": "icons/obj/items.dmi",
+                "icon_state": "grenade_fuse",
+                "item_state": "pen",
+                "force": "0",
+                "w_class": "1",
+                "m_amt": "100"
+            }
+        }
+    }
+}

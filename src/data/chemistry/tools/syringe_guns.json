@@ -1,0 +1,37 @@
+{
+    "obj": {
+        "item": {
+            "gun": {
+                "syringe": {
+                    "name": "syringe gun",
+                    "icon": "icons/obj/gun.dmi",
+                    "icon_state": "syringegun",
+                    "item_state": "syringegun",
+                    "w_class": "3.0",
+                    "throw_speed": "2",
+                    "throw_range": "10",
+                    "force": "4.0",
+                    "current_projectile": "new/datum/projectile/syringe",
+                    "m_amt": "2000",
+                    "contraband": "3",
+                    "add_residue": "1"
+                }
+            }
+        }
+    },
+    "datum": {
+        "projectile": {
+            "syringe": {
+                "name": "syringe",
+                "icon": "icons/obj/chemical.dmi",
+                "icon_state": "syringeproj",
+                "dissipation_rate": "1",
+                "dissipation_delay": "7",
+                "power": "1",
+                "hit_ground_chance": "10",
+                "ks_ratio": "1.0",
+                "shot_sound": "sound/effects/syringeproj.ogg"
+            }
+        }
+    }
+}

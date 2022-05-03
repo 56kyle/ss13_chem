@@ -1,0 +1,16 @@
+{
+    "var": {
+        "list": {
+            "datum": {
+                "reagents": {
+                    "active_reagent_holders": []
+                }
+            }
+        },
+        "desc": null
+    },
+    "datum": {
+        "reagents": "new/datum/reagents(max_vol)",
+        "reagents.my_atom": "src"
+    }
+}

@@ -1,0 +1,103 @@
+{
+    "obj": {
+        "reagent_dispensers": {
+            "name": "Dispenser",
+            "desc": "...",
+            "icon": "icons/obj/objects.dmi",
+            "icon_state": "watertank",
+            "density": "1",
+            "anchored": "0",
+            "flags": "FPRINT",
+            "pressure_resistance": "2*ONE_ATMOSPHERE",
+            "var": {
+                "amount_per_transfer_from_this": "10"
+            },
+            "ants": {
+                "name": "space ants",
+                "desc": "A bunch of space ants.",
+                "icon": "icons/effects/effects.dmi",
+                "icon_state": "spaceants",
+                "layer": "MOB_LAYER",
+                "density": "0",
+                "anchored": "1",
+                "amount_per_transfer_from_this": "5"
+            },
+            "spiders": {
+                "name": "spiders",
+                "desc": "A bunch of spiders.",
+                "icon": "icons/effects/effects.dmi",
+                "icon_state": "spaceants",
+                "layer": "MOB_LAYER",
+                "density": "0",
+                "anchored": "1",
+                "amount_per_transfer_from_this": "5",
+                "color": "#160505"
+            },
+            "foamtank": {
+                "name": "foamtank",
+                "desc": "A foamtank",
+                "icon": "icons/obj/objects.dmi",
+                "icon_state": "foamtank",
+                "amount_per_transfer_from_this": "25"
+            },
+            "watertank": {
+                "name": "watertank",
+                "desc": "A watertank",
+                "icon": "icons/obj/objects.dmi",
+                "icon_state": "watertank",
+                "amount_per_transfer_from_this": "25",
+                "big": {
+                    "name": "high-capacity watertank",
+                    "desc": "A specialised high-pressure water tank for holding large amounts of water.",
+                    "icon": "icons/obj/objects.dmi",
+                    "icon_state": "watertankbig",
+                    "amount_per_transfer_from_this": "25"
+                },
+                "fountain": {
+                    "name": "water fountain",
+                    "desc": "It's called a fountain, but it's not very decorative or interesting. You can get a drink from it, though.",
+                    "icon_state": "water_fountain1",
+                    "anchored": "1",
+                    "var": {
+                        "cup_amount": "12"
+                    }
+                }
+            },
+            "fueltank": {
+                "name": "fueltank",
+                "desc": "A fueltank",
+                "icon": "icons/obj/objects.dmi",
+                "icon_state": "weldtank",
+                "amount_per_transfer_from_this": "25"
+            },
+            "heliumtank": {
+                "name": "heliumtank",
+                "desc": "A tank of helium.",
+                "icon": "icons/obj/objects.dmi",
+                "icon_state": "heliumtank",
+                "amount_per_transfer_from_this": "25"
+            },
+            "beerkeg": {
+                "name": "beer keg",
+                "desc": "A beer keg",
+                "icon": "icons/obj/objects.dmi",
+                "icon_state": "beertankTEMP",
+                "amount_per_transfer_from_this": "25"
+            },
+            "compostbin": {
+                "name": "compost tank",
+                "desc": "A device that mulches up unwanted produce into usable fertiliser.",
+                "icon": "icons/obj/objects.dmi",
+                "icon_state": "compost",
+                "amount_per_transfer_from_this": "30"
+            },
+            "still": {
+                "name": "still",
+                "desc": "A piece of equipment for brewing alcoholic beverages.",
+                "icon": "icons/obj/objects.dmi",
+                "icon_state": "still",
+                "amount_per_transfer_from_this": "25"
+            }
+        }
+    }
+}

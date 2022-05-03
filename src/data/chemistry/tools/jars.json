@@ -1,0 +1,36 @@
+{
+    "obj": {
+        "item": {
+            "reagent_containers": {
+                "glass": {
+                    "jar": {
+                        "name": "glass jar",
+                        "icon": "icons/obj/chemical.dmi",
+                        "icon_state": "mason_jar",
+                        "item_state": "beaker",
+                        "initial_volume": "75",
+                        "var": {
+                            "image": {
+                                "color_underlay": null
+                            }
+                        },
+                        "rc_flags": "0"
+                    }
+                },
+                "food": {
+                    "snacks": {
+                        "pickle_holder": {
+                            "name": "ethereal pickle",
+                            "desc": "You can't see anything, but there is an unmistakable presence of vinegar and spices here.  Kosher dill."
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "var": {
+        "list": {
+            "jars": []
+        }
+    }
+}

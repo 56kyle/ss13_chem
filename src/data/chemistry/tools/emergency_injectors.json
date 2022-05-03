@@ -1,0 +1,116 @@
+{
+    "obj": {
+        "item": {
+            "reagent_containers": {
+                "emergency_injector": {
+                    "name": "emergency auto-injector",
+                    "desc": "A small syringe-like thing that automatically injects its contents into someone.",
+                    "icon": "icons/obj/chemical.dmi",
+                    "inhand_image_icon": "icons/mob/inhand/hand_medical.dmi",
+                    "item_state": "dnainjector",
+                    "icon_state": "emerg_inj-orange",
+                    "initial_volume": "10",
+                    "amount_per_transfer_from_this": "10",
+                    "flags": "FPRINT | TABLEPASS",
+                    "rc_flags": "RC_SCALE | RC_VISIBLE | RC_SPECTRO",
+                    "var": {
+                        "empty": "0",
+                        "label": "orange"
+                    },
+                    "module_research": {
+                        "medicine": 1,
+                        "science": 1
+                    },
+                    "epinephrine": {
+                        "name": "emergency auto-injector (epinephrine)"
+                    },
+                    "atropine": {
+                        "name": "emergency auto-injector (atropine)",
+                        "label": "red"
+                    },
+                    "charcoal": {
+                        "name": "emergency auto-injector (charcoal)",
+                        "label": "green"
+                    },
+                    "saline": {
+                        "name": "emergency auto-injector (saline-glucose)",
+                        "label": "blue"
+                    },
+                    "anti_rad": {
+                        "name": "emergency auto-injector (potassium iodide)",
+                        "label": "green"
+                    },
+                    "insulin": {
+                        "name": "emergency auto-injector (insulin)",
+                        "label": "yellow"
+                    },
+                    "calomel": {
+                        "name": "emergency auto-injector (calomel)",
+                        "label": "green"
+                    },
+                    "salicylic_acid": {
+                        "name": "emergency auto-injector (salicylic acid)",
+                        "label": "purple"
+                    },
+                    "spaceacillin": {
+                        "name": "emergency auto-injector (spaceacillin)",
+                        "label": "yellow"
+                    },
+                    "antihistamine": {
+                        "name": "emergency auto-injector (diphenhydramine)",
+                        "label": "blue"
+                    },
+                    "salbutamol": {
+                        "name": "emergency auto-injector (salbutamol)",
+                        "label": "blue"
+                    },
+                    "mannitol": {
+                        "name": "emergency auto-injector (mannitol)",
+                        "label": "red"
+                    },
+                    "mutadone": {
+                        "name": "emergency auto-injector (mutadone)",
+                        "label": "purple"
+                    },
+                    "methamphetamine": {
+                        "name": "emergency auto-injector (methamphetamine)",
+                        "label": "white"
+                    },
+                    "lexorin": {
+                        "name": "emergency auto-injector (lexorin)",
+                        "label": "blue"
+                    },
+                    "synaptizine": {
+                        "name": "emergency auto-injector (synaptizine)",
+                        "label": "orange"
+                    },
+                    "random": {
+                        "name": "emergency auto-injector (???)",
+                        "label": "black"
+                    },
+                    "vr": {
+                        "epinephrine": {
+                            "name": "emergency auto-injector (epinephrine)",
+                            "label": "vr"
+                        },
+                        "calomel": {
+                            "name": "emergency auto-injector (calomel)",
+                            "label": "vr2"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "\"": {
+        "obj": {
+            "item": {
+                "reagent_containers": {
+                    "emergency_injector\"": {
+                        "module_research_type": "/obj/item/reagent_containers/emergency_injector"
+                    }
+                }
+            }
+        }
+    }
+}

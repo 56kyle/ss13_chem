@@ -1,0 +1,38 @@
+{
+    "obj": {
+        "item": {
+            "extinguisher": {
+                "name": "fire extinguisher",
+                "icon": "icons/obj/items.dmi",
+                "inhand_image_icon": "icons/mob/inhand/hand_tools.dmi",
+                "icon_state": "fire_extinguisher0",
+                "var": {
+                    "last_use": "1.0",
+                    "safety": "1",
+                    "special": "0"
+                },
+                "hitsound": "sound/weapons/smash.ogg",
+                "flags": "FPRINT | EXTRADELAY | TABLEPASS | CONDUCT | OPENCONTAINER",
+                "throwforce": "10",
+                "w_class": "3.0",
+                "throw_speed": "2",
+                "throw_range": "10",
+                "force": "10.0",
+                "item_state": "fire_extinguisher",
+                "m_amt": "90",
+                "desc": "A portable container with a spray nozzle that contains specially mixed fire-fighting foam. The safety is removed, the nozzle pointed at the base of the fire, and the trigger squeezed to extinguish fire.",
+                "stamina_damage": "15",
+                "stamina_cost": "20",
+                "stamina_crit_chance": "35",
+                "module_research": {
+                    "tools": 5,
+                    "science": 1
+                },
+                "rand_pos": "1",
+                "virtual": {
+                    "icon": "icons/effects/VR.dmi"
+                }
+            }
+        }
+    }
+}

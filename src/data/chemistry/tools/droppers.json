@@ -1,0 +1,36 @@
+{
+    "obj": {
+        "item": {
+            "reagent_containers": {
+                "dropper": {
+                    "name": "dropper",
+                    "desc": "A dropper. Transfers 5 units.",
+                    "icon": "icons/obj/chemical.dmi",
+                    "inhand_image_icon": "icons/mob/inhand/hand_medical.dmi",
+                    "icon_state": "dropper0",
+                    "initial_volume": "5",
+                    "amount_per_transfer_from_this": "5",
+                    "rc_flags": "RC_SCALE | RC_VISIBLE | RC_SPECTRO",
+                    "var": {
+                        "icon_empty": "dropper0",
+                        "icon_filled": "dropper1",
+                        "customizable_settings_available": "0",
+                        "transfer_amount": "5.0",
+                        "transfer_mode": "TO_SELF"
+                    },
+                    "mechanical": {
+                        "name": "mechanical dropper",
+                        "desc": "Allows you to transfer reagents in precise measurements.",
+                        "icon": "icons/obj/chemical.dmi",
+                        "icon_state": "ppipette-empty",
+                        "initial_volume": "10",
+                        "icon_empty": "ppipette-empty",
+                        "icon_filled": "ppipette-filled",
+                        "fluid_image": null,
+                        "customizable_settings_available": "1"
+                    }
+                }
+            }
+        }
+    }
+}

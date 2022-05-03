@@ -1,0 +1,208 @@
+{
+    "obj": {
+        "submachine": {
+            "chef_sink": {
+                "chem_sink": {
+                    "name": "sink",
+                    "density": "0",
+                    "layer": "5",
+                    "icon": "icons/obj/chemical.dmi",
+                    "icon_state": "sink",
+                    "flags": "NOSPLASH"
+                }
+            }
+        },
+        "machinery": {
+            "chem_heater": {
+                "name": "Reagent Heater/Cooler",
+                "density": "1",
+                "anchored": "1",
+                "icon": "icons/obj/chemical.dmi",
+                "icon_state": "heater",
+                "flags": "NOSPLASH",
+                "mats": "15",
+                "power_usage": "50",
+                "var": {
+                    "obj": {
+                        "beaker": null
+                    },
+                    "active": "0",
+                    "target_temp": "T0C",
+                    "roboworking": "0",
+                    "static": {
+                        "image": {
+                            "icon_beaker": "image('icons/obj/chemical.dmi', \"heater-beaker\")"
+                        }
+                    }
+                }
+            },
+            "chem_dispenser": {
+                "name": "chem dispenser",
+                "density": "1",
+                "anchored": "1",
+                "icon": "icons/obj/chemical.dmi",
+                "icon_state": "dispenser",
+                "var": {
+                    "icon_base": "dispenser",
+                    "beaker": null,
+                    "list": {
+                        "dispensable_reagents": [
+                            "aluminium",
+                            "barium",
+                            "bromine",
+                            "carbon",
+                            "chlorine",
+                            "chromium",
+                            "copper",
+                            "fluorine",
+                            "ethanol",
+                            "hydrogen",
+                            "iodine",
+                            "iron",
+                            "lithium",
+                            "magnesium",
+                            "mercury",
+                            "nickel",
+                            "nitrogen",
+                            "oxygen",
+                            "plasma",
+                            "platinum",
+                            "phosphorus",
+                            "potassium",
+                            "radium",
+                            "silicon",
+                            "silver",
+                            "sodium",
+                            "sulfur",
+                            "sugar",
+                            "water"
+                        ],
+                        "accounts": []
+                    },
+                    "glass_path": "/obj/item/reagent_containers/glass",
+                    "glass_name": "beaker",
+                    "dispenser_name": "Chemical",
+                    "obj": {
+                        "item": {
+                            "card": {
+                                "id": {
+                                    "user_id": null
+                                }
+                            }
+                        }
+                    },
+                    "datum": {
+                        "reagent_group_account": {
+                            "current_account": null
+                        }
+                    },
+                    "doing_a_thing": "0"
+                },
+                "flags": "NOSPLASH",
+                "mats": "30",
+                "alcohol": {
+                    "name": "alcohol dispenser",
+                    "desc": "You see a small, fading warning label on the side of the machine:<br>WARNING: Contents artificially produced using industrial ethanol. Not recommended for human consumption.",
+                    "dispensable_reagents": [
+                        "beer",
+                        "cider",
+                        "gin",
+                        "wine",
+                        "champagne",
+                        "rum",
+                        "vodka",
+                        "bourbon",
+                        "vermouth",
+                        "tequila",
+                        "bitters",
+                        "tonic"
+                    ],
+                    "icon_state": "alc_dispenser",
+                    "icon_base": "alc_dispenser",
+                    "glass_path": "/obj/item/reagent_containers/food/drinks",
+                    "glass_name": "bottle",
+                    "dispenser_name": "Alcohol"
+                },
+                "soda": {
+                    "name": "soda fountain",
+                    "desc": "A soda fountain that definitely does not have a suspicious similarity to the alcohol and chemical dispensers. No sir.",
+                    "dispensable_reagents": [
+                        "cola",
+                        "juice_lime",
+                        "juice_lemon",
+                        "juice_orange",
+                        "juice_cran",
+                        "juice_cherry",
+                        "juice_pineapple",
+                        "juice_tomato",
+                        "coconut_milk",
+                        "sugar",
+                        "water",
+                        "vanilla",
+                        "tea"
+                    ],
+                    "icon_state": "alc_dispenser",
+                    "icon_base": "alc_dispenser",
+                    "glass_path": "/obj/item/reagent_containers/food/drinks",
+                    "glass_name": "bottle",
+                    "dispenser_name": "Soda"
+                }
+            },
+            "chem_master": {
+                "name": "CheMaster 3000",
+                "density": "1",
+                "anchored": "1",
+                "icon": "icons/obj/chemical.dmi",
+                "icon_state": "mixer0",
+                "flags": "NOSPLASH",
+                "mats": "15",
+                "var": {
+                    "beaker": null,
+                    "list": {
+                        "whitelist": []
+                    },
+                    "emagged": "0"
+                }
+            },
+            "chemicompiler_stationary": {
+                "name": "ChemiCompiler CCS1000",
+                "desc": "this device looks very difficult to use.",
+                "density": "1",
+                "anchored": "1",
+                "icon": "icons/obj/chemical.dmi",
+                "icon_state": "chemicompiler_st_off",
+                "mats": "15"
+            }
+        }
+    },
+    "datum": {
+        "reagent_group_account": {
+            "var": {
+                "obj": {
+                    "item": {
+                        "card": {
+                            "id": {
+                                "user_id": null
+                            }
+                        }
+                    }
+                },
+                "list": {
+                    "groups": []
+                }
+            }
+        },
+        "reagent_group": {
+            "var": {
+                "name": null,
+                "reagents": [],
+                "reagent_number": "0"
+            }
+        },
+        "chemicompiler_core": {
+            "stationaryCore": {
+                "statusChangeCallback": "statusChange"
+            }
+        }
+    }
+}

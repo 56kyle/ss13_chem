@@ -1,0 +1,70 @@
+{
+    "var": {
+        "list": {
+            "booster_enzyme_reagents_to_check": [
+                "charcoal",
+                "synaptizine",
+                "stypic_powder",
+                "teporone",
+                "salbutamol",
+                "methamphetamine",
+                "omnizine",
+                "perfluorodecalin",
+                "ryetalin",
+                "hydronalin",
+                "penteticacid",
+                "oculine",
+                "epinephrine",
+                "mannitol",
+                "synthflesh"
+            ]
+        }
+    },
+    "datum": {
+        "reagent": {
+            "var": {
+                "name": "Reagent",
+                "id": "reagent",
+                "description": "",
+                "datum": {
+                    "reagents": {
+                        "holder": null
+                    }
+                },
+                "list": {
+                    "pathogen_nutrition": null
+                },
+                "reagent_state": "SOLID",
+                "data": null,
+                "volume": "0",
+                "transparency": "150",
+                "fluid_r": "0",
+                "fluid_b": "0",
+                "fluid_g": "255",
+                "addiction_prob": "0",
+                "dispersal": "4",
+                "volatility": "0",
+                "reacting": "0",
+                "overdose": "0",
+                "depletion_rate": "0.4",
+                "penetrates_skin": "0",
+                "touch_modifier": "1",
+                "taste": "uninteresting",
+                "value": "1",
+                "thirst_value": "0",
+                "hygiene_value": "0",
+                "blob_damage": "0"
+            },
+            "*helldrug": {
+                "name": "cthonium",
+                "id": "chtonium",
+                "description": "***CLASSIFIED. ULTRAVIOLET-CLASS ANOMALOUS MATERIAL. INFORMATION REGARDING THIS REAGENT IS ABOVE YOUR PAY GRADE. QUARANTINE THE SAMPLE IMMEDIATELY AND REPORT THIS INCIDENT TO YOUR HEAD OF SECURITY***",
+                "reagent_state": "LIQUID",
+                "fluid_r": "250",
+                "fluid_b": "250",
+                "fluid_g": "0",
+                "transparency": "40"
+            }
+        }
+    }
+}

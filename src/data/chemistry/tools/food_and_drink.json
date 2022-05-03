@@ -1,0 +1,176 @@
+{
+    "obj": {
+        "item": {
+            "reagent_containers": {
+                "food": {
+                    "inhand_image_icon": "icons/mob/inhand/hand_food.dmi",
+                    "var": {
+                        "heal_amt": "0",
+                        "needfork": "0",
+                        "needspoon": "0",
+                        "food_color": "#FF0000",
+                        "custom_food": "1",
+                        "festivity": "0",
+                        "antloc": null,
+                        "doants": "1",
+                        "brewable": "0",
+                        "brew_result": null,
+                        "unlock_medal_when_eaten": null
+                    },
+                    "rc_flags": "0",
+                    "snacks": {
+                        "name": "snack",
+                        "desc": "yummy",
+                        "icon": "icons/obj/food.dmi",
+                        "icon_state": null,
+                        "amount": "3",
+                        "heal_amt": "1",
+                        "initial_volume": "100",
+                        "festivity": "0",
+                        "rc_flags": "0",
+                        "edible": "1",
+                        "module_research": {
+                            "cuisine": 6
+                        },
+                        "rand_pos": "1"
+                    },
+                    "drinks": {
+                        "name": "drink",
+                        "desc": "yummy",
+                        "icon": "icons/obj/drink.dmi",
+                        "inhand_image_icon": "icons/mob/inhand/hand_food.dmi",
+                        "icon_state": null,
+                        "flags": "FPRINT | TABLEPASS | OPENCONTAINER | SUPPRESSATTACK",
+                        "rc_flags": "RC_FULLNESS | RC_VISIBLE | RC_SPECTRO",
+                        "var": {
+                            "gulp_size": "5"
+                        },
+                        "doants": "0",
+                        "bowl": {
+                            "name": "bowl",
+                            "desc": "A bowl is a common open-top container used in many cultures to serve food, and is also used for drinking and storing other items.",
+                            "icon": "icons/obj/kitchen.dmi",
+                            "icon_state": "bowl",
+                            "item_state": "zippo",
+                            "initial_volume": "50",
+                            "rc_flags": "RC_FULLNESS | RC_VISIBLE | RC_SPECTRO",
+                            "var": {
+                                "image": {
+                                    "fluid_image": null
+                                }
+                            }
+                        },
+                        "bottle": {
+                            "name": "bottle",
+                            "icon": "icons/obj/bottle.dmi",
+                            "icon_state": "bottle",
+                            "desc": "A stylish bottle for the containment of liquids.",
+                            "var": {
+                                "label": "blank",
+                                "labeled": "0",
+                                "static": {
+                                    "image": {
+                                        "bottle_image": null
+                                    }
+                                },
+                                "unbreakable": "0",
+                                "broken": "0",
+                                "bottle_style": "clear",
+                                "fluid_style": "bottle",
+                                "shatter": "0"
+                            },
+                            "initial_volume": "50",
+                            "g_amt": "60",
+                            "rc_flags": "RC_VISIBLE | RC_FULLNESS | RC_SPECTRO"
+                        },
+                        "drinkingglass": {
+                            "name": "drinking glass",
+                            "desc": "Caution - fragile.",
+                            "icon": "icons/obj/drink.dmi",
+                            "icon_state": "glass-drink",
+                            "item_state": "drink_glass",
+                            "rc_flags": "RC_FULLNESS | RC_VISIBLE | RC_SPECTRO",
+                            "g_amt": "30",
+                            "var": {
+                                "glass_style": "drink",
+                                "salted": "0",
+                                "wedge": null,
+                                "umbrella": null,
+                                "in_glass": null
+                            },
+                            "initial_volume": "50",
+                            "shot": {
+                                "name": "shot glass",
+                                "icon_state": "glass-shot",
+                                "glass_style": "shot",
+                                "amount_per_transfer_from_this": "15",
+                                "gulp_size": "15",
+                                "initial_volume": "15"
+                            },
+                            "wine": {
+                                "name": "wine glass",
+                                "icon_state": "glass-wine",
+                                "glass_style": "wine",
+                                "initial_volume": "30"
+                            },
+                            "cocktail": {
+                                "name": "cocktail glass",
+                                "icon_state": "glass-cocktail",
+                                "glass_style": "cocktail",
+                                "initial_volume": "20"
+                            },
+                            "flute": {
+                                "name": "champagne flute",
+                                "icon_state": "glass-flute",
+                                "glass_style": "flute",
+                                "initial_volume": "20"
+                            }
+                        },
+                        "skull_chalice": {
+                            "name": "skull chalice",
+                            "desc": "A thing which you can drink fluids out of. Um. It's made from a skull. Considering how many holes are in skulls, this is perhaps a questionable design.",
+                            "icon_state": "skullchalice",
+                            "item_state": "skullchalice",
+                            "rc_flags": "RC_SPECTRO"
+                        },
+                        "mug": {
+                            "name": "mug",
+                            "desc": "A standard mug, for coffee or tea or whatever you wanna drink.",
+                            "icon_state": "mug",
+                            "item_state": "mug",
+                            "rc_flags": "RC_SPECTRO"
+                        },
+                        "paper_cup": {
+                            "name": "paper cup",
+                            "desc": "A cup made of paper. It's not that complicated.",
+                            "icon_state": "paper_cup",
+                            "item_state": "drink_glass",
+                            "rc_flags": "RC_SPECTRO",
+                            "initial_volume": "15"
+                        },
+                        "pitcher": {
+                            "name": "glass pitcher",
+                            "desc": "A big container for holding a lot of liquid that you then serve to people. Probably alcohol, let's be honest.",
+                            "icon_state": "pitcher",
+                            "item_state": "drink_glass",
+                            "initial_volume": "120"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "\"": {
+        "obj": {
+            "item": {
+                "reagent_containers": {
+                    "food": {
+                        "snacks\"": {
+                            "module_research_type": "/obj/item/reagent_containers/food/snacks"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

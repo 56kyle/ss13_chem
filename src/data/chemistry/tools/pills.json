@@ -1,0 +1,172 @@
+{
+    "obj": {
+        "item": {
+            "reagent_containers": {
+                "pill": {
+                    "name": "pill",
+                    "desc": "a pill.",
+                    "icon": "icons/obj/pills.dmi",
+                    "inhand_image_icon": "icons/mob/inhand/hand_medical.dmi",
+                    "icon_state": "pill1",
+                    "item_state": "pill",
+                    "vr": {
+                        "salbutamol": {
+                            "rc_flags": "RC_SPECTRO",
+                            "name": "salbutamol pill",
+                            "desc": "Used to treat respiratory distress.",
+                            "icon_state": "pill4"
+                        },
+                        "icon": "icons/effects/VR.dmi",
+                        "mannitol": {
+                            "name": "mannitol pill",
+                            "desc": "Used to treat cranial swelling.",
+                            "icon_state": "pill1"
+                        },
+                        "antitox": {
+                            "name": "anti-toxins pill",
+                            "desc": "Neutralizes many common toxins.",
+                            "icon_state": "pill2"
+                        },
+                        "salicylic_acid": {
+                            "name": "analgesic pill",
+                            "desc": "Commonly used to treat moderate pain and fevers.",
+                            "icon_state": "pill3"
+                        }
+                    },
+                    "module_research": {
+                        "medicine": "0.5",
+                        "science": "0.5"
+                    },
+                    "var": {
+                        "random_icon": "0"
+                    },
+                    "uranium": {
+                        "name": "Uranium nugget"
+                    },
+                    "antitox": {
+                        "name": "anti-toxins pill",
+                        "desc": "Neutralizes many common toxins.",
+                        "icon_state": "pill17",
+                        "initial_volume": "100"
+                    },
+                    "calomel": {
+                        "name": "calomel pill",
+                        "desc": "Can be used to purge impurities, but is highly toxic itself.",
+                        "icon_state": "pill3",
+                        "initial_volume": "100"
+                    },
+                    "tox": {
+                        "name": "cyanide pill",
+                        "desc": "Highly lethal.",
+                        "icon_state": "pill5",
+                        "initial_volume": "100"
+                    },
+                    "stox": {
+                        "name": "morphine pill",
+                        "desc": "Used to treat severe pain. Highly addictive.",
+                        "icon_state": "pill8",
+                        "initial_volume": "100"
+                    },
+                    "salicylic_acid": {
+                        "name": "analgesic pill",
+                        "desc": "Commonly used to treat moderate pain and fevers.",
+                        "icon_state": "pill4",
+                        "initial_volume": "100"
+                    },
+                    "silver_sulfadiazine": {
+                        "name": "silver sulfadiazine pill",
+                        "desc": "Used to treat burns, but it's not meant to be ingested. Welp.",
+                        "icon_state": "pill11",
+                        "initial_volume": "100"
+                    },
+                    "epinephrine": {
+                        "name": "epinephrine pill",
+                        "desc": "Used to stabilize patients in crisis.",
+                        "icon_state": "pill20",
+                        "initial_volume": "100"
+                    },
+                    "salbutamol": {
+                        "name": "salbutamol pill",
+                        "desc": "Used to treat respiratory distress.",
+                        "icon_state": "pill16",
+                        "initial_volume": "100"
+                    },
+                    "mutadone": {
+                        "name": "mutadone pill",
+                        "desc": "Used to cure genetic abnormalities.",
+                        "icon_state": "pill18",
+                        "initial_volume": "100"
+                    },
+                    "mannitol": {
+                        "name": "mannitol pill",
+                        "desc": "Used to treat cranial swelling.",
+                        "icon_state": "pill19",
+                        "initial_volume": "100"
+                    },
+                    "antirad": {
+                        "name": "potassium iodide pill",
+                        "desc": "Used to treat radiation poisoning.",
+                        "icon_state": "pill9",
+                        "initial_volume": "100"
+                    },
+                    "hairgrownium": {
+                        "name": "\\improper EZ-Hairgrowth pill",
+                        "desc": "The #1 hair growth product on the market! WARNING: Some side effects may occur.",
+                        "icon_state": "pill6",
+                        "initial_volume": "100"
+                    },
+                    "methamphetamine": {
+                        "name": "methamphetamine pill",
+                        "desc": "Methamphetamine is a highly effective and dangerous stimulant drug.",
+                        "icon_state": "pill9",
+                        "initial_volume": "100"
+                    },
+                    "crank": {
+                        "name": "crank pill",
+                        "desc": "A cheap and dirty stimulant drug, commonly used by space biker gangs.",
+                        "icon_state": "pill4",
+                        "initial_volume": "100"
+                    },
+                    "bathsalts": {
+                        "name": "bath salts pill",
+                        "desc": "Sometimes packaged as a refreshing bathwater additive, these crystals are definitely not for human consumption.",
+                        "icon_state": "pill1",
+                        "initial_volume": "100"
+                    },
+                    "catdrugs": {
+                        "name": "cat drugs pill",
+                        "desc": "Uhhh...",
+                        "icon_state": "pill5",
+                        "initial_volume": "100"
+                    },
+                    "cyberpunk": {
+                        "name": "cyberpunk pill",
+                        "desc": "A cocktail of illicit designer drugs, who knows what might be in here.",
+                        "initial_volume": "100",
+                        "random_icon": "1"
+                    }
+                }
+            }
+        }
+    },
+    "\"": {
+        "obj": {
+            "item": {
+                "reagent_containers": {
+                    "pill\"": {
+                        "module_research_type": "/obj/item/reagent_containers/pill"
+                    }
+                }
+            }
+        }
+    },
+    "var": {
+        "list": {
+            "CYBERPUNK_drug_prefixes": "strings(\"chemistry_tools.txt\", \"CYBERPUNK_drug_prefixes\")",
+            "CYBERPUNK_drug_suffixes": "strings(\"chemistry_tools.txt\", \"CYBERPUNK_drug_suffixes\")",
+            "CYBERPUNK_drug_primaries": "strings(\"chemistry_tools.txt\", \"CYBERPUNK_drug_primaries\")",
+            "CYBERPUNK_drug_adulterants": "strings(\"chemistry_tools.txt\", \"CYBERPUNK_drug_adulterants\")",
+            "CYBERPUNK_drug_adulterants_safe": "strings(\"chemistry_tools.txt\", \"CYBERPUNK_drug_adulterants_safe\")"
+        }
+    }
+}

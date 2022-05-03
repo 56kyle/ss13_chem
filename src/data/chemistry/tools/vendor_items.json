@@ -1,0 +1,34 @@
+{
+    "obj": {
+        "item": {
+            "reagent_containers": {
+                "vending": {
+                    "name": "chem vendor item",
+                    "desc": "A generic parent item for the chemical vendor chem containers. You really shouldn't be able to see this thing!",
+                    "icon": "icons/obj/chemical.dmi",
+                    "icon_state": "vendvial",
+                    "flags": "FPRINT | TABLEPASS | OPENCONTAINER",
+                    "initial_volume": "5",
+                    "amount_per_transfer_from_this": "5",
+                    "rc_flags": "RC_FULLNESS | RC_VISIBLE",
+                    "vial": {
+                        "name": "small vial",
+                        "desc": "A little vial. Can hold up to 5 units.",
+                        "icon_state": "minivial",
+                        "rc_flags": "RC_VISIBLE | RC_SPECTRO"
+                    },
+                    "bag": {
+                        "name": "small bag",
+                        "desc": "A little bag. Can hold up to 5 units.",
+                        "icon_state": "vendbag",
+                        "larger": {
+                            "name": "bag",
+                            "desc": "A bag. Can hold up to 50 units.",
+                            "initial_volume": "50"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

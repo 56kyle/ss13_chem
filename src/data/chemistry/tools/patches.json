@@ -1,0 +1,127 @@
+{
+    "obj": {
+        "item": {
+            "reagent_containers": {
+                "patch": {
+                    "name": "patch",
+                    "desc": "A small adhesive chemical pouch, for application to the skin.",
+                    "icon": "icons/obj/chemical.dmi",
+                    "icon_state": "patch",
+                    "var": {
+                        "medical": "0",
+                        "borg": "0",
+                        "style": "patch",
+                        "in_use": "0"
+                    },
+                    "initial_volume": "40",
+                    "LSD": {
+                        "cyborg": {
+                            "rc_flags": "RC_SPECTRO",
+                            "borg": "1"
+                        },
+                        "name": "blotter",
+                        "desc": "What is this?",
+                        "icon_state": "patch_LSD",
+                        "module_research": {
+                            "vice": 10
+                        }
+                    },
+                    "module_research": {
+                        "medicine": 1,
+                        "science": 1
+                    },
+                    "bruise": {
+                        "name": "styptic powder patch",
+                        "desc": "Heals brute damage wounding.",
+                        "medical": "1",
+                        "medbot": {
+                            "name": "tissue reapplication stamp",
+                            "borg": "1"
+                        }
+                    },
+                    "burn": {
+                        "name": "silver sulfadiazine patch",
+                        "desc": "Heals burn damage wounding.",
+                        "medical": "1",
+                        "medbot": {
+                            "name": "post-incendary dermal repair stamp",
+                            "borg": "1"
+                        }
+                    },
+                    "synthflesh": {
+                        "name": "synthflesh patch",
+                        "desc": "Heals both brute and burn damage wounding.",
+                        "medical": "1",
+                        "medbot": {
+                            "name": "skin soothing ultra-damage repair stamp",
+                            "borg": "1"
+                        }
+                    },
+                    "nicotine": {
+                        "name": "nicotine patch",
+                        "desc": "Satisfies the needs of nicotine addicts."
+                    },
+                    "vr": {
+                        "icon": "icons/effects/VR.dmi",
+                        "bruise": {
+                            "name": "healing patch",
+                            "desc": "Heals brute damage wounding.",
+                            "icon_state": "patch_med-brute",
+                            "medical": "1"
+                        },
+                        "burn": {
+                            "name": "burn patch",
+                            "desc": "Heals burn damage wounding.",
+                            "icon_state": "patch_med-burn",
+                            "medical": "1"
+                        }
+                    },
+                    "mini": {
+                        "name": "mini-patch",
+                        "icon_state": "minipatch",
+                        "style": "minipatch",
+                        "initial_volume": "20",
+                        "bruise": {
+                            "name": "healing mini-patch",
+                            "desc": "Heals brute damage wounding.",
+                            "medical": "1"
+                        },
+                        "burn": {
+                            "name": "burn mini-patch",
+                            "desc": "Heals burn damage wounding.",
+                            "medical": "1"
+                        },
+                        "synthflesh": {
+                            "name": "skin soothing ultra-damage repair mini-patch",
+                            "desc": "Heals both brute and burn damage wounding.",
+                            "medical": "1"
+                        }
+                    }
+                }
+            },
+            "patch_stack": {
+                "name": "Patch Stack",
+                "desc": "A stack, holding patches. The top patch can be used.",
+                "icon": "icons/obj/chemical.dmi",
+                "icon_state": "patch_stack",
+                "flags": "FPRINT | TABLEPASS | SUPPRESSATTACK",
+                "var": {
+                    "list": {
+                        "patches": []
+                    }
+                }
+            }
+        }
+    },
+    "\"": {
+        "obj": {
+            "item": {
+                "reagent_containers": {
+                    "patch\"": {
+                        "module_research_type": "/obj/item/reagent_containers/patch"
+                    }
+                }
+            }
+        }
+    }
+}

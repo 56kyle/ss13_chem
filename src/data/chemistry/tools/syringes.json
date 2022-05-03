@@ -1,0 +1,85 @@
+{
+    "obj": {
+        "item": {
+            "reagent_containers": {
+                "syringe": {
+                    "name": "Syringe",
+                    "desc": "A syringe.",
+                    "icon": "icons/obj/syringe.dmi",
+                    "inhand_image_icon": "icons/mob/inhand/hand_medical.dmi",
+                    "item_state": "syringe_0",
+                    "icon_state": "0",
+                    "initial_volume": "15",
+                    "amount_per_transfer_from_this": "5",
+                    "module_research": {
+                        "science": 1,
+                        "medicine": 1
+                    },
+                    "var": {
+                        "mode": "S_DRAW"
+                    },
+                    "rc_flags": "RC_SCALE | RC_VISIBLE | RC_SPECTRO",
+                    "robot": {
+                        "name": "syringe (mixed)",
+                        "desc": "Contains epinephrine & anti-toxins."
+                    },
+                    "epinephrine": {
+                        "name": "syringe (epinephrine)",
+                        "desc": "Contains epinephrine - used to stabilize patients."
+                    },
+                    "insulin": {
+                        "name": "syringe (insulin)",
+                        "desc": "Contains insulin - used to treat diabetes.",
+                        "initial_volume": "15"
+                    },
+                    "haloperidol": {
+                        "name": "syringe (anti-psychotic)",
+                        "desc": "Contains haloperidol - used for sedation and to counter violent psychosis.",
+                        "initial_volume": "15"
+                    },
+                    "antitoxin": {
+                        "name": "syringe (anti-toxin)",
+                        "desc": "Contains charcoal - used to treat toxins and damage from toxins.",
+                        "initial_volume": "15"
+                    },
+                    "antiviral": {
+                        "name": "syringe (spaceacillin)",
+                        "desc": "Contains antibacterial agents.",
+                        "initial_volume": "15"
+                    },
+                    "atropine": {
+                        "name": "syringe (atropine)",
+                        "desc": "Contains atropine, a rapid antidote for nerve gas exposure.",
+                        "initial_volume": "15"
+                    },
+                    "krokodil": {
+                        "name": "syringe (krokodil)",
+                        "desc": "Contains krokodil, a sketchy homemade opiate often used by disgruntled Cosmonauts..",
+                        "initial_volume": "15"
+                    },
+                    "morphine": {
+                        "name": "syringe (morphine)",
+                        "desc": "Contains morphine, a strong but highly addictive opiate painkiller with sedative side effects.",
+                        "initial_volume": "15"
+                    },
+                    "calomel": {
+                        "name": "syringe (calomel)",
+                        "desc": "Contains calomel, which be used to purge impurities, but is highly toxic itself.",
+                        "initial_volume": "15"
+                    }
+                }
+            }
+        }
+    },
+    "\"": {
+        "obj": {
+            "item": {
+                "reagent_containers": {
+                    "syringe\"": {
+                        "module_research_type": "/obj/item/reagent_containers/syringe"
+                    }
+                }
+            }
+        }
+    }
+}

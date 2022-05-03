@@ -1,0 +1,85 @@
+{
+    "obj": {
+        "item": {
+            "reagent_containers": {
+                "glass": {
+                    "beaker": {
+                        "name": "beaker",
+                        "desc": "A beaker. Can hold up to 50 units.",
+                        "icon": "icons/obj/chemical.dmi",
+                        "inhand_image_icon": "icons/mob/inhand/hand_medical.dmi",
+                        "icon_state": "beaker",
+                        "item_state": "beaker",
+                        "initial_volume": "50",
+                        "module_research": {
+                            "science": 2,
+                            "medicine": 2
+                        },
+                        "var": {
+                            "icon_style": "beaker"
+                        },
+                        "rc_flags": "RC_SCALE | RC_VISIBLE | RC_SPECTRO",
+                        "cryoxadone": {
+                            "name": "beaker (cryoxadone)"
+                        },
+                        "epinephrine": {
+                            "name": "beaker (epinephrine)"
+                        },
+                        "antitox": {
+                            "name": "beaker (anti-toxin)"
+                        },
+                        "brute": {
+                            "name": "beaker (styptic powder)"
+                        },
+                        "burn": {
+                            "name": "beaker (silver sulfadiazine)"
+                        },
+                        "large": {
+                            "name": "large beaker",
+                            "desc": "A large beaker. Can hold up to 100 units.",
+                            "icon_state": "beakerlarge",
+                            "initial_volume": "100",
+                            "icon_style": "beakerlarge",
+                            "epinephrine": {
+                                "name": "epinephrine reserve tank"
+                            },
+                            "antitox": {
+                                "name": "anti-toxin reserve tank"
+                            },
+                            "brute": {
+                                "name": "styptic powder reserve tank"
+                            },
+                            "burn": {
+                                "name": "silver sulfadiazine reserve tank"
+                            },
+                            "happy_plant": {
+                                "name": "Happy Plant Mixture",
+                                "desc": "160 units of things that make plants grow happy!",
+                                "amount_per_transfer_from_this": "40",
+                                "initial_volume": "160"
+                            }
+                        },
+                        "extractor_tank": {
+                            "name": "reagent extractor tank",
+                            "desc": "A large tank used in the reagent extractors. You probably shouldn't be able to see this!",
+                            "initial_volume": "500"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "\"": {
+        "obj": {
+            "item": {
+                "reagent_containers": {
+                    "glass": {
+                        "beaker\"": {
+                            "module_research_type": "/obj/item/reagent_containers/glass/beaker"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

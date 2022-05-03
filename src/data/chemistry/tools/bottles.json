@@ -1,0 +1,265 @@
+{
+    "obj": {
+        "item": {
+            "reagent_containers": {
+                "glass": {
+                    "bottle": {
+                        "name": "bottle",
+                        "desc": "A small bottle.",
+                        "icon": "icons/obj/chemical.dmi",
+                        "icon_state": "bottle1",
+                        "item_state": "atoxinbottle",
+                        "initial_volume": "30",
+                        "var": {
+                            "bottle_style": null
+                        },
+                        "rc_flags": "RC_FULLNESS | RC_VISIBLE | RC_SPECTRO",
+                        "amount_per_transfer_from_this": "10",
+                        "flags": "FPRINT | TABLEPASS | OPENCONTAINER | SUPPRESSATTACK",
+                        "module_research": {
+                            "science": "0.5",
+                            "medicine": "0.5"
+                        },
+                        "epinephrine": {
+                            "name": "epinephrine bottle",
+                            "desc": "A small bottle. Contains epinephrine - used to stabilize patients.",
+                            "bottle_style": "1",
+                            "amount_per_transfer_from_this": "10"
+                        },
+                        "toxin": {
+                            "name": "toxin bottle",
+                            "desc": "A small bottle containing toxic compounds.",
+                            "bottle_style": "2",
+                            "amount_per_transfer_from_this": "5"
+                        },
+                        "atropine": {
+                            "name": "atropine bottle",
+                            "desc": "A small bottle containing atropine, used for cardiac emergencies.",
+                            "bottle_style": "2",
+                            "amount_per_transfer_from_this": "5"
+                        },
+                        "saline": {
+                            "name": "saline-glucose bottle",
+                            "desc": "A small bottle containing saline-glucose solution.",
+                            "bottle_style": "2",
+                            "amount_per_transfer_from_this": "5"
+                        },
+                        "aspirin": {
+                            "name": "salicylic acid bottle",
+                            "desc": "A small bottle containing medicine for pain and fevers.",
+                            "bottle_style": "2",
+                            "amount_per_transfer_from_this": "5"
+                        },
+                        "poison": {
+                            "name": "poison bottle",
+                            "desc": "There is a little skull and crossbones on the label. Yikes.",
+                            "initial_volume": "40",
+                            "amount_per_transfer_from_this": "5"
+                        },
+                        "morphine": {
+                            "name": "morphine bottle",
+                            "desc": "A small bottle of morphine, a powerful painkiller.",
+                            "bottle_style": "4",
+                            "amount_per_transfer_from_this": "5"
+                        },
+                        "pfd": {
+                            "name": "perfluorodecalin bottle",
+                            "desc": "A small bottle of an experimental liquid-breathing medicine.",
+                            "bottle_style": "4",
+                            "amount_per_transfer_from_this": "5"
+                        },
+                        "omnizine": {
+                            "name": "omnizine bottle",
+                            "desc": "A small bottle of an experimental and expensive herbal compound.",
+                            "bottle_style": "4",
+                            "amount_per_transfer_from_this": "5"
+                        },
+                        "ether": {
+                            "name": "ether bottle",
+                            "desc": "A small bottle of an ether, a strong but highly addictive anesthetic and sedative.",
+                            "amount_per_transfer_from_this": "5"
+                        },
+                        "haloperidol": {
+                            "name": "haloperidol bottle",
+                            "desc": "A small bottle of haloperidol, a powerful anti-psychotic.",
+                            "amount_per_transfer_from_this": "5"
+                        },
+                        "pentetic": {
+                            "name": "pentetic acid bottle",
+                            "desc": "A small bottle of pentetic acid, an experimental and aggressive chelation agent.",
+                            "bottle_style": "4",
+                            "amount_per_transfer_from_this": "5"
+                        },
+                        "sulfonal": {
+                            "name": "sulfonal bottle",
+                            "desc": "A small bottle.",
+                            "bottle_style": "4",
+                            "amount_per_transfer_from_this": "5"
+                        },
+                        "pancuronium": {
+                            "name": "pancuronium bottle",
+                            "desc": "A small bottle.",
+                            "bottle_style": "1",
+                            "amount_per_transfer_from_this": "5"
+                        },
+                        "antitoxin": {
+                            "name": "anti-toxin bottle",
+                            "desc": "A small bottle.",
+                            "bottle_style": "3",
+                            "amount_per_transfer_from_this": "5"
+                        },
+                        "antihistamine": {
+                            "name": "antihistamine bottle",
+                            "desc": "A small bottle of allergy medication.",
+                            "bottle_style": "1",
+                            "amount_per_transfer_from_this": "5"
+                        },
+                        "eyedrops": {
+                            "name": "oculine bottle",
+                            "desc": "A small bottle of combined eye and ear medication.",
+                            "bottle_style": "1",
+                            "amount_per_transfer_from_this": "5"
+                        },
+                        "antirad": {
+                            "name": "anti-radiation bottle",
+                            "desc": "A small bottle of potassium iodide.",
+                            "bottle_style": "3",
+                            "amount_per_transfer_from_this": "5"
+                        },
+                        "pacid": {
+                            "name": "fluorosulfuric acid bottle",
+                            "desc": "A small bottle.",
+                            "bottle_style": "2",
+                            "amount_per_transfer_from_this": "5"
+                        },
+                        "fluorosurfactant": {
+                            "name": "fluorosurfactant bottle",
+                            "desc": "A small bottle.",
+                            "bottle_style": "1",
+                            "amount_per_transfer_from_this": "5"
+                        },
+                        "oil": {
+                            "name": "oil bottle",
+                            "desc": "A reagent storage bottle.",
+                            "icon_state": "reagent_bottle",
+                            "initial_volume": "50",
+                            "amount_per_transfer_from_this": "5"
+                        },
+                        "phenol": {
+                            "name": "phenol bottle",
+                            "desc": "A reagent storage bottle.",
+                            "icon_state": "reagent_bottle",
+                            "initial_volume": "50",
+                            "amount_per_transfer_from_this": "5"
+                        },
+                        "acetone": {
+                            "name": "acetone bottle",
+                            "desc": "A reagent storage bottle.",
+                            "icon_state": "reagent_bottle",
+                            "initial_volume": "50",
+                            "amount_per_transfer_from_this": "5",
+                            "large": {
+                                "desc": "A large bottle.",
+                                "initial_volume": "100",
+                                "icon_state": "largebottle"
+                            },
+                            "janitors": {
+                                "desc": "A generic unbranded metallic container for acetone.",
+                                "initial_volume": "100",
+                                "icon_state": "acetone"
+                            }
+                        },
+                        "ammonia": {
+                            "name": "ammonia bottle",
+                            "desc": "A reagent storage bottle.",
+                            "icon_state": "reagent_bottle",
+                            "initial_volume": "50",
+                            "amount_per_transfer_from_this": "5",
+                            "large": {
+                                "desc": "A large bottle.",
+                                "initial_volume": "100",
+                                "icon_state": "largebottle"
+                            },
+                            "janitors": {
+                                "desc": "A generic unbranded bottle of ammonia.",
+                                "initial_volume": "100",
+                                "icon_state": "bleach"
+                            }
+                        },
+                        "diethylamine": {
+                            "name": "diethylamine bottle",
+                            "desc": "A reagent storage bottle.",
+                            "icon_state": "reagent_bottle",
+                            "initial_volume": "50",
+                            "amount_per_transfer_from_this": "5"
+                        },
+                        "acid": {
+                            "name": "acid bottle",
+                            "desc": "A reagent storage bottle.",
+                            "icon_state": "reagent_bottle",
+                            "initial_volume": "50",
+                            "amount_per_transfer_from_this": "5",
+                            "large": {
+                                "desc": "A large bottle.",
+                                "initial_volume": "100",
+                                "icon_state": "largebottle"
+                            }
+                        },
+                        "formaldehyde": {
+                            "name": "embalming fluid bottle",
+                            "desc": "A reagent storage bottle.",
+                            "icon_state": "reagent_bottle",
+                            "initial_volume": "50",
+                            "amount_per_transfer_from_this": "5"
+                        },
+                        "bubblebath": {
+                            "name": "Cap'n Bubs(TM) Extra-Manly Bubble Bath",
+                            "desc": "Industrial strength bubblebath with a fat and sassy mascot on the bottle. Neat.",
+                            "icon": "icons/obj/drink.dmi",
+                            "icon_state": "moonshine",
+                            "initial_volume": "50",
+                            "amount_per_transfer_from_this": "5",
+                            "rc_flags": "RC_FULLNESS"
+                        },
+                        "icing": {
+                            "name": "icing tube",
+                            "desc": "Used to put icing on cakes.",
+                            "icon": "icons/obj/food.dmi",
+                            "icon_state": "icing_tube",
+                            "initial_volume": "50",
+                            "amount_per_transfer_from_this": "5",
+                            "rc_flags": "RC_FULLNESS"
+                        },
+                        "holywater": {
+                            "name": "Holy Water",
+                            "desc": "A small bottle filled with blessed water.",
+                            "icon": "icons/obj/chemical.dmi",
+                            "icon_state": "holy_water",
+                            "amount_per_transfer_from_this": "10"
+                        },
+                        "cleaner": {
+                            "name": "cleaner bottle",
+                            "desc": "A bottle filled with cleaning fluid.",
+                            "icon_state": "largebottle-labeled",
+                            "initial_volume": "50",
+                            "amount_per_transfer_from_this": "10"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "\"": {
+        "obj": {
+            "item": {
+                "reagent_containers": {
+                    "glass": {
+                        "bottle\"": {
+                            "module_research_type": "/obj/item/reagent_containers/glass/bottle"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

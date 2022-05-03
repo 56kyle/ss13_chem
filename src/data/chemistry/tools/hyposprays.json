@@ -1,0 +1,78 @@
+{
+    "var": {
+        "global": {
+            "list": {
+                "chem_whitelist": [
+                    "antihol",
+                    "charcoal",
+                    "epinephrine",
+                    "insulin",
+                    "mutadone",
+                    "teporone",
+                    "silver_sulfadiazine",
+                    "salbutamol",
+                    "perfluorodecalin",
+                    "omnizine",
+                    "stimulants",
+                    "synaptizine",
+                    "anti_rad",
+                    "oculine",
+                    "mannitol",
+                    "penteticacid",
+                    "stypic_powder",
+                    "methamphetamine",
+                    "spaceacillin",
+                    "saline",
+                    "salicylic_acid",
+                    "cryoxadone",
+                    "blood",
+                    "bloodc"
+                ]
+            }
+        }
+    },
+    "obj": {
+        "item": {
+            "reagent_containers": {
+                "hypospray": {
+                    "name": "hypospray",
+                    "desc": "An automated injector that will dump out any harmful chemicals it finds in itself.",
+                    "icon": "icons/obj/chemical.dmi",
+                    "inhand_image_icon": "icons/mob/inhand/hand_medical.dmi",
+                    "initial_volume": "30",
+                    "item_state": "syringe_0",
+                    "icon_state": "hypo0",
+                    "amount_per_transfer_from_this": "5",
+                    "flags": "FPRINT | TABLEPASS | OPENCONTAINER | ONBELT | NOSPLASH",
+                    "module_research": {
+                        "science": 3,
+                        "medicine": 2
+                    },
+                    "var": {
+                        "list": {
+                            "whitelist": []
+                        },
+                        "inj_amount": "5",
+                        "safe": "1"
+                    },
+                    "mats": "6",
+                    "rc_flags": "RC_SCALE | RC_VISIBLE | RC_SPECTRO",
+                    "emagged": {
+                        "safe": "0"
+                    }
+                }
+            }
+        }
+    },
+    "\"": {
+        "obj": {
+            "item": {
+                "reagent_containers": {
+                    "hypospray\"": {
+                        "module_research_type": "/obj/item/reagent_containers/hypospray"
+                    }
+                }
+            }
+        }
+    }
+}
