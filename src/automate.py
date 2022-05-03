@@ -61,7 +61,6 @@ medical_recipes = [
 ]
 
 all_recipes = [
-    ['PRESS ME', '']
     *basic_recipes,
     *utility,
     *acids,
