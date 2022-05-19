@@ -1,0 +1,249 @@
+{
+    "obj": {
+        "item": {
+            "reagent_containers": {
+                "patch": {
+                    "name": "patch",
+                    "desc": "A small adhesive chemical pouch, for application to the skin.",
+                    "icon": "icons/obj/chemical.dmi",
+                    "icon_state": "patch",
+                    "var": {
+                        "medical": "0",
+                        "borg": "0",
+                        "style": "patch",
+                        "in_use": "0",
+                        "good_throw": "0",
+                        "active": "0",
+                        "overlay_key": "0",
+                        "atom": {
+                            "attached": "0"
+                        },
+                        "sticker_icon_state": "patch"
+                    },
+                    "initial_volume": "30",
+                    "event_handler_flags": "HANDLE_STICKER | USE_FLUID_ENTER",
+                    "flags": "FPRINT | TABLEPASS | SUPPRESSATTACK | EXTRADELAY",
+                    "bruise": {
+                        "name": "styptic powder patch",
+                        "desc": "Heals brute damage wounding.",
+                        "medical": "1",
+                        "initial_reagents": "styptic_powder",
+                        "medbot": {
+                            "name": "tissue reapplication stamp",
+                            "borg": "1"
+                        }
+                    },
+                    "burn": {
+                        "name": "silver sulfadiazine patch",
+                        "desc": "Heals burn damage wounding.",
+                        "medical": "1",
+                        "initial_reagents": "silver_sulfadiazine",
+                        "medbot": {
+                            "name": "post-incendary dermal repair stamp",
+                            "borg": "1"
+                        }
+                    },
+                    "synthflesh": {
+                        "name": "synthflesh patch",
+                        "desc": "Heals both brute and burn damage wounding.",
+                        "medical": "1",
+                        "initial_reagents": "synthflesh",
+                        "medbot": {
+                            "name": "skin soothing ultra-damage repair stamp",
+                            "borg": "1"
+                        }
+                    },
+                    "nicotine": {
+                        "name": "nicotine patch",
+                        "desc": "Satisfies the needs of nicotine addicts.",
+                        "initial_reagents": {
+                            "nicotine": 10
+                        }
+                    },
+                    "LSD": {
+                        "name": "blotter",
+                        "desc": "What is this?",
+                        "icon_state": "patch_LSD",
+                        "initial_reagents": {
+                            "LSD": 20
+                        },
+                        "cyborg": {
+                            "borg": "1"
+                        }
+                    },
+                    "lsd_bee": {
+                        "name": "bluzzer",
+                        "desc": "A highly potent hallucinogenic substance. It smells like honey.",
+                        "icon_state": "patch_LSBee",
+                        "initial_reagents": {
+                            "lsd_bee": 20
+                        }
+                    },
+                    "vr": {
+                        "icon": "icons/effects/VR.dmi",
+                        "icon_state": "patch_med",
+                        "bruise": {
+                            "name": "healing patch",
+                            "desc": "Heals brute damage wounding.",
+                            "icon_state": "patch_med-brute",
+                            "medical": "1",
+                            "initial_reagents": {
+                                "styptic_powder": 20
+                            }
+                        },
+                        "burn": {
+                            "name": "burn patch",
+                            "desc": "Heals burn damage wounding.",
+                            "icon_state": "patch_med-burn",
+                            "medical": "1",
+                            "initial_reagents": {
+                                "silver_sulfadiazine": 20
+                            }
+                        }
+                    },
+                    "mini": {
+                        "name": "mini-patch",
+                        "icon_state": "minipatch",
+                        "style": "minipatch",
+                        "initial_volume": "15",
+                        "sticker_icon_state": "mini-patch",
+                        "bruise": {
+                            "name": "healing mini-patch",
+                            "desc": "Heals brute damage wounding.",
+                            "medical": "1",
+                            "initial_reagents": "styptic_powder"
+                        },
+                        "burn": {
+                            "name": "burn mini-patch",
+                            "desc": "Heals burn damage wounding.",
+                            "medical": "1",
+                            "initial_reagents": "silver_sulfadiazine"
+                        },
+                        "synthflesh": {
+                            "name": "skin soothing ultra-damage repair mini-patch",
+                            "desc": "Heals both brute and burn damage wounding.",
+                            "medical": "1",
+                            "initial_reagents": "synthflesh"
+                        }
+                    }
+                },
+                "mender_refill_cartridge": {
+                    "both": {
+                        "high_capacity": {
+                            "rc_flags": "RC_SPECTRO",
+                            "initial_volume": "500"
+                        },
+                        "name": "synthflesh auto-mender refill cartridge",
+                        "initial_reagents": "synthflesh"
+                    },
+                    "name": "auto-mender refill cartridge",
+                    "desc": "A container designed to be able to quickly refill medical auto-menders.",
+                    "icon": "icons/obj/chemical.dmi",
+                    "initial_volume": "200",
+                    "initial_reagents": "nicotine",
+                    "icon_state": "mender-refill",
+                    "flags": "FPRINT | TABLEPASS",
+                    "brute": {
+                        "name": "brute auto-mender refill cartridge",
+                        "initial_reagents": "styptic_powder",
+                        "high_capacity": {
+                            "initial_volume": "500"
+                        }
+                    },
+                    "burn": {
+                        "name": "burn auto-mender refill cartridge",
+                        "initial_reagents": "silver_sulfadiazine",
+                        "high_capacity": {
+                            "initial_volume": "500"
+                        }
+                    }
+                },
+                "mender": {
+                    "name": "auto-mender",
+                    "desc": "A small electronic device designed to topically apply healing chemicals.",
+                    "icon": "icons/obj/chemical.dmi",
+                    "icon_state": "mender",
+                    "mats": {
+                        "MET-2": 5,
+                        "CRY-1": 4,
+                        "gold": 5
+                    },
+                    "var": {
+                        "tampered": "0",
+                        "borg": "0",
+                        "list": {
+                            "whitelist": []
+                        },
+                        "use_volume": "8",
+                        "static": {
+                            "list": {
+                                "sfx": [
+                                    "sound/items/mender.ogg",
+                                    "sound/items/mender2.ogg"
+                                ]
+                            }
+                        }
+                    },
+                    "initial_volume": "200",
+                    "flags": "FPRINT | TABLEPASS | OPENCONTAINER | ONBELT | NOSPLASH | ATTACK_SELF_DELAY",
+                    "click_delay": "0.7 SECONDS",
+                    "rc_flags": "RC_SCALE | RC_VISIBLE | RC_SPECTRO",
+                    "brute": {
+                        "initial_reagents": "styptic_powder",
+                        "medbot": {
+                            "name": "brute auto-mender",
+                            "borg": "1"
+                        },
+                        "high_capacity": {
+                            "initial_volume": "500"
+                        }
+                    },
+                    "burn": {
+                        "initial_reagents": "silver_sulfadiazine",
+                        "medbot": {
+                            "name": "burn auto-mender",
+                            "borg": "1"
+                        },
+                        "high_capacity": {
+                            "initial_volume": "500"
+                        }
+                    },
+                    "both": {
+                        "initial_reagents": "synthflesh"
+                    }
+                }
+            },
+            "patch_stack": {
+                "name": "Patch Stack",
+                "desc": "A stack, holding patches. The top patch can be used.",
+                "icon": "icons/obj/chemical.dmi",
+                "icon_state": "patch_stack",
+                "flags": "FPRINT | TABLEPASS | SUPPRESSATTACK",
+                "var": {
+                    "list": {
+                        "patches": []
+                    }
+                }
+            }
+        }
+    },
+    "datum": {
+        "action": {
+            "bar": {
+                "icon": {
+                    "automender_apply": {
+                        "duration": "10",
+                        "interrupt_flags": "INTERRUPT_MOVE | INTERRUPT_STUNNED | INTERRUPT_ATTACKED",
+                        "id": "automender_apply",
+                        "icon": "icons/obj/chemical.dmi",
+                        "icon_state": "mender-active",
+                        "var": {
+                            "looped": "0",
+                            "health_temp": "0"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

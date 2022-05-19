@@ -1,0 +1,18 @@
+{
+    "obj": {
+        "item": {
+            "chem_hint": {
+                "icon": "icons/obj/dojo.dmi",
+                "icon_state": "scroll",
+                "name": "Clue scroll",
+                "desc": "A scroll containing a hint for a secret chemical recipe.",
+                "var": {
+                    "hint_text": "heck, someone forgot to put a hint in this scroll! Call 1-800-IMCODER",
+                    "chem_name": "1-800-CODER",
+                    "has_been_read": "0",
+                    "only_on_production_no_file": "0"
+                }
+            }
+        }
+    }
+}

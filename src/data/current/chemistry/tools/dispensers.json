@@ -1,0 +1,151 @@
+{
+    "obj": {
+        "reagent_dispensers": {
+            "name": "Dispenser",
+            "desc": "...",
+            "icon": "icons/obj/objects.dmi",
+            "icon_state": "watertank",
+            "density": "1",
+            "anchored": "0",
+            "flags": "FPRINT | FLUID_SUBMERGE",
+            "pressure_resistance": "2*ONE_ATMOSPHERE",
+            "p_class": "1.5",
+            "var": {
+                "amount_per_transfer_from_this": "10"
+            },
+            "cleanable": {
+                "ants": {
+                    "name": "space ants",
+                    "desc": "A bunch of space ants.",
+                    "icon": "icons/effects/effects.dmi",
+                    "icon_state": "spaceants",
+                    "layer": "MOB_LAYER",
+                    "density": "0",
+                    "anchored": "1",
+                    "amount_per_transfer_from_this": "5"
+                },
+                "spiders": {
+                    "name": "spiders",
+                    "desc": "A bunch of spiders.",
+                    "icon": "icons/effects/effects.dmi",
+                    "icon_state": "spaceants",
+                    "layer": "MOB_LAYER",
+                    "density": "0",
+                    "anchored": "1",
+                    "amount_per_transfer_from_this": "5",
+                    "color": "#160505"
+                }
+            },
+            "foamtank": {
+                "name": "foamtank",
+                "desc": "A massive tank full of firefighting foam, for refilling extinguishers.",
+                "icon": "icons/obj/objects.dmi",
+                "icon_state": "foamtank",
+                "amount_per_transfer_from_this": "25"
+            },
+            "watertank": {
+                "name": "watertank",
+                "desc": "A watertank",
+                "icon": "icons/obj/objects.dmi",
+                "icon_state": "watertank",
+                "amount_per_transfer_from_this": "25",
+                "capacity": "1000",
+                "big": {
+                    "name": "high-capacity watertank",
+                    "desc": "A specialised high-pressure water tank for holding large amounts of water.",
+                    "icon": "icons/obj/objects.dmi",
+                    "icon_state": "watertankbig",
+                    "anchored": "0",
+                    "amount_per_transfer_from_this": "25"
+                },
+                "fountain": {
+                    "name": "water cooler",
+                    "desc": "A popular gathering place for NanoTrasen's finest bureaucrats and pencil-pushers.",
+                    "icon_state": "coolerbase",
+                    "anchored": "1",
+                    "deconstruct_flags": "DECON_SCREWDRIVER | DECON_CROWBAR",
+                    "mats": "8",
+                    "capacity": "500",
+                    "var": {
+                        "has_tank": "1",
+                        "cup_max": "12",
+                        "image": {
+                            "cup_sprite": null,
+                            "fluid_sprite": null,
+                            "tank_sprite": null
+                        }
+                    },
+                    "piss": {
+                        "name": "discolored water fountain",
+                        "desc": "It's called a fountain, but it's not very decorative or interesting. You can get a drink from it, though seeing the color you feel you shouldn't",
+                        "color": "#ffffcc"
+                    },
+                    "juicer": {
+                        "name": "discolored water fountain",
+                        "desc": "It's called a fountain, but it's not very decorative or interesting. You can get a drink from it, though seeing the color you feel you shouldn't",
+                        "color": "#ccffcc"
+                    }
+                }
+            },
+            "fueltank": {
+                "name": "fueltank",
+                "desc": "A high-pressure tank full of welding fuel. Keep away from open flames and sparks.",
+                "icon": "icons/obj/objects.dmi",
+                "icon_state": "weldtank",
+                "amount_per_transfer_from_this": "25",
+                "custom_suicide": "1"
+            },
+            "heliumtank": {
+                "name": "heliumtank",
+                "desc": "A tank of helium.",
+                "icon": "icons/obj/objects.dmi",
+                "icon_state": "heliumtank",
+                "amount_per_transfer_from_this": "25"
+            },
+            "beerkeg": {
+                "name": "beer keg",
+                "desc": "Full of delicious alcohol, hopefully.",
+                "icon": "icons/obj/objects.dmi",
+                "icon_state": "beertankTEMP",
+                "amount_per_transfer_from_this": "25"
+            },
+            "compostbin": {
+                "name": "compost tank",
+                "desc": "A device that mulches up unwanted produce into usable fertiliser.",
+                "icon": "icons/obj/objects.dmi",
+                "icon_state": "compost",
+                "anchored": "0",
+                "amount_per_transfer_from_this": "30",
+                "event_handler_flags": "NO_MOUSEDROP_QOL"
+            },
+            "still": {
+                "name": "still",
+                "desc": "A piece of equipment for brewing alcoholic beverages.",
+                "icon": "icons/obj/objects.dmi",
+                "icon_state": "still",
+                "amount_per_transfer_from_this": "25",
+                "event_handler_flags": "NO_MOUSEDROP_QOL"
+            }
+        },
+        "item": {
+            "reagent_containers": {
+                "food": {
+                    "drinks": {
+                        "coolerbottle": {
+                            "name": "water cooler bottle",
+                            "desc": "A water cooler bottle. Can hold up to 500 units.",
+                            "icon": "icons/obj/chemical.dmi",
+                            "inhand_image_icon": "icons/mob/inhand/hand_medical.dmi",
+                            "icon_state": "itemtank",
+                            "item_state": "flask",
+                            "initial_volume": "500",
+                            "w_class": "W_CLASS_BULKY",
+                            "incompatible_with_chem_dispensers": "1",
+                            "can_chug": "0"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

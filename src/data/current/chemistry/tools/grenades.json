@@ -1,0 +1,171 @@
+{
+    "obj": {
+        "item": {
+            "chem_grenade": {
+                "name": "metal casing",
+                "icon_state": "grenade-chem1",
+                "icon": "icons/obj/items/grenade.dmi",
+                "inhand_image_icon": "icons/mob/inhand/hand_weapons.dmi",
+                "item_state": "flashbang",
+                "w_class": "W_CLASS_SMALL",
+                "force": "2.0",
+                "var": {
+                    "stage": "0",
+                    "state": "0",
+                    "icon_state_armed": "grenade-chem-armed",
+                    "list": {
+                        "beakers": []
+                    },
+                    "is_dangerous": "TRUE",
+                    "detonating": "0"
+                },
+                "throw_speed": "4",
+                "throw_range": "20",
+                "flags": "FPRINT | TABLEPASS | CONDUCT | ONBELT | EXTRADELAY | NOSPLASH",
+                "stamina_damage": "0",
+                "stamina_cost": "0",
+                "stamina_crit_chance": "0",
+                "move_triggered": "1",
+                "duration_put": "0.25 SECONDS",
+                "metalfoam": {
+                    "name": "metal foam grenade",
+                    "desc": "After activating, creates a mess of foamed metal. Useful for plugging the hull up.",
+                    "icon": "icons/obj/items/grenade.dmi",
+                    "icon_state": "metalfoam",
+                    "icon_state_armed": "metalfoam1",
+                    "stage": "2",
+                    "is_dangerous": "FALSE"
+                },
+                "firefighting": {
+                    "name": "fire fighting grenade",
+                    "desc": "Propells firefighting foam in a wide area around it after activation, putting out fires.",
+                    "icon": "icons/obj/items/grenade.dmi",
+                    "icon_state": "firefighting",
+                    "icon_state_armed": "firefighting1",
+                    "stage": "2",
+                    "is_dangerous": "FALSE"
+                },
+                "cleaner": {
+                    "name": "cleaner grenade",
+                    "desc": "BLAM!-brand foaming space cleaner. In a special applicator for rapid cleaning of wide areas.",
+                    "icon": "icons/obj/items/grenade.dmi",
+                    "icon_state": "cleaner",
+                    "icon_state_armed": "cleaner1",
+                    "stage": "2",
+                    "is_dangerous": "FALSE"
+                },
+                "fcleaner": {
+                    "name": "cleaner grenade",
+                    "desc": "BLAM!-brand foaming space cleaner. In a special applicator for rapid cleaning of wide areas.",
+                    "icon": "icons/obj/items/grenade.dmi",
+                    "icon_state": "cleaner",
+                    "icon_state_armed": "cleaner1",
+                    "stage": "2"
+                },
+                "flashbang": {
+                    "name": "flashbang",
+                    "desc": "A standard stun grenade.",
+                    "icon": "icons/obj/items/grenade.dmi",
+                    "icon_state": "flashbang",
+                    "icon_state_armed": "flashbang1",
+                    "stage": "2",
+                    "is_syndicate": "1",
+                    "is_dangerous": "FALSE",
+                    "mats": "6",
+                    "revolution": {
+                        "mats": null
+                    }
+                },
+                "cryo": {
+                    "name": "cryo grenade",
+                    "desc": "An experimental non-lethal grenade using cryogenic technologies.",
+                    "icon": "icons/obj/items/grenade.dmi",
+                    "icon_state": "cryo",
+                    "icon_state_armed": "cryo1",
+                    "stage": "2"
+                },
+                "incendiary": {
+                    "name": "incendiary grenade",
+                    "desc": "A rather volatile grenade that creates a small fire.",
+                    "icon": "icons/obj/items/grenade.dmi",
+                    "icon_state": "incendiary",
+                    "icon_state_armed": "incendiary1",
+                    "stage": "2"
+                },
+                "very_incendiary": {
+                    "name": "high range incendiary grenade",
+                    "desc": "A rather volatile grenade that creates a large fire.",
+                    "icon": "icons/obj/items/grenade.dmi",
+                    "icon_state": "incendiary-highrange",
+                    "icon_state_armed": "incendiary-highrange1",
+                    "stage": "2",
+                    "vr": {
+                        "icon": "icons/effects/VR.dmi",
+                        "icon_state": "chemg3",
+                        "icon_state_armed": "chemg4"
+                    }
+                },
+                "shock": {
+                    "name": "shock grenade",
+                    "desc": "An arc flashing grenade that shocks everyone close by.",
+                    "icon": "icons/obj/items/grenade.dmi",
+                    "icon_state": "shock",
+                    "icon_state_armed": "shock1",
+                    "stage": "2"
+                },
+                "pepper": {
+                    "name": "crowd dispersal grenade",
+                    "desc": "An non-lethal grenade for use against protests, riots, vagrancy and loitering. Not to be used as a food additive.",
+                    "icon": "icons/obj/items/grenade.dmi",
+                    "icon_state": "pepper",
+                    "icon_state_armed": "pepper1",
+                    "stage": "2"
+                },
+                "sarin": {
+                    "name": "sarin gas grenade",
+                    "desc": "A smoke grenade containing an extremely lethal nerve agent. Use of this mixture constitutes a war crime, so... try not to leave any witnesses.",
+                    "icon": "icons/obj/items/grenade.dmi",
+                    "icon_state": "sarin",
+                    "icon_state_armed": "sarin1",
+                    "stage": "2"
+                },
+                "luminol": {
+                    "name": "luminol smoke grenade",
+                    "desc": "A smoke grenade containing a compound that reveals traces of blood.",
+                    "icon": "icons/obj/items/grenade.dmi",
+                    "icon_state": "luminol",
+                    "icon_state_armed": "luminol1",
+                    "stage": "2",
+                    "is_dangerous": "FALSE"
+                },
+                "fog": {
+                    "name": "fog grenade",
+                    "desc": "A specialized smoke grenade that releases a fog that blocks vision, but is not irritating to inhale.",
+                    "icon": "icons/obj/items/grenade.dmi",
+                    "icon_state": "fog",
+                    "icon_state_armed": "fog1",
+                    "stage": "2",
+                    "is_dangerous": "FALSE"
+                },
+                "napalm": {
+                    "name": "napalm smoke grenade",
+                    "desc": "A grenade that will fill an area with napalm smoke.",
+                    "icon": "icons/obj/items/grenade.dmi",
+                    "icon_state": "incendiary",
+                    "icon_state_armed": "incendiary1",
+                    "stage": "2"
+                }
+            },
+            "grenade_fuse": {
+                "name": "grenade fuse",
+                "desc": "A fuse mechanism with a safety lever.",
+                "icon": "icons/obj/items/grenade.dmi",
+                "icon_state": "grenade-fuse",
+                "item_state": "pen",
+                "force": "0",
+                "w_class": "W_CLASS_TINY",
+                "m_amt": "100"
+            }
+        }
+    }
+}

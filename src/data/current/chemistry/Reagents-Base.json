@@ -1,0 +1,463 @@
+{
+    "datum": {
+        "reagent": {
+            "aluminium": {
+                "name": "aluminium",
+                "id": "aluminium",
+                "description": "A silvery white and ductile member of the boron group of chemical elements.",
+                "reagent_state": "SOLID",
+                "fluid_r": "220",
+                "fluid_g": "220",
+                "fluid_b": "220",
+                "transparency": "255"
+            },
+            "barium": {
+                "name": "barium",
+                "id": "barium",
+                "description": "A highly reactive element.",
+                "reagent_state": "SOLID",
+                "fluid_r": "220",
+                "fluid_g": "220",
+                "fluid_b": "220",
+                "transparency": "255"
+            },
+            "bromine": {
+                "name": "bromine",
+                "id": "bromine",
+                "description": "A red-brown liquid element.",
+                "reagent_state": "LIQUID",
+                "fluid_r": "150",
+                "fluid_g": "50",
+                "fluid_b": "50",
+                "transparency": "50"
+            },
+            "calcium": {
+                "name": "calcium",
+                "id": "calcium",
+                "description": "A white metallic element.",
+                "reagent_state": "SOLID",
+                "fluid_r": "255",
+                "fluid_g": "255",
+                "fluid_b": "255",
+                "transparency": "255"
+            },
+            "carbon": {
+                "name": "carbon",
+                "id": "carbon",
+                "description": "A chemical element critical to organic chemistry.",
+                "reagent_state": "SOLID",
+                "fluid_r": "0",
+                "fluid_g": "0",
+                "fluid_b": "0",
+                "hygiene_value": "-0.5",
+                "transparency": "255"
+            },
+            "chlorine": {
+                "name": "chlorine",
+                "id": "chlorine",
+                "description": "A chemical element.",
+                "reagent_state": "GAS",
+                "fluid_r": "220",
+                "fluid_g": "255",
+                "fluid_b": "160",
+                "transparency": "60",
+                "penetrates_skin": "1"
+            },
+            "chromium": {
+                "name": "chromium",
+                "id": "chromium",
+                "description": "A catalytic chemical element.",
+                "reagent_state": "SOLID",
+                "fluid_r": "220",
+                "fluid_g": "220",
+                "fluid_b": "220",
+                "transparency": "255",
+                "penetrates_skin": "0"
+            },
+            "copper": {
+                "name": "copper",
+                "id": "copper",
+                "description": "A chemical element.",
+                "reagent_state": "SOLID",
+                "fluid_r": "184",
+                "fluid_g": "115",
+                "fluid_b": "51",
+                "transparency": "255",
+                "penetrates_skin": "0"
+            },
+            "fluorine": {
+                "name": "fluorine",
+                "id": "fluorine",
+                "description": "A highly-reactive chemical element.",
+                "reagent_state": "GAS",
+                "fluid_r": "255",
+                "fluid_g": "215",
+                "fluid_b": "160",
+                "transparency": "60",
+                "penetrates_skin": "1"
+            },
+            "ethanol": {
+                "name": "ethanol",
+                "id": "ethanol",
+                "description": "A well-known alcohol with a variety of applications.",
+                "reagent_state": "LIQUID",
+                "fluid_r": "255",
+                "fluid_b": "255",
+                "fluid_g": "255",
+                "transparency": "5",
+                "addiction_prob": "1",
+                "addiction_min": "10",
+                "depletion_rate": "0.05",
+                "overdose": "100",
+                "thirst_value": "-0.02",
+                "bladder_value": "-0.2",
+                "hygiene_value": "1"
+            },
+            "phenol": {
+                "target_organs": [
+                    "liver"
+                ],
+                "var": {
+                    "mob": {
+                        "living": {
+                            "carbon": {
+                                "human": {
+                                    "H": "M"
+                                }
+                            }
+                        }
+                    }
+                },
+                "name": "phenol",
+                "id": "phenol",
+                "description": "Also known as carbolic acid, this is a useful building block in organic chemistry.",
+                "reagent_state": "SOLID",
+                "fluid_r": "180",
+                "fluid_g": "180",
+                "fluid_b": "180",
+                "transparency": "35",
+                "value": "5"
+            },
+            "hydrogen": {
+                "name": "hydrogen",
+                "id": "hydrogen",
+                "description": "A colorless, odorless, nonmetallic, tasteless, highly combustible diatomic gas.",
+                "reagent_state": "GAS",
+                "fluid_r": "202",
+                "fluid_g": "254",
+                "fluid_b": "252",
+                "transparency": "20"
+            },
+            "iodine": {
+                "name": "iodine",
+                "id": "iodine",
+                "description": "A purple gaseous element.",
+                "reagent_state": "GAS",
+                "fluid_r": "127",
+                "fluid_g": "0",
+                "fluid_b": "255",
+                "transparency": "50"
+            },
+            "iron": {
+                "name": "iron",
+                "id": "iron",
+                "description": "Pure iron is a metal, and can help with the regeneration of red blood cells after major trauma.",
+                "reagent_state": "SOLID",
+                "fluid_r": "145",
+                "fluid_g": "135",
+                "fluid_b": "135",
+                "transparency": "255",
+                "overdose": "20",
+                "pathogen_nutrition": [
+                    "iron"
+                ]
+            },
+            "lithium": {
+                "name": "lithium",
+                "id": "lithium",
+                "description": "A chemical element.",
+                "reagent_state": "SOLID",
+                "fluid_r": "220",
+                "fluid_g": "220",
+                "fluid_b": "220",
+                "transparency": "255"
+            },
+            "magnesium": {
+                "name": "magnesium",
+                "id": "magnesium",
+                "description": "A hot-burning chemical element.",
+                "reagent_state": "SOLID",
+                "fluid_r": "255",
+                "fluid_g": "255",
+                "fluid_b": "255",
+                "transparency": "255"
+            },
+            "mercury": {
+                "name": "mercury",
+                "id": "mercury",
+                "description": "A chemical element.",
+                "reagent_state": "LIQUID",
+                "fluid_r": "160",
+                "fluid_g": "160",
+                "fluid_b": "160",
+                "transparency": "255",
+                "penetrates_skin": "1",
+                "touch_modifier": "0.2",
+                "depletion_rate": "0.2"
+            },
+            "nickel": {
+                "name": "nickel",
+                "id": "nickel",
+                "description": "Not actually a coin.",
+                "reagent_state": "SOLID",
+                "fluid_r": "220",
+                "fluid_g": "220",
+                "fluid_b": "220",
+                "transparency": "255"
+            },
+            "nitrogen": {
+                "name": "nitrogen",
+                "id": "nitrogen",
+                "description": "A colorless, odorless, tasteless gas.",
+                "reagent_state": "GAS",
+                "fluid_r": "202",
+                "fluid_g": "254",
+                "fluid_b": "252",
+                "transparency": "20",
+                "pathogen_nutrition": [
+                    "nitrogen"
+                ]
+            },
+            "oxygen": {
+                "name": "oxygen",
+                "id": "oxygen",
+                "description": "A colorless, odorless gas.",
+                "reagent_state": "GAS",
+                "fluid_r": "202",
+                "fluid_g": "254",
+                "fluid_b": "252",
+                "transparency": "20"
+            },
+            "phosphorus": {
+                "name": "phosphorus",
+                "id": "phosphorus",
+                "description": "A chemical element.",
+                "reagent_state": "SOLID",
+                "fluid_r": "150",
+                "fluid_g": "110",
+                "fluid_b": "110",
+                "transparency": "255"
+            },
+            "plasma": {
+                "name": "plasma",
+                "id": "plasma",
+                "description": "The liquid phase of an unusual extraterrestrial compound.",
+                "reagent_state": "LIQUID",
+                "fluid_r": "130",
+                "fluid_g": "40",
+                "fluid_b": "160",
+                "transparency": "222",
+                "minimum_reaction_temperature": "T0C + 100",
+                "var": {
+                    "reacted_to_temp": "0"
+                }
+            },
+            "platinum": {
+                "name": "platinum",
+                "id": "platinum",
+                "description": "Shiny.",
+                "reagent_state": "SOLID",
+                "fluid_r": "220",
+                "fluid_g": "220",
+                "fluid_b": "220",
+                "transparency": "255"
+            },
+            "potassium": {
+                "name": "potassium",
+                "id": "potassium",
+                "description": "A soft, low-melting solid that can easily be cut with a knife. Reacts violently with water.",
+                "reagent_state": "SOLID",
+                "fluid_r": "190",
+                "fluid_g": "190",
+                "fluid_b": "190",
+                "transparency": "255"
+            },
+            "silicon": {
+                "name": "silicon",
+                "id": "silicon",
+                "description": "A tetravalent metalloid, silicon is less reactive than its chemical analog carbon.",
+                "reagent_state": "SOLID",
+                "fluid_r": "120",
+                "fluid_g": "140",
+                "fluid_b": "150",
+                "transparency": "255"
+            },
+            "silver": {
+                "name": "silver",
+                "id": "silver",
+                "description": "A lustrous metallic element regarded as one of the precious metals.",
+                "reagent_state": "SOLID",
+                "fluid_r": "200",
+                "fluid_g": "200",
+                "fluid_b": "200",
+                "transparency": "255",
+                "taste": "metallic"
+            },
+            "sulfur": {
+                "name": "sulfur",
+                "id": "sulfur",
+                "description": "A chemical element.",
+                "reagent_state": "SOLID",
+                "fluid_r": "255",
+                "fluid_g": "255",
+                "fluid_b": "0",
+                "transparency": "255"
+            },
+            "sugar": {
+                "name": "sugar",
+                "id": "sugar",
+                "description": "This white, odorless, crystalline powder has a pleasing, sweet taste.",
+                "reagent_state": "SOLID",
+                "fluid_r": "255",
+                "fluid_g": "255",
+                "fluid_b": "255",
+                "transparency": "255",
+                "overdose": "200",
+                "hunger_value": "0.098",
+                "thirst_value": "-0.098",
+                "pathogen_nutrition": [
+                    "sugar"
+                ],
+                "taste": "sweet",
+                "stun_resist": "6",
+                "threshold": "THRESHOLD_INIT",
+                "sweet_tea": {
+                    "name": "sweet tea",
+                    "id": "sweet_tea",
+                    "description": "A solution of sugar and tea, popular in the American South.  Some people raise the sugar levels in it to the point of saturation and beyond.",
+                    "reagent_state": "LIQUID",
+                    "fluid_r": "139",
+                    "fluid_g": "90",
+                    "fluid_b": "54",
+                    "transparency": "235",
+                    "thirst_value": "0.7909",
+                    "hunger_value": "0.098"
+                }
+            },
+            "helium": {
+                "name": "helium",
+                "id": "helium",
+                "description": "A chemical element.",
+                "reagent_state": "GAS",
+                "fluid_r": "255",
+                "fluid_g": "250",
+                "fluid_b": "160",
+                "transparency": "155",
+                "data": null
+            },
+            "radium": {
+                "name": "radium",
+                "id": "radium",
+                "description": "Radium is an alkaline earth metal. It is highly radioactive.",
+                "reagent_state": "SOLID",
+                "fluid_r": "220",
+                "fluid_g": "220",
+                "fluid_b": "220",
+                "transparency": "255",
+                "penetrates_skin": "1",
+                "touch_modifier": "0.5",
+                "blob_damage": "1"
+            },
+            "sodium": {
+                "name": "sodium",
+                "id": "sodium",
+                "description": "A soft, silvery-white, highly reactive alkali metal.",
+                "reagent_state": "SOLID",
+                "fluid_r": "200",
+                "fluid_g": "200",
+                "fluid_b": "200",
+                "transparency": "255",
+                "pathogen_nutrition": [
+                    "sodium"
+                ]
+            },
+            "uranium": {
+                "name": "uranium",
+                "id": "uranium",
+                "description": "A radioactive heavy metal commonly used for nuclear fission reactions.",
+                "reagent_state": "SOLID",
+                "fluid_r": "40",
+                "fluid_g": "40",
+                "fluid_b": "40",
+                "transparency": "255"
+            },
+            "water": {
+                "name": "water",
+                "id": "water",
+                "reagent_state": "LIQUID",
+                "fluid_r": "10",
+                "fluid_g": "165",
+                "fluid_b": "254",
+                "transparency": "80",
+                "pathogen_nutrition": [
+                    "water"
+                ],
+                "thirst_value": "0.8909",
+                "hygiene_value": "1.33",
+                "bladder_value": "-0.2",
+                "taste": "bland",
+                "minimum_reaction_temperature": "-INFINITY",
+                "target_organs": [
+                    "left_kidney",
+                    "right_kidney"
+                ],
+                "heat_capacity": "400",
+                "block_slippy": "1",
+                "description": "A ubiquitous chemical substance that is composed of hydrogen and oxygen.",
+                "water_holy": {
+                    "name": "holy water",
+                    "id": "water_holy",
+                    "description": "Blessed water, supposedly effective against evil.",
+                    "thirst_value": "0.8909",
+                    "hygiene_value": "2",
+                    "value": "3"
+                },
+                "tonic": {
+                    "name": "tonic water",
+                    "id": "tonic",
+                    "description": "Carbonated water with quinine for a bitter flavor. Protects against Space Malaria.",
+                    "reagent_state": "LIQUID",
+                    "thirst_value": "0.8909",
+                    "hygiene_value": "0.75",
+                    "bladder_value": "-0.25",
+                    "taste": "bitter"
+                },
+                "sea": {
+                    "name": "seawater",
+                    "id": "seawater",
+                    "description": "A little strange. Not like any seawater you've seen. But definitely OSHA approved.",
+                    "block_slippy": "1",
+                    "reagent_state": "LIQUID",
+                    "thirst_value": "-0.3",
+                    "hygiene_value": "0.3",
+                    "bladder_value": "-0.5",
+                    "taste": "gross"
+                }
+            },
+            "ice": {
+                "name": "ice",
+                "id": "ice",
+                "description": "It's frozen water. What did you expect?!",
+                "reagent_state": "SOLID",
+                "fluid_r": "200",
+                "fluid_g": "200",
+                "fluid_b": "250",
+                "transparency": "200",
+                "thirst_value": "0.8909",
+                "bladder_value": "-0.2",
+                "minimum_reaction_temperature": "T0C+1",
+                "taste": "cold"
+            }
+        }
+    }
+}

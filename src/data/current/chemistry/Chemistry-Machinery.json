@@ -1,0 +1,167 @@
+{
+    "obj": {
+        "submachine": {
+            "chef_sink": {
+                "chem_sink": {
+                    "name": "sink",
+                    "density": "0",
+                    "layer": "5",
+                    "icon": "icons/obj/chemical.dmi",
+                    "icon_state": "sink",
+                    "flags": "NOSPLASH"
+                }
+            }
+        },
+        "machinery": {
+            "chem_heater": {
+                "name": "Reagent Heater/Cooler",
+                "desc": "A device used for the slow but precise heating and cooling of chemicals. It looks like a cross between an oven and a urinal.",
+                "density": "1",
+                "anchored": "1",
+                "icon": "icons/obj/chemical.dmi",
+                "icon_state": "heater",
+                "flags": "NOSPLASH | TGUI_INTERACTIVE",
+                "mats": "15",
+                "deconstruct_flags": "DECON_SCREWDRIVER | DECON_WRENCH | DECON_CROWBAR | DECON_WELDER",
+                "power_usage": "50",
+                "var": {
+                    "obj": {
+                        "beaker": null
+                    },
+                    "active": "0",
+                    "target_temp": "T0C",
+                    "output_target": null,
+                    "mob": {
+                        "roboworking": null
+                    },
+                    "static": {
+                        "image": {
+                            "icon_beaker": "image('icons/obj/chemical.dmi', \"heater-beaker\")"
+                        }
+                    }
+                }
+            },
+            "chem_master": {
+                "name": "CheMaster 3000",
+                "desc": "A computer-like device used in the production of various pharmaceutical items. It has a slot for a beaker on the top.",
+                "density": "1",
+                "anchored": "1",
+                "icon": "icons/obj/chemical.dmi",
+                "icon_state": "mixer0",
+                "flags": "NOSPLASH",
+                "mats": "15",
+                "deconstruct_flags": "DECON_SCREWDRIVER | DECON_WRENCH | DECON_CROWBAR | DECON_WELDER | DECON_MULTITOOL",
+                "var": {
+                    "obj": {
+                        "item": {
+                            "beaker": null
+                        }
+                    },
+                    "list": {
+                        "whitelist": []
+                    },
+                    "emagged": "0",
+                    "patch_box": "1",
+                    "pill_bottle": "1",
+                    "output_target": null
+                }
+            },
+            "chemicompiler_stationary": {
+                "name": "ChemiCompiler CCS1001",
+                "desc": "This device looks very difficult to use.",
+                "density": "1",
+                "anchored": "1",
+                "icon": "icons/obj/chemical.dmi",
+                "icon_state": "chemicompiler_st_off",
+                "mats": "15",
+                "flags": "NOSPLASH",
+                "processing_tier": "PROCESSING_FULL",
+                "deconstruct_flags": "DECON_SCREWDRIVER | DECON_WRENCH | DECON_CROWBAR | DECON_WELDER | DECON_MULTITOOL"
+            },
+            "chem_fractioning_still": {
+                "name": "fractional still",
+                "desc": "A towering piece of industrial equipment. It reeks of hydrocarbons.",
+                "density": "1",
+                "anchored": "1",
+                "power_usage": "500",
+                "var": {
+                    "active": "0",
+                    "overall_temp": "T20C",
+                    "target_temp": "T20C",
+                    "heating": "0",
+                    "distilling": "0",
+                    "cracking": "0",
+                    "obj": {
+                        "item": {
+                            "reagent_containers": {
+                                "glass": {
+                                    "beaker": {
+                                        "extractor_tank": {
+                                            "thick": {
+                                                "bottoms": null
+                                            },
+                                            "tops": null,
+                                            "feed": null,
+                                            "overflow": null
+                                        }
+                                    }
+                                },
+                                "user_beaker": null
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "item": {
+            "reagent_containers": {
+                "glass": {
+                    "beaker": {
+                        "extractor_tank": {
+                            "thick": {
+                                "initial_volume": "1000"
+                            }
+                        }
+                    }
+                }
+            },
+            "robot_chemaster": {
+                "prototype": {
+                    "name": "prototype ChemiTool",
+                    "desc": "A prototype of a compact CheMaster/Reagent Extractor device.",
+                    "icon_state": "minichem_proto",
+                    "flags": "NOSPLASH",
+                    "var": {
+                        "mode": "overview",
+                        "autoextract": "0",
+                        "obj": {
+                            "item": {
+                                "reagent_containers": {
+                                    "glass": {
+                                        "extract_to": null,
+                                        "inserted": null,
+                                        "storage_tank_1": null,
+                                        "storage_tank_2": null
+                                    }
+                                }
+                            }
+                        },
+                        "list": {
+                            "ingredients": [],
+                            "allowed": []
+                        },
+                        "output_target": null
+                    },
+                    ".": "FALSE"
+                }
+            }
+        }
+    },
+    "datum": {
+        "chemicompiler_core": {
+            "stationaryCore": {
+                "statusChangeCallback": "statusChange"
+            }
+        }
+    }
+}

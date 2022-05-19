@@ -1,0 +1,83 @@
+{
+    "var": {
+        "global": {
+            "list": {
+                "chem_whitelist": [
+                    "antihol",
+                    "charcoal",
+                    "epinephrine",
+                    "insulin",
+                    "mutadone",
+                    "teporone",
+                    "silver_sulfadiazine",
+                    "salbutamol",
+                    "perfluorodecalin",
+                    "omnizine",
+                    "synaptizine",
+                    "anti_rad",
+                    "oculine",
+                    "mannitol",
+                    "penteticacid",
+                    "styptic_powder",
+                    "methamphetamine",
+                    "spaceacillin",
+                    "saline",
+                    "salicylic_acid",
+                    "cryoxadone",
+                    "blood",
+                    "bloodc",
+                    "synthflesh",
+                    "menthol",
+                    "cold_medicine",
+                    "antihistamine",
+                    "ipecac",
+                    "booster_enzyme",
+                    "anti_fart",
+                    "goodnanites",
+                    "smelling_salt",
+                    "CBD"
+                ]
+            }
+        }
+    },
+    "obj": {
+        "item": {
+            "reagent_containers": {
+                "hypospray": {
+                    "name": "hypospray",
+                    "desc": "An advanced device capable of injecting various medicines into a patient instantaneously. Dumps any harmful chemicals.",
+                    "icon": "icons/obj/chemical.dmi",
+                    "inhand_image_icon": "icons/mob/inhand/hand_medical.dmi",
+                    "initial_volume": "30",
+                    "item_state": "syringe_0",
+                    "icon_state": "hypo0",
+                    "amount_per_transfer_from_this": "5",
+                    "flags": "FPRINT | TABLEPASS | OPENCONTAINER | ONBELT | NOSPLASH",
+                    "var": {
+                        "list": {
+                            "whitelist": []
+                        },
+                        "inj_amount": "5",
+                        "safe": "1",
+                        "sound": {
+                            "sound_inject": "sound/items/hypo.ogg"
+                        }
+                    },
+                    "mats": "6",
+                    "rc_flags": "RC_SCALE | RC_VISIBLE | RC_SPECTRO",
+                    "hide_attack": "2",
+                    "inventory_counter_enabled": "1",
+                    "emagged": {
+                        "else": {
+                            "src.icon_state": "hypo0",
+                            "src.name": "hypospray"
+                        },
+                        "var": {
+                            "dat": ""
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

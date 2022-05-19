@@ -1,0 +1,515 @@
+{
+    "datum": {
+        "reagent": {
+            "disease": {
+                "name": "disease reagent",
+                "id": "ohfuck!",
+                "description": "if you're seeing this ingame something has fucked up!",
+                "reagent_state": "LIQUID",
+                "viscosity": "0.6",
+                "var": {
+                    "disease": null,
+                    "minimum_to_infect": "4.5"
+                },
+                "rainbow_fluid": {
+                    "name": "rainbow fluid",
+                    "id": "rainbow fluid",
+                    "description": "It is every colour of the rainbow.",
+                    "reagent_state": "LIQUID",
+                    "fluid_r": "255",
+                    "fluid_g": "255",
+                    "fluid_b": "255",
+                    "transparency": "0",
+                    "disease": "/datum/ailment/disease/clowning_around"
+                },
+                "vampire_serum": {
+                    "name": "vampire serum",
+                    "id": "vampire_serum",
+                    "description": "A sinister blood-like fluid. It smells evil, somehow.",
+                    "reagent_state": "LIQUID",
+                    "fluid_r": "150",
+                    "fluid_g": "0",
+                    "fluid_b": "0",
+                    "transparency": "255",
+                    "disease": "/datum/ailment/disease/vampiritis"
+                },
+                "painbow_fluid": {
+                    "name": "painbow fluid",
+                    "id": "painbow fluid",
+                    "description": "It is every colour of the pain spectrum. It even hurts to look at it.",
+                    "reagent_state": "LIQUID",
+                    "fluid_r": "255",
+                    "fluid_g": "255",
+                    "fluid_b": "255",
+                    "transparency": "0",
+                    "disease": "/datum/ailment/disease/cluwneing_around"
+                },
+                "lycanthropy": {
+                    "name": "werewolf serum",
+                    "id": "werewolf_serum",
+                    "description": "A mutagenic substance associated with a mythical beast.",
+                    "reagent_state": "LIQUID",
+                    "minimum_to_infect": "3",
+                    "fluid_r": "173",
+                    "fluid_g": "65",
+                    "fluid_b": "133",
+                    "transparency": "0",
+                    "disease": "/datum/ailment/disease/lycanthropy"
+                },
+                "mucus": {
+                    "name": "mucus",
+                    "id": "mucus",
+                    "description": "The stuff that comes from your throat.",
+                    "reagent_state": "LIQUID",
+                    "minimum_to_infect": "0",
+                    "fluid_r": "245",
+                    "fluid_g": "255",
+                    "fluid_b": "245",
+                    "transparency": "235",
+                    "disease": "/datum/ailment/disease/cold"
+                },
+                "stringy_gibbis": {
+                    "name": "stringy gibbis",
+                    "id": "stringy gibbis",
+                    "description": "Liquid gibbis that is very stringy.",
+                    "reagent_state": "LIQUID",
+                    "fluid_r": "255",
+                    "fluid_g": "0",
+                    "fluid_b": "0",
+                    "transparency": "60",
+                    "disease": "/datum/ailment/disease/fake_gbs"
+                },
+                "green_mucus": {
+                    "name": "green Mucus",
+                    "id": "green mucus",
+                    "description": "Mucus. That's green.",
+                    "reagent_state": "LIQUID",
+                    "minimum_to_infect": "0",
+                    "fluid_r": "215",
+                    "fluid_g": "255",
+                    "fluid_b": "215",
+                    "transparency": "235",
+                    "disease": "/datum/ailment/disease/flu"
+                },
+                "gibbis": {
+                    "name": "gibbis",
+                    "id": "gibbis",
+                    "description": "Liquid gibbis.",
+                    "reagent_state": "LIQUID",
+                    "minimum_to_infect": "2.5",
+                    "fluid_r": "255",
+                    "fluid_g": "0",
+                    "fluid_b": "0",
+                    "transparency": "150",
+                    "disease": "/datum/ailment/disease/gbs"
+                },
+                "banana_peel": {
+                    "name": "banana peel",
+                    "id": "banana peel",
+                    "description": "Banana peel crushed up to a liquid.",
+                    "reagent_state": "LIQUID",
+                    "fluid_r": "255",
+                    "fluid_g": "255",
+                    "fluid_b": "0",
+                    "transparency": "150",
+                    "disease": "/datum/ailment/disease/monkey_madness"
+                },
+                "liquid_plasma": {
+                    "name": "liquid plasma",
+                    "id": "liquid plasma",
+                    "description": "Liquid plasma.",
+                    "reagent_state": "LIQUID",
+                    "fluid_r": "200",
+                    "fluid_g": "0",
+                    "fluid_b": "200",
+                    "transparency": "80",
+                    "disease": "/datum/ailment/disease/plasmatoid"
+                },
+                "hootonium": {
+                    "name": "Hootonium",
+                    "id": "hootonium",
+                    "description": "A dangerous cocktail of mutagens and Owl DNA.",
+                    "reagent_state": "LIQUID",
+                    "fluid_r": "138",
+                    "fluid_g": "87",
+                    "fluid_b": "44",
+                    "transparency": "80",
+                    "random_chem_blacklisted": "1",
+                    "disease": "/datum/ailment/disease/hootonium"
+                },
+                "nanites": {
+                    "name": "nanomachines",
+                    "id": "nanites",
+                    "description": "Microscopic construction robots.",
+                    "reagent_state": "LIQUID",
+                    "minimum_to_infect": "1.5",
+                    "fluid_r": "101",
+                    "fluid_g": "101",
+                    "fluid_b": "101",
+                    "transparency": "110",
+                    "disease": "/datum/ailment/disease/robotic_transformation"
+                },
+                "goodnanites": {
+                    "name": "Directed nanites",
+                    "id": "goodnanites",
+                    "description": "Microscopic construction robots that have been reprogrammed to only replace a small part of their host. First discovered by Edgar Palmer and Camryn Stern.",
+                    "reagent_state": "LIQUID",
+                    "minimum_to_infect": "1.5",
+                    "fluid_r": "101",
+                    "fluid_g": "101",
+                    "fluid_b": "101",
+                    "transparency": "110",
+                    "disease": "/datum/ailment/disease/good_robotic_transformation"
+                },
+                "corruptednanites": {
+                    "name": "corrupted nanomachines",
+                    "id": "corruptnanites",
+                    "description": "Microscopic construction robots. Although they seem to be moving in an unusual pattern. Huh.",
+                    "reagent_state": "LIQUID",
+                    "minimum_to_infect": "1.5",
+                    "fluid_r": "90",
+                    "fluid_g": "85",
+                    "fluid_b": "85",
+                    "transparency": "110",
+                    "disease": "/datum/ailment/disease/corrupt_robotic_transformation"
+                },
+                "medusa": {
+                    "name": "Petrification",
+                    "id": "medusa",
+                    "description": "The patient is slowly turning to stone! Oh shit!",
+                    "reagent_state": "SOLID",
+                    "minimum_to_infect": "4",
+                    "fluid_r": "128",
+                    "fluid_g": "128",
+                    "fluid_b": "128",
+                    "disease": "/datum/ailment/disease/medusa"
+                },
+                "liquid_spacetime": {
+                    "name": "liquid spacetime",
+                    "id": "liquid spacetime",
+                    "description": "A drop of liquid spacetime.",
+                    "reagent_state": "LIQUID",
+                    "fluid_r": "0",
+                    "fluid_g": "0",
+                    "fluid_b": "0",
+                    "transparency": "60",
+                    "disease": "/datum/ailment/disease/teleportitis"
+                },
+                "pubbie_tears": {
+                    "name": "pubbie tears",
+                    "id": "pubbie tears",
+                    "description": "The most bitter of all liquids.",
+                    "reagent_state": "LIQUID",
+                    "fluid_r": "0",
+                    "fluid_g": "0",
+                    "fluid_b": "255",
+                    "transparency": "30",
+                    "disease": "/datum/ailment/disease/berserker"
+                },
+                "salts1": {
+                    "name": "jagged crystals",
+                    "id": "salts1",
+                    "description": "Rapid chemical decomposition has warped these crystals into twisted spikes.",
+                    "reagent_state": "SOLID",
+                    "minimum_to_infect": "0",
+                    "fluid_r": "250",
+                    "fluid_g": "0",
+                    "fluid_b": "0",
+                    "transparency": "30",
+                    "disease": "/datum/ailment/disease/berserker"
+                },
+                "salmonella": {
+                    "name": "salmonella bacteria",
+                    "id": "salmonella",
+                    "description": "A nasty bacteria found in spoiled food.",
+                    "reagent_state": "LIQUID",
+                    "minimum_to_infect": "0",
+                    "fluid_r": "30",
+                    "fluid_g": "70",
+                    "fluid_b": "0",
+                    "transparency": "255",
+                    "disease": "/datum/ailment/disease/food_poisoning"
+                },
+                "ecoli": {
+                    "name": "e.coli bacteria",
+                    "id": "e.coli",
+                    "description": "A nasty bacteria found in contaminated food and biological waste products.",
+                    "reagent_state": "LIQUID",
+                    "fluid_r": "30",
+                    "fluid_g": "70",
+                    "fluid_b": "0",
+                    "transparency": "255",
+                    "disease": "/datum/ailment/disease/food_poisoning"
+                },
+                "MRSA": {
+                    "name": "MRSA",
+                    "id": "MRSA",
+                    "description": "A virulent bacteria that often strikes dirty hospitals.",
+                    "reagent_state": "LIQUID",
+                    "fluid_r": "30",
+                    "fluid_g": "70",
+                    "fluid_b": "0",
+                    "transparency": "255",
+                    "disease": "/datum/ailment/disease/infection"
+                },
+                "necrovirus": {
+                    "name": "necrovirus",
+                    "id": "necrovirus",
+                    "description": "An extremely dangerous virus.",
+                    "reagent_state": "LIQUID",
+                    "fluid_r": "200",
+                    "fluid_g": "220",
+                    "fluid_b": "200",
+                    "transparency": "170",
+                    "random_chem_blacklisted": "1",
+                    "disease": "/datum/ailment/disease/necrotic_degeneration"
+                },
+                "viral_curative": {
+                    "name": "viral curative",
+                    "id": "viral curative",
+                    "description": "A virus that feeds on other virii and bacteria.",
+                    "reagent_state": "LIQUID",
+                    "minimum_to_infect": "0",
+                    "fluid_r": "255",
+                    "fluid_g": "255",
+                    "fluid_b": "255",
+                    "transparency": "10",
+                    "disease": "/datum/ailment/disease/panacaea"
+                },
+                "rotting": {
+                    "name": "rotting",
+                    "id": "rotting",
+                    "description": "A virus that causes tissue to rot.",
+                    "reagent_state": "LIQUID",
+                    "fluid_r": "192",
+                    "fluid_g": "0",
+                    "fluid_b": "0",
+                    "transparency": "10",
+                    "penetrates_skin": "1",
+                    "disease": "/datum/ailment/disease/tissue_necrosis"
+                },
+                "plague": {
+                    "name": "rat venom",
+                    "id": "rat_venom",
+                    "description": "Unbelievably deadly. Not to be mistaken with rat poison.",
+                    "reagent_state": "LIQUID",
+                    "fluid_r": "255",
+                    "fluid_g": "40",
+                    "fluid_b": "40",
+                    "transparency": "50",
+                    "disease": "/datum/ailment/disease/space_plague"
+                },
+                "loose_screws": {
+                    "name": "loose screws",
+                    "id": "loose_screws",
+                    "description": "Liquefied screws that were screwy.",
+                    "reagent_state": "LIQUID",
+                    "fluid_r": "70",
+                    "fluid_g": "70",
+                    "fluid_b": "70",
+                    "transparency": "70",
+                    "disease": "/datum/ailment/disease/space_madness"
+                },
+                "grave_dust": {
+                    "name": "grave dust",
+                    "id": "grave dust",
+                    "description": "Moldy old dust taken from a grave site.",
+                    "reagent_state": "LIQUID",
+                    "fluid_r": "70",
+                    "fluid_g": "80",
+                    "fluid_b": "70",
+                    "transparency": "255",
+                    "disease": "/datum/ailment/disease/vamplague"
+                },
+                "prions": {
+                    "name": "prions",
+                    "id": "prions",
+                    "description": "A disease-causing agent that is neither bacterial nor fungal nor viral and contains no genetic material.",
+                    "taste": "<br>\u3000\u3000\u2227,,,\u2227<br>\u3000 \uff08 \u30fb\u03c9\u30fb\uff09 like prion disease...<br>\u3000\u3000( \u3064\u65e6O<br>\u3000\u3000\u3068\uff3f)_)<br>",
+                    "reagent_state": "LIQUID",
+                    "minimum_to_infect": "5.1",
+                    "fluid_r": "255",
+                    "fluid_g": "255",
+                    "fluid_b": "255",
+                    "transparency": "60",
+                    "disease": "/datum/ailment/disease/kuru"
+                },
+                "spidereggs": {
+                    "name": "spider eggs",
+                    "id": "spidereggs",
+                    "description": "A fine dust containing ice spider eggs. Oh god.",
+                    "reagent_state": "SOLID",
+                    "minimum_to_infect": "2.5",
+                    "fluid_r": "255",
+                    "fluid_g": "255",
+                    "fluid_b": "255",
+                    "transparency": "60",
+                    "disease": "/datum/ailment/parasite/spidereggs"
+                },
+                "bee": {
+                    "name": "bee",
+                    "id": "bee",
+                    "description": "The yolk from a space bee egg.",
+                    "reagent_state": "LIQUID",
+                    "fluid_r": "255",
+                    "fluid_g": "255",
+                    "fluid_b": "100",
+                    "transparency": "40",
+                    "minimum_to_infect": "0.4",
+                    "disease": "/datum/ailment/parasite/bee_larva"
+                },
+                "concentrated_initro": {
+                    "name": "concentrated initropidril",
+                    "id": "concentrated_initro",
+                    "description": "A guaranteed heart-stopper!",
+                    "reagent_state": "LIQUID",
+                    "fluid_r": "192",
+                    "fluid_g": "32",
+                    "fluid_b": "232",
+                    "transparency": "0",
+                    "disease": "/datum/ailment/malady/flatline"
+                },
+                "bacon_grease": {
+                    "name": "pure bacon grease",
+                    "id": "bacon_grease",
+                    "description": "Hook me up to an IV of that sweet, sweet stuff!",
+                    "reagent_state": "LIQUID",
+                    "fluid_r": "247",
+                    "fluid_g": "230",
+                    "fluid_b": "177",
+                    "transparency": "0",
+                    "disease": "/datum/ailment/malady/heartfailure"
+                },
+                "toomuch": {
+                    "name": "too much",
+                    "id": "too much",
+                    "description": "bad pear, that",
+                    "reagent_state": "LIQUID",
+                    "fluid_r": "100",
+                    "fluid_g": "255",
+                    "fluid_b": "100",
+                    "transparency": "255",
+                    "disease": "/datum/ailment/disease/high_fever"
+                },
+                "heartworms": {
+                    "name": "space heartworms",
+                    "id": "heartworms",
+                    "description": "Aww, gross! These things can't be good for your heart. They're gunna eat it!",
+                    "reagent_state": "SOLID",
+                    "fluid_r": "146",
+                    "fluid_g": "93",
+                    "fluid_b": "108",
+                    "transparency": "0",
+                    "disease": "/datum/ailment/disease/noheart"
+                },
+                "feather_fluid": {
+                    "name": "feather fluid",
+                    "id": "feather_fluid",
+                    "description": "Liquid feather. It's quite pretty.",
+                    "reagent_state": "LIQUID",
+                    "fluid_r": "146",
+                    "fluid_g": "186",
+                    "fluid_b": "121",
+                    "transparency": "180",
+                    "disease": "/datum/ailment/disease/avian_flu"
+                },
+                "mewtini": {
+                    "name": "Mewtini",
+                    "id": "mewtini",
+                    "fluid_r": "255",
+                    "fluid_g": "165",
+                    "fluid_b": "0",
+                    "transparency": "190",
+                    "description": "A mysterious mutagenic slurry that will drive anyone catty.",
+                    "reagent_state": "LIQUID",
+                    "taste": "hairy",
+                    "thirst_value": "-0.5",
+                    "disease": "/datum/ailment/disease/going_catty"
+                },
+                "cocktail_sheltestgrog": {
+                    "name": "sheltestgrog",
+                    "id": "sheltestgrog",
+                    "description": "The essence of pure frogness.",
+                    "reagent_state": "LIQUID",
+                    "taste": "heavenly",
+                    "disease": "/datum/ailment/disease/frog_flu",
+                    "fluid_r": "145",
+                    "fluid_g": "185",
+                    "fluid_b": "120",
+                    "transparency": "255"
+                }
+            },
+            "blood": {
+                "pathogen": {
+                    "name": "pathogen",
+                    "id": "pathogen",
+                    "description": "A liquid sample of one (or multiple) pathogens.",
+                    "reagent_state": "LIQUID",
+                    "fluid_r": "50",
+                    "fluid_b": "50",
+                    "fluid_g": "180",
+                    "transparency": "200",
+                    "depletion_rate": "0.8",
+                    "smoke_spread_mod": "10"
+                }
+            },
+            "antiviral": {
+                "name": "Viral Serum",
+                "id": "antiviral",
+                "description": "An agent which can be used to create a specialized cure for a viral pathogen.",
+                "reagent_state": "2"
+            },
+            "biocide": {
+                "name": "Biocide",
+                "id": "biocide",
+                "description": "An agent which can be used to create a specialized cure for a fungal or parasitic pathogen.",
+                "reagent_state": "2"
+            },
+            "inhibitor": {
+                "name": "Mutation Inhibitor",
+                "id": "inhibitor",
+                "description": "An agent which can be used to create a specialized cure for a cellular mutative pathogen",
+                "reagent_state": "2"
+            },
+            "bacterialmedium": {
+                "name": "Bacterial Medium",
+                "id": "bacterialmedium",
+                "description": "A solution useful for the cultivation of bacteria.",
+                "reagent_state": "2",
+                "pathogen_nutrition": [
+                    "water",
+                    "sugar",
+                    "sodium",
+                    "iron",
+                    "nitrogen"
+                ]
+            },
+            "parasiticmedium": {
+                "name": "Parasitic Medium",
+                "id": "parasiticmedium",
+                "description": "A solution useful for the cultivation of parasites.",
+                "reagent_state": "2",
+                "pathogen_nutrition": [
+                    "water",
+                    "sugar",
+                    "sodium",
+                    "iron",
+                    "nitrogen"
+                ]
+            },
+            "fungalmedium": {
+                "name": "Fungal Medium",
+                "id": "fungalmedium",
+                "description": "A solution encouraging the growth of fungi.",
+                "reagent_state": "2",
+                "pathogen_nutrition": [
+                    "water",
+                    "sugar",
+                    "sodium",
+                    "iron",
+                    "nitrogen"
+                ]
+            }
+        }
+    }
+}

@@ -1,0 +1,98 @@
+{
+    "obj": {
+        "item": {
+            "reagent_containers": {
+                "iv_drip": {
+                    "name": "\\improper IV drip",
+                    "desc": "A bag with a fine needle attached at the end, for injecting patients with fluids.",
+                    "icon": "icons/obj/surgery.dmi",
+                    "icon_state": "IV",
+                    "uses_multiple_icon_states": "1",
+                    "inhand_image_icon": "icons/mob/inhand/hand_medical.dmi",
+                    "item_state": "IV",
+                    "w_class": "W_CLASS_TINY",
+                    "flags": "FPRINT | TABLEPASS | SUPPRESSATTACK | OPENCONTAINER",
+                    "rc_flags": "RC_VISIBLE | RC_FULLNESS | RC_SPECTRO",
+                    "amount_per_transfer_from_this": "5",
+                    "initial_volume": "250",
+                    "var": {
+                        "image": {
+                            "fluid_image": null,
+                            "image_inj_dr": null
+                        },
+                        "mob": {
+                            "living": {
+                                "carbon": {
+                                    "human": {
+                                        "patient": null
+                                    }
+                                }
+                            }
+                        },
+                        "obj": {
+                            "iv_stand": {
+                                "stand": null
+                            }
+                        },
+                        "mode": "IV_DRAW",
+                        "in_use": "0",
+                        "slashed": "0"
+                    },
+                    "blood": {
+                        "desc": "A bag filled with some odd, synthetic blood. There's a fine needle at the end that can be used to transfer it to someone.",
+                        "icon_state": "IV-blood",
+                        "mode": "IV_INJECT",
+                        "initial_reagents": "blood",
+                        "vr": {
+                            "icon": "icons/effects/VR.dmi"
+                        }
+                    },
+                    "saline": {
+                        "desc": "A bag filled with saline. There's a fine needle at the end that can be used to transfer it to someone.",
+                        "mode": "IV_INJECT",
+                        "initial_reagents": "saline"
+                    }
+                }
+            },
+            "furniture_parts": {
+                "IVstand": {
+                    "name": "\\improper IV stand parts",
+                    "desc": "A collection of parts that can be used to make an IV stand.",
+                    "icon": "icons/obj/surgery.dmi",
+                    "icon_state": "IVstand_parts",
+                    "force": "2",
+                    "stamina_damage": "10",
+                    "stamina_cost": "8",
+                    "furniture_type": "/obj/iv_stand",
+                    "furniture_name": "\\improper IV stand",
+                    "build_duration": "25"
+                }
+            }
+        },
+        "iv_stand": {
+            "name": "\\improper IV stand",
+            "desc": "A metal pole that you can hang IV bags on, which is useful since we aren't animals that go leaving our sanitized medical equipment all over the ground or anything!",
+            "icon": "icons/obj/surgery.dmi",
+            "icon_state": "IVstand",
+            "anchored": "0",
+            "density": "0",
+            "var": {
+                "image": {
+                    "fluid_image": null,
+                    "bag_image": null
+                },
+                "obj": {
+                    "item": {
+                        "reagent_containers": {
+                            "iv_drip": {
+                                "IV": null
+                            }
+                        }
+                    },
+                    "paired_obj": null
+                }
+            },
+            "mats": "10"
+        }
+    }
+}

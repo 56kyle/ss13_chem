@@ -5,29 +5,49 @@ from logger import log
 from typing import List, Dict
 
 
+def is_reagent_dict(reagent: Dict[str, any]) -> bool:
+    if not isinstance(reagent, dict):
+        return False
+    if not reagent.get('name') and not reagent.get('id'):
+        return False
+    return True
+
 def parse_compounds(reagents: Dict[str, any]) -> Dict[str, any]:
-    to_remove = []
+    keywords = ['var']
+    new_reagents = {}
     for k, v in reagents.items():
-        if not isinstance(v, dict):
-            to_remove.append(k)
-    for k in to_remove:
-        del reagents[k]
-    return reagents
+        if isinstance(v, dict):
+            if is_reagent_dict(v):
+                new_reagents[k] = v
+            for nested_name, nested_value in parse_compounds(v).items():
+                new_reagents[nested_name] = nested_value
+    return new_reagents
 
 
-base_reagents = parse_compounds(json.load(open('data/chemistry/Reagents-Base.json', 'r'))['datum']['reagent'])
-disease_reagents = parse_compounds(json.load(open('data/chemistry/Reagents-Diseases.json', 'r'))['datum']['reagent']['disease'])
-drug_reagents = parse_compounds(json.load(open('data/chemistry/Reagents-Drugs.json', 'r'))['datum']['reagent']['drug'])
-explosive_reagents = parse_compounds(json.load(open('data/chemistry/Reagents-ExplosiveFire.json', 'r'))['datum']['reagent']['combustible'])
-food_reagents = parse_compounds(json.load(open('data/chemistry/Reagents-FoodDrink.json', 'r'))['datum']['reagent']['fooddrink'])
-medical_reagents = parse_compounds(json.load(open('data/chemistry/Reagents-Medical.json', 'r'))['datum']['reagent']['medical'])
-misc_reagents = parse_compounds(json.load(open('data/chemistry/Reagents-Misc.json', 'r'))['datum']['reagent'])
-poison_reagents = parse_compounds(json.load(open('data/chemistry/Reagents-PoisonEtc.json', 'r'))['datum']['reagent']['harmful'])
+def get_all_compounds_by_id(reactions: Dict[str, any]) -> Dict[str, any]:
+    reactions_by_id = {}
+    for k, v in reactions.items():
+        if v.get('id', None) is not None:
+            reactions_by_id[v['id']] = v
+    return reactions_by_id
+
+
+base_reagents = parse_compounds(json.load(open('data/current/chemistry/Reagents-Base.json', 'r'))['datum']['reagent'])
+disease_reagents = parse_compounds(json.load(open('data/current/chemistry/Reagents-Diseases.json', 'r'))['datum']['reagent']['disease'])
+drug_reagents = parse_compounds(json.load(open('data/current/chemistry/Reagents-Drugs.json', 'r'))['datum']['reagent']['drug'])
+explosive_reagents = parse_compounds(json.load(open('data/current/chemistry/Reagents-ExplosiveFire.json', 'r'))['datum']['reagent']['combustible'])
+food_reagents = parse_compounds(json.load(open('data/current/chemistry/Reagents-FoodDrink.json', 'r'))['datum']['reagent']['fooddrink'])
+medical_reagents = parse_compounds(json.load(open('data/current/chemistry/Reagents-Medical.json', 'r'))['datum']['reagent']['medical'])
+misc_reagents = parse_compounds(json.load(open('data/current/chemistry/Reagents-Misc.json', 'r'))['datum']['reagent'])
+poison_reagents = parse_compounds(json.load(open('data/current/chemistry/Reagents-PoisonEtc.json', 'r'))['datum']['reagent']['harmful'])
 all_reagents = {**base_reagents, **disease_reagents, **drug_reagents, **explosive_reagents, **food_reagents, **medical_reagents, **misc_reagents, **poison_reagents}
+all_reagents_by_id = get_all_compounds_by_id(all_reagents)
 
 dispensable_reagents = json.load(open('data/chemistry/Chemistry-Machinery.json', 'r'))['obj']['machinery']['chem_dispenser']['var']['list']['dispensable_reagents']
 
-all_reactions = parse_compounds(json.load(open('data/chemistry/Chemistry-Recipes.json', 'r'))['datum']['chemical_reaction'])
+all_reactions = parse_compounds(json.load(open('data/current/chemistry/Chemistry-Recipes.json', 'r'))['datum']['chemical_reaction'])
+all_reactions_by_id = get_all_compounds_by_id(all_reactions)
+
 
 def recurse_print(data, tabs=0):
     if isinstance(data, dict):
@@ -40,25 +60,27 @@ def recurse_print(data, tabs=0):
     else:
         print('\t' * tabs, data)
 
+def get_reaction(reaction_name: str) -> Dict[str, any] | None:
+    if reaction_name + 'stable' in all_reactions.keys() or reaction_name + 'stable' in all_reactions_by_id.keys():
+        return get_reaction(reaction_name + 'stable')
+    if reaction_name in all_reactions.keys():
+        return all_reactions[reaction_name]
+    elif reaction_name in all_reactions_by_id.keys():
+        return all_reactions_by_id[reaction_name]
+    return None
 
-def get_all_reactions():
-    reactions = json.load(open('data/chemistry/Chemistry-Recipes.json', 'r'))['datum']['chemical_reaction']
-    to_remove = []
-    for k, v in reactions.items():
-        if not isinstance(v, dict):
-            print('removing ', k, ' from reactions')
-            print('\t', v)
-            to_remove.append(k)
-    for k in to_remove:
-        del reactions[k]
-    return reactions
-
+def get_reagent(reagent_name: str) -> Dict[str, any] | None:
+    if reagent_name in all_reagents.keys():
+        return all_reagents[reagent_name]
+    elif reagent_name in all_reagents_by_id.keys():
+        return all_reagents_by_id[reagent_name]
+    return None
 
 def is_reaction(name: str) -> bool:
-    return name in all_reactions.keys()
+    return name in all_reactions.keys() or name in all_reactions_by_id.keys()
 
 def is_reagent(name: str) -> bool:
-    return name in all_reagents.keys()
+    return name in all_reagents.keys() or name in all_reagents_by_id.keys()
 
 def is_dispensable(name: str) -> bool:
     return name in dispensable_reagents
@@ -80,16 +102,22 @@ def simplify_reagents(reagents: Dict[str, int | float], result_amount: int = 1) 
     return new_reagents
 
 def simplify_reaction(reaction_name: str) -> Dict[str, float]:
-    reaction = all_reactions[reaction_name]
-    return simplify_reagents(reaction['required_reagents'], reaction['result_amount'])
-
+    reaction = get_reaction(reaction_name)
+    if reaction.get('required_reagents', None) is None:
+        log.warning('No required reagents for reaction: ', reaction_name)
+        return {}
+    if reaction.get('result_amount', None) is None:
+        log.warning(f'No result amount for reaction: {reaction_name}')
+    return simplify_reagents(reaction['required_reagents'], reaction.get('result_amount', 1))
 
 def convert_to_units(reagents: Dict[str, float]) -> Dict[str, int]:
+    if not reagents:
+        return {}
     lowest_amount = sorted(reagents.values())[0]
     as_units = {k: int(v / lowest_amount) for k, v in reagents.items()}
     for k, v in as_units.items():
         if reagents[k] % lowest_amount > .000000001:
-            log.warning(f'Warning: {k} has a remainder of {reagents[k] % lowest_amount}')
+            log.warning(f'\tWarning: {k} has a remainder of {reagents[k] % lowest_amount}')
     return as_units
 
 def as_reagent_group(reagents: Dict[str, int]) -> str:
@@ -163,26 +191,36 @@ def get_dispensable_group(reaction_or_reagents: str | Dict[str, int]) -> str:
     return reagents_as_dispensable_group(reaction_or_reagents)
 
 
-def analyze():
-    reactions = [
-        'oil',
-        'acetone',
-        'sarin',
-        'salt',
-        'acid',
-        'ammonia',
-        'weedkiller',
-    ]
-    for name in reactions:
-        try:
-            dispensable_group = get_dispensable_group(name)
-        except ValueError:
-            log.warning(f'{name} is not a valid reaction')
-            continue
-        log.info(f'\t{[name, dispensable_group]}')
+def generate_reagent_groups(reactions: List[str]) -> Dict[str, str]:
+    for reaction in reactions:
+        yield reaction, get_reagent_group(reaction)
+
+def generate_dispensable_groups(reactions: List[str]) -> Dict[str, str]:
+    for reaction in reactions:
+        yield reaction, get_dispensable_group(reaction)
+
+
+def generate_all():
+    as_reagent_group_dict = {reaction: get_reagent_group_dict(reaction) for reaction in all_reactions}
+    as_dispensable_dict = {reaction: get_dispensable_group_dict(reaction) for reaction in all_reactions}
+    as_dispensable_changed = {}
+    for name, disp_reaction in as_dispensable_dict.items():
+        reag_reaction = as_reagent_group_dict.get(name, None)
+        if not reag_reaction:
+            raise ValueError(f'Reaction {name} not present in both groups')
+        name_additions = []
+        for reagent, amount in reag_reaction.items():
+            if reagent not in disp_reaction.keys():
+                name_additions.append(f'*{reagent}({amount})')
+        new_name = ' '.join([name, *name_additions])
+        as_dispensable_changed[new_name] = disp_reaction
+
+    with open('reactions.py', 'w') as file:
+        recipes_as_lists = [[k, as_reagent_group(v)] for k, v in as_dispensable_changed.items()]
+        file.write(f'all_recipes = {recipes_as_lists}')
 
 
 if __name__ == '__main__':
-    analyze()
+    print(get_reagent_group('cyanide'))
 
 

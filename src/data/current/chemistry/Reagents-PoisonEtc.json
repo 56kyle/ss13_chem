@@ -1,0 +1,586 @@
+{
+    "datum": {
+        "reagent": {
+            "harmful": {
+                "name": "dangerous stuff",
+                "viscosity": "0.16",
+                "simple_damage_toxin": {
+                    "name": "toxin precursor",
+                    "id": "simple_damage_toxin",
+                    "var": {
+                        "damage_factor": "1"
+                    },
+                    "nitrogen_dioxide": {
+                        "name": "nitrogen dioxide",
+                        "id": "nitrogen_dioxide",
+                        "description": "A common, mildly toxic pollutant.",
+                        "reagent_state": "GAS",
+                        "fluid_r": "128",
+                        "fluid_g": "32",
+                        "fluid_b": "32",
+                        "transparency": "120",
+                        "penetrates_skin": "1"
+                    }
+                },
+                "simple_damage_burn": {
+                    "name": "irritant precursor",
+                    "id": "simple_damage_burn",
+                    "var": {
+                        "damage_factor": "1"
+                    }
+                },
+                "acid": {
+                    "name": "sulfuric acid",
+                    "id": "acid",
+                    "description": "A strong mineral acid with the molecular formula H2SO4.",
+                    "reagent_state": "LIQUID",
+                    "fluid_r": "0",
+                    "fluid_g": "255",
+                    "fluid_b": "50",
+                    "transparency": "20",
+                    "blob_damage": "1",
+                    "value": "3",
+                    "clacid": {
+                        "name": "hydrochloric acid",
+                        "id": "clacid",
+                        "description": "A strong acid with the molecular formula HCl.",
+                        "fluid_r": "0",
+                        "fluid_g": "200",
+                        "fluid_b": "255",
+                        "blob_damage": "1.2"
+                    },
+                    "nitric_acid": {
+                        "name": "nitric acid",
+                        "id": "nitric_acid",
+                        "description": "A strong acid.",
+                        "fluid_r": "0",
+                        "fluid_g": "200",
+                        "fluid_b": "255",
+                        "blob_damage": "0.7"
+                    }
+                },
+                "acetic_acid": {
+                    "name": "acetic acid",
+                    "id": "acetic_acid",
+                    "description": "A weak acid that is the main component of vinegar and bad hangovers.",
+                    "fluid_r": "0",
+                    "fluid_g": "128",
+                    "fluid_b": "255",
+                    "transparency": "64",
+                    "reagent_state": "LIQUID",
+                    "blob_damage": "0.2"
+                },
+                "amanitin": {
+                    "name": "amanitin",
+                    "id": "amanitin",
+                    "description": "A toxin produced by certain mushrooms. Very deadly.",
+                    "reagent_state": "LIQUID",
+                    "fluid_r": "255",
+                    "fluid_g": "255",
+                    "fluid_b": "255",
+                    "transparency": "50",
+                    "var": {
+                        "damage_counter": "0"
+                    }
+                },
+                "chemilin": {
+                    "name": "chemilin",
+                    "id": "chemilin",
+                    "description": "Discovered by A. S. Wonkington, on a friday the 13th, during lunch break. This cheese compound is unbelievably lethal.",
+                    "reagent_state": "LIQUID",
+                    "fluid_r": "255",
+                    "fluid_g": "255",
+                    "fluid_b": "0",
+                    "transparency": "50",
+                    "random_chem_blacklisted": "1"
+                },
+                "coniine": {
+                    "name": "coniine",
+                    "id": "coniine",
+                    "description": "A neurotoxin that rapidly causes respiratory failure.",
+                    "reagent_state": "LIQUID",
+                    "fluid_r": "125",
+                    "fluid_g": "195",
+                    "fluid_b": "160",
+                    "transparency": "80",
+                    "depletion_rate": "0.05"
+                },
+                "cyanide": {
+                    "name": "cyanide",
+                    "id": "cyanide",
+                    "fluid_r": "0",
+                    "fluid_b": "180",
+                    "fluid_g": "25",
+                    "transparency": "0",
+                    "description": "A highly toxic chemical with some uses as a building block for other things.",
+                    "reagent_state": "LIQUID",
+                    "depletion_rate": "0.1",
+                    "penetrates_skin": "1",
+                    "blob_damage": "5",
+                    "value": "7",
+                    "var": {
+                        "counter": "1"
+                    }
+                },
+                "curare": {
+                    "name": "curare",
+                    "id": "curare",
+                    "description": "A highly dangerous paralytic poison.",
+                    "fluid_r": "25",
+                    "fluid_g": "25",
+                    "fluid_b": "25",
+                    "reagent_state": "SOLID",
+                    "transparency": "255",
+                    "depletion_rate": "0.2",
+                    "var": {
+                        "counter": "1"
+                    },
+                    "penetrates_skin": "1"
+                },
+                "ricin": {
+                    "name": "space ricin",
+                    "id": "ricin",
+                    "reagent_state": "LIQUID",
+                    "fluid_r": "255",
+                    "fluid_g": "255",
+                    "fluid_b": "255",
+                    "transparency": "255",
+                    "description": "Extremely toxic, but slow acting, stealthy, and hard to cure agent that causes organ failure.",
+                    "depletion_rate": "0.025",
+                    "penetrates_skin": "0",
+                    "target_organs": [
+                        "left_kidney",
+                        "right_kidney",
+                        "liver",
+                        "stomach",
+                        "intestines",
+                        "spleen",
+                        "pancreas"
+                    ],
+                    "flushing_multiplier": "0.15",
+                    "var": {
+                        "counter": "1"
+                    }
+                },
+                "formaldehyde": {
+                    "name": "embalming fluid",
+                    "id": "formaldehyde",
+                    "description": "Formaldehyde is a common industrial chemical and is used to preserve corpses and medical samples. It is highly toxic and irritating. Casualdehyde is the less invasive form of this chemical.",
+                    "reagent_state": "LIQUID",
+                    "fluid_r": "180",
+                    "fluid_b": "0",
+                    "fluid_g": "75",
+                    "transparency": "20",
+                    "penetrates_skin": "1",
+                    "value": "4",
+                    "werewolf_serum_fake1": {
+                        "name": "Werewolf Serum Precursor Alpha",
+                        "id": "werewolf_part1",
+                        "description": "A strange and poisonous lupine compound.",
+                        "reagent_state": "LIQUID",
+                        "fluid_r": "149",
+                        "fluid_g": "172",
+                        "fluid_b": "147",
+                        "transparency": "150"
+                    }
+                },
+                "acetaldehyde": {
+                    "name": "acetaldehyde",
+                    "id": "acetaldehyde",
+                    "description": "Acetaldehyde is a common industrial chemical. It is a severe irritant.",
+                    "reagent_state": "LIQUID",
+                    "fluid_r": "180",
+                    "fluid_b": "0",
+                    "fluid_g": "75",
+                    "transparency": "20",
+                    "penetrates_skin": "1",
+                    "value": "4"
+                },
+                "lipolicide": {
+                    "name": "lipolicide",
+                    "id": "lipolicide",
+                    "description": "A compound found in many seedy dollar stores in the form of a weight-loss tonic.",
+                    "fluid_r": "240",
+                    "fluid_g": "255",
+                    "fluid_b": "240",
+                    "transparency": "215",
+                    "depletion_rate": "0.2"
+                },
+                "initropidril": {
+                    "name": "initropidril",
+                    "id": "initropidril",
+                    "description": "A highly potent cardiac poison - can kill within minutes.",
+                    "reagent_state": "LIQUID",
+                    "fluid_r": "127",
+                    "fluid_g": "16",
+                    "fluid_b": "192",
+                    "transparency": "255",
+                    "threshold": "THRESHOLD_INIT"
+                },
+                "initrobeedril_old": {
+                    "name": "old initrobeedril",
+                    "id": "initrobeedril_old",
+                    "description": "A highly experimental poison originally created by a mad scientist by the name of \\\"SpyGuy\\\" on earth in 2014.",
+                    "reagent_state": "LIQUID",
+                    "fluid_r": "127",
+                    "fluid_g": "190",
+                    "fluid_b": "5",
+                    "transparency": "255",
+                    "depletion_rate": "0.1",
+                    "var": {
+                        "ticks": "0"
+                    }
+                },
+                "initrobeedril": {
+                    "name": "initrobeedril",
+                    "id": "initrobeedril",
+                    "description": "A highly experimental poison originally created by a mad scientist by the name of \\\"SpyGuy\\\" on earth in 2014.",
+                    "reagent_state": "LIQUID",
+                    "fluid_r": "127",
+                    "fluid_g": "190",
+                    "fluid_b": "5",
+                    "transparency": "255",
+                    "depletion_rate": "0.2",
+                    "var": {
+                        "ticks": "0"
+                    }
+                },
+                "royal_initrobeedril": {
+                    "name": "royal initrobeedril",
+                    "id": "royal_initrobeedril",
+                    "description": "A highly experimental poison originally created by a mad scientist by the name of \\\"SpyGuy\\\" on earth in 2014.",
+                    "reagent_state": "LIQUID",
+                    "fluid_r": "102",
+                    "fluid_g": "0",
+                    "fluid_b": "255",
+                    "transparency": "255",
+                    "depletion_rate": "0.2",
+                    "var": {
+                        "ticks": "0"
+                    }
+                },
+                "cholesterol": {
+                    "name": "cholesterol",
+                    "id": "cholesterol",
+                    "description": "Pure cholesterol. Probably not very good for you.",
+                    "reagent_state": "LIQUID",
+                    "fluid_r": "255",
+                    "fluid_g": "250",
+                    "fluid_b": "200",
+                    "transparency": "255",
+                    "threshold": "THRESHOLD_INIT"
+                },
+                "itching": {
+                    "name": "itching powder",
+                    "id": "itching",
+                    "description": "An abrasive powder beloved by cruel pranksters.",
+                    "reagent_state": "SOLID",
+                    "fluid_r": "200",
+                    "fluid_g": "200",
+                    "fluid_b": "200",
+                    "transparency": "100",
+                    "depletion_rate": "0.3",
+                    "penetrates_skin": "1"
+                },
+                "pacid": {
+                    "name": "fluorosulfuric acid",
+                    "id": "pacid",
+                    "description": "Fluorosulfuric acid is a an extremely corrosive super-acid.",
+                    "reagent_state": "LIQUID",
+                    "fluid_r": "80",
+                    "fluid_g": "80",
+                    "fluid_b": "255",
+                    "transparency": "40",
+                    "dispersal": "1",
+                    "blob_damage": "4"
+                },
+                "pancuronium": {
+                    "name": "pancuronium",
+                    "id": "pancuronium",
+                    "description": "Pancuronium bromide is a powerful skeletal muscle relaxant.",
+                    "reagent_state": "LIQUID",
+                    "fluid_r": "45",
+                    "fluid_g": "80",
+                    "fluid_b": "150",
+                    "transparency": "50",
+                    "depletion_rate": "0.2",
+                    "var": {
+                        "counter": "1"
+                    },
+                    "threshold": "THRESHOLD_INIT"
+                },
+                "polonium": {
+                    "name": "polonium",
+                    "id": "polonium",
+                    "description": "Polonium is a rare and highly radioactive silvery metal.",
+                    "reagent_state": "SOLID",
+                    "fluid_r": "120",
+                    "fluid_g": "120",
+                    "fluid_b": "120",
+                    "transparency": "255",
+                    "depletion_rate": "0.1",
+                    "penetrates_skin": "1",
+                    "blob_damage": "3"
+                },
+                "sodium_thiopental": {
+                    "name": "sodium thiopental",
+                    "id": "sodium_thiopental",
+                    "description": "An rapidly-acting barbituate tranquilizer.",
+                    "reagent_state": "LIQUID",
+                    "fluid_r": "100",
+                    "fluid_g": "150",
+                    "fluid_b": "250",
+                    "transparency": "20",
+                    "depletion_rate": "0.7",
+                    "var": {
+                        "counter": "1"
+                    },
+                    "threshold": "THRESHOLD_INIT"
+                },
+                "ketamine": {
+                    "name": "ketamine",
+                    "id": "ketamine",
+                    "description": "A potent veterinary tranquilizer.",
+                    "reagent_state": "LIQUID",
+                    "fluid_r": "100",
+                    "fluid_g": "150",
+                    "fluid_b": "250",
+                    "transparency": "20",
+                    "depletion_rate": "0.8",
+                    "penetrates_skin": "1",
+                    "var": {
+                        "counter": "1"
+                    },
+                    "threshold": "THRESHOLD_INIT"
+                },
+                "sulfonal": {
+                    "name": "sulfonal",
+                    "id": "sulfonal",
+                    "description": "An old sedative with toxic side-effects.",
+                    "reagent_state": "LIQUID",
+                    "fluid_r": "125",
+                    "fluid_g": "195",
+                    "fluid_b": "160",
+                    "transparency": "80",
+                    "depletion_rate": "0.1",
+                    "var": {
+                        "counter": "1",
+                        "remove_buff": "0"
+                    },
+                    "blob_damage": "2",
+                    "threshold": "THRESHOLD_INIT"
+                },
+                "toxin": {
+                    "name": "toxin",
+                    "id": "toxin",
+                    "description": "A Toxic chemical.",
+                    "reagent_state": "LIQUID",
+                    "fluid_r": "25",
+                    "fluid_b": "0",
+                    "fluid_g": "25",
+                    "transparency": "20",
+                    "blob_damage": "1"
+                },
+                "spider_venom": {
+                    "name": "venom",
+                    "id": "venom",
+                    "description": "An incredibly potent poison. Origin unknown.",
+                    "reagent_state": "LIQUID",
+                    "fluid_r": "240",
+                    "fluid_g": "255",
+                    "fluid_b": "240",
+                    "transparency": "200",
+                    "depletion_rate": "0.2"
+                },
+                "viper_venom": {
+                    "name": "viper venom",
+                    "id": "viper_venom",
+                    "description": "A dangerous toxin that causes massive bleeding and tissue damage",
+                    "reagent_state": "LIQUID",
+                    "fluid_r": "210",
+                    "fluid_g": "180",
+                    "fluid_b": "25",
+                    "depletion_rate": "0.3",
+                    "blob_damage": "1"
+                },
+                "neurotoxin": {
+                    "name": "neurotoxin",
+                    "id": "neurotoxin",
+                    "description": "A dangerous toxin that attacks the nervous system",
+                    "reagent_state": "LIQUID",
+                    "fluid_r": "100",
+                    "fluid_g": "145",
+                    "fluid_b": "110",
+                    "depletion_rate": "1",
+                    "var": {
+                        "counter": "1",
+                        "fainted": "0"
+                    },
+                    "blob_damage": "1",
+                    "value": "4"
+                },
+                "mutagen": {
+                    "name": "unstable mutagen",
+                    "id": "mutagen",
+                    "description": "Might cause unpredictable mutations. Keep away from children.",
+                    "reagent_state": "LIQUID",
+                    "fluid_r": "0",
+                    "fluid_g": "255",
+                    "fluid_b": "0",
+                    "transparency": "255",
+                    "depletion_rate": "0.3",
+                    "blob_damage": "1",
+                    "value": "3"
+                },
+                "omega_mutagen": {
+                    "name": "glowing slurry",
+                    "id": "omega_mutagen",
+                    "description": "This is probably not good for you.",
+                    "reagent_state": "LIQUID",
+                    "fluid_r": "0",
+                    "fluid_g": "255",
+                    "fluid_b": "0",
+                    "transparency": "255",
+                    "werewolf_serum_fake2": {
+                        "name": "Werewolf Serum Precursor Beta",
+                        "id": "werewolf_part2",
+                        "description": "A potent and very unstable mutagenic substance.",
+                        "reagent_state": "LIQUID",
+                        "fluid_r": "50",
+                        "fluid_g": "172",
+                        "fluid_b": "100",
+                        "transparency": "200"
+                    }
+                },
+                "fake_initropidril": {
+                    "name": "initropidril",
+                    "id": "fake_initropidril",
+                    "description": "A highly potent toxin - can kill within minutes.",
+                    "reagent_state": "LIQUID",
+                    "fluid_r": "127",
+                    "fluid_g": "16",
+                    "fluid_b": "192",
+                    "transparency": "220"
+                },
+                "wolfsbane": {
+                    "name": "Aconitum",
+                    "id": "wolfsbane",
+                    "description": "Also known as monkshood or wolfsbane, aconitum is a very potent neurotoxin.",
+                    "reagent_state": "LIQUID",
+                    "fluid_r": "129",
+                    "fluid_b": "116",
+                    "fluid_g": "198",
+                    "transparency": "20"
+                },
+                "toxic_slurry": {
+                    "name": "toxic slurry",
+                    "id": "toxic_slurry",
+                    "description": "A filthy, carcinogenic sludge produced by the Slurrypod plant.",
+                    "reagent_state": "LIQUID",
+                    "fluid_r": "0",
+                    "fluid_g": "200",
+                    "fluid_b": "30",
+                    "transparency": "255"
+                },
+                "histamine": {
+                    "name": "histamine",
+                    "id": "histamine",
+                    "description": "Immune-system neurotransmitter. If detected in blood, the subject is likely undergoing an allergic reaction.",
+                    "reagent_state": "LIQUID",
+                    "fluid_r": "250",
+                    "fluid_g": "100",
+                    "fluid_b": "100",
+                    "transparency": "60",
+                    "depletion_rate": "0.2",
+                    "overdose": "40"
+                },
+                "sarin": {
+                    "name": "sarin",
+                    "id": "sarin",
+                    "description": "A lethal organophosphate nerve agent. Can be neutralized with atropine.",
+                    "reagent_state": "LIQUID",
+                    "fluid_r": "255",
+                    "fluid_g": "255",
+                    "fluid_b": "255",
+                    "transparency": "255",
+                    "penetrates_skin": "1",
+                    "depletion_rate": "0.1",
+                    "overdose": "25",
+                    "var": {
+                        "counter": "1"
+                    },
+                    "blob_damage": "5"
+                },
+                "dna_mutagen": {
+                    "name": "stable mutagen",
+                    "id": "dna_mutagen",
+                    "description": "Just the regular, boring sort of mutagenic compound.  Works in a completely predictable manner.",
+                    "reagent_state": "LIQUID",
+                    "fluid_r": "125",
+                    "fluid_g": "255",
+                    "fluid_b": "0",
+                    "transparency": "255",
+                    "depletion_rate": "2",
+                    "pathogen_nutrition": [
+                        "dna_mutagen"
+                    ],
+                    "var": {
+                        "tmp": {
+                            "progress_timer": "1"
+                        }
+                    }
+                },
+                "madness_toxin": {
+                    "name": "Rajaijah",
+                    "id": "madness_toxin",
+                    "description": "A synthetic version of a potent neurotoxin derived from plants capable of driving a person to madness. First discovered in India by a Belgian reporter in 1931.",
+                    "reagent_state": "LIQUID",
+                    "fluid_r": "157",
+                    "fluid_g": "206",
+                    "fluid_b": "69",
+                    "transparency": "255",
+                    "var": {
+                        "ticks": "0",
+                        "spooksounds": {
+                            "sound/effects/ghost.ogg": 80,
+                            "sound/effects/ghost2.ogg": 20,
+                            "sound/effects/ghostbreath.ogg": 60,
+                            "sound/effects/ghostlaugh.ogg": 40,
+                            "sound/effects/ghostvoice.ogg": 90
+                        },
+                        "lastSpook": "0",
+                        "lastSpookLen": "0",
+                        "ai_was_active": "0",
+                        "t1": "2",
+                        "t2": "11",
+                        "t3": "18",
+                        "t4": "26",
+                        "t5": "28",
+                        "t6": "30",
+                        "t7": "50",
+                        "t8": "51",
+                        "t9": "101",
+                        "t10": "103"
+                    },
+                    "depletion_rate": "0.1"
+                },
+                "strychnine": {
+                    "name": "strychnine",
+                    "id": "strychnine",
+                    "description": "A highly potent neurotoxin in crystalline form. Causes severe convulsions and eventually death by asphyxiation. Has been known to be used as a performance enhancer by certain athletes.",
+                    "taste": "intensely bitter",
+                    "reagent_state": "SOLID",
+                    "fluid_r": "244",
+                    "fluid_g": "244",
+                    "fluid_b": "244",
+                    "transparency": "255",
+                    "depletion_rate": "0.2",
+                    "var": {
+                        "ticks": "0",
+                        "stage": "0"
+                    }
+                }
+            }
+        }
+    }
+}

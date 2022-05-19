@@ -1,0 +1,246 @@
+{
+    "obj": {
+        "item": {
+            "reagent_containers": {
+                "emergency_injector": {
+                    "name": "emergency auto-injector",
+                    "desc": "A small syringe-like thing that automatically injects its contents into someone.",
+                    "icon": "icons/obj/chemical.dmi",
+                    "inhand_image_icon": "icons/mob/inhand/hand_medical.dmi",
+                    "item_state": "emerg_inj-orange",
+                    "icon_state": "emerg_inj-orange",
+                    "initial_volume": "10",
+                    "amount_per_transfer_from_this": "10",
+                    "flags": "FPRINT | TABLEPASS",
+                    "rc_flags": "RC_SCALE | RC_VISIBLE | RC_SPECTRO",
+                    "var": {
+                        "empty": "0",
+                        "label": "orange"
+                    },
+                    "hide_attack": "2",
+                    "epinephrine": {
+                        "name": "emergency auto-injector (epinephrine)",
+                        "initial_reagents": "epinephrine"
+                    },
+                    "atropine": {
+                        "name": "emergency auto-injector (atropine)",
+                        "initial_reagents": "atropine",
+                        "label": "red"
+                    },
+                    "charcoal": {
+                        "name": "emergency auto-injector (charcoal)",
+                        "initial_reagents": "charcoal",
+                        "label": "green"
+                    },
+                    "saline": {
+                        "name": "emergency auto-injector (saline-glucose)",
+                        "initial_reagents": "saline",
+                        "label": "blue"
+                    },
+                    "anti_rad": {
+                        "name": "emergency auto-injector (potassium iodide)",
+                        "initial_reagents": "anti_rad",
+                        "label": "green"
+                    },
+                    "pentetic_acid": {
+                        "name": "emergency auto-injector (pentetic acid)",
+                        "initial_reagents": {
+                            "penteticacid": 5
+                        },
+                        "label": "blue"
+                    },
+                    "insulin": {
+                        "name": "emergency auto-injector (insulin)",
+                        "initial_reagents": "insulin",
+                        "label": "yellow"
+                    },
+                    "calomel": {
+                        "name": "emergency auto-injector (calomel)",
+                        "initial_reagents": {
+                            "calomel": 5
+                        },
+                        "label": "green"
+                    },
+                    "salicylic_acid": {
+                        "name": "emergency auto-injector (salicylic acid)",
+                        "initial_reagents": "salicylic_acid",
+                        "label": "purple"
+                    },
+                    "spaceacillin": {
+                        "name": "emergency auto-injector (spaceacillin)",
+                        "initial_reagents": "spaceacillin",
+                        "label": "yellow"
+                    },
+                    "antihistamine": {
+                        "name": "emergency auto-injector (diphenhydramine)",
+                        "initial_reagents": "antihistamine",
+                        "label": "blue"
+                    },
+                    "salbutamol": {
+                        "name": "emergency auto-injector (salbutamol)",
+                        "initial_reagents": "salbutamol",
+                        "label": "blue"
+                    },
+                    "perf": {
+                        "name": "emergency auto-injector (perfluorodecalin)",
+                        "initial_reagents": "perfluorodecalin",
+                        "label": "blue"
+                    },
+                    "mannitol": {
+                        "name": "emergency auto-injector (mannitol)",
+                        "initial_reagents": "mannitol",
+                        "label": "red"
+                    },
+                    "mutadone": {
+                        "name": "emergency auto-injector (mutadone)",
+                        "initial_reagents": "mutadone",
+                        "label": "purple"
+                    },
+                    "heparin": {
+                        "name": "emergency auto-injector (heparin)",
+                        "initial_reagents": "heparin",
+                        "label": "green"
+                    },
+                    "proconvertin": {
+                        "name": "emergency auto-injector (proconvertin)",
+                        "initial_reagents": "proconvertin",
+                        "label": "red"
+                    },
+                    "filgrastim": {
+                        "name": "emergency auto-injector (filgrastim)",
+                        "initial_reagents": "filgrastim",
+                        "label": "purple"
+                    },
+                    "methamphetamine": {
+                        "name": "emergency auto-injector (methamphetamine)",
+                        "initial_reagents": "methamphetamine",
+                        "label": "white"
+                    },
+                    "lexorin": {
+                        "name": "emergency auto-injector (lexorin)",
+                        "initial_reagents": "lexorin",
+                        "label": "blue"
+                    },
+                    "synaptizine": {
+                        "name": "emergency auto-injector (synaptizine)",
+                        "initial_reagents": "synaptizine",
+                        "label": "orange"
+                    },
+                    "morphine": {
+                        "name": "emergency auto-injector (morphine)",
+                        "initial_reagents": "morphine",
+                        "label": "purple"
+                    },
+                    "random": {
+                        "name": "emergency auto-injector (???)",
+                        "label": "black"
+                    },
+                    "vr": {
+                        "epinephrine": {
+                            "name": "emergency auto-injector (epinephrine)",
+                            "initial_reagents": "epinephrine",
+                            "label": "vr"
+                        },
+                        "calomel": {
+                            "name": "emergency auto-injector (calomel)",
+                            "initial_reagents": {
+                                "calomel": 5
+                            },
+                            "label": "vr2"
+                        }
+                    },
+                    "high_capacity": {
+                        "name": "high-capacity auto-injector",
+                        "initial_volume": "50",
+                        "amount_per_transfer_from_this": "5",
+                        "epinephrine": {
+                            "name": "high-capacity auto-injector (epinephrine)",
+                            "initial_reagents": "epinephrine",
+                            "label": "green"
+                        },
+                        "salbutamol": {
+                            "name": "high-capacity auto-injector (salbutamol)",
+                            "initial_reagents": "salbutamol",
+                            "label": "blue"
+                        },
+                        "salicylic_acid": {
+                            "name": "high-capacity auto-injector (salicylic acid)",
+                            "initial_reagents": "salicylic_acid",
+                            "label": "purple"
+                        },
+                        "saline": {
+                            "name": "high-capacity auto-injector (saline-glucose)",
+                            "initial_reagents": "saline",
+                            "label": "blue"
+                        },
+                        "atropine": {
+                            "name": "high-capacity auto-injector (atropine)",
+                            "initial_reagents": "atropine",
+                            "label": "red"
+                        },
+                        "pentetic": {
+                            "name": "high-capacity auto-injector (pentetic acid)",
+                            "initial_reagents": "penteticacid",
+                            "label": "purple"
+                        },
+                        "mannitol": {
+                            "name": "high-capacity auto-injector (mannitol)",
+                            "initial_reagents": "mannitol",
+                            "label": "green"
+                        },
+                        "cardiac": {
+                            "name": "cardiac combi-injector",
+                            "desc": "A combination medical injector containing saline and epinephrine.",
+                            "initial_reagents": {
+                                "saline": 25,
+                                "epinephrine": 25
+                            },
+                            "label": "yellow"
+                        },
+                        "bloodloss": {
+                            "name": "bloodloss combi-injector",
+                            "desc": "A combination medical injector containing filgrastim and proconvertin.",
+                            "initial_reagents": {
+                                "filgrastim": 25,
+                                "proconvertin": 25
+                            },
+                            "label": "red"
+                        },
+                        "lifesupport": {
+                            "name": "lifesupport combi-injector",
+                            "desc": "A combination medical injector containing salbutamol and mannitol.",
+                            "initial_reagents": {
+                                "salbutamol": 25,
+                                "mannitol": 25
+                            },
+                            "label": "blue"
+                        },
+                        "juggernaut": {
+                            "name": "Juggernaut injector",
+                            "desc": "A large syringe-like thing that automatically injects its contents into someone. This one contains juggernaut, a potent pain-killing chemical.",
+                            "initial_reagents": "juggernaut",
+                            "label": "bigred",
+                            "initial_volume": "60",
+                            "amount_per_transfer_from_this": "20"
+                        },
+                        "donk_injector": {
+                            "name": "Donk injector",
+                            "desc": "A large syringe-like thing that automatically injects its contents into someone. This one contains a cocktail of chemicals intended to mimic the effect of eating a warm donk pocket.",
+                            "initial_reagents": {
+                                "omnizine": 15,
+                                "teporone": 15,
+                                "synaptizine": 15,
+                                "saline": 15,
+                                "salbutamol": 15,
+                                "synd_methamphetamine": 15
+                            },
+                            "label": "bigblue",
+                            "initial_volume": "90",
+                            "amount_per_transfer_from_this": "15"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

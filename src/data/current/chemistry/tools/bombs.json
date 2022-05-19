@@ -1,0 +1,31 @@
+{
+    "obj": {
+        "item": {
+            "assembly": {
+                "chem_bomb": {
+                    "var": {
+                        "obj": {
+                            "item": {
+                                "device": {
+                                    "triggering_device": null,
+                                    "igniter": {
+                                        "igniter": null
+                                    }
+                                },
+                                "chem_grenade": {
+                                    "payload": null
+                                }
+                            }
+                        },
+                        "mob": {
+                            "attacher": "Unknown"
+                        }
+                    },
+                    "status": "0.0",
+                    "flags": "FPRINT | TABLEPASS | CONDUCT",
+                    "event_handler_flags": "USE_PROXIMITY | USE_FLUID_ENTER"
+                }
+            }
+        }
+    }
+}

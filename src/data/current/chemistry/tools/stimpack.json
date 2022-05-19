@@ -1,0 +1,26 @@
+{
+    "obj": {
+        "item": {
+            "storage": {
+                "box": {
+                    "stimulants": {
+                        "name": "stimulants box",
+                        "desc": "A box containing 3 stimpacks. Use responsibly.",
+                        "spawn_contents": []
+                    }
+                }
+            },
+            "stimpack": {
+                "name": "Stimpack",
+                "icon": "icons/obj/items/items.dmi",
+                "icon_state": "stims",
+                "throw_speed": "1",
+                "throw_range": "5",
+                "w_class": "W_CLASS_TINY",
+                "var": {
+                    "empty": "0"
+                }
+            }
+        }
+    }
+}

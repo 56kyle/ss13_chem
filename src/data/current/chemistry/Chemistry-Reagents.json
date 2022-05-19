@@ -1,0 +1,69 @@
+{
+    "datum": {
+        "reagent": {
+            "var": {
+                "name": "Reagent",
+                "id": "reagent",
+                "description": "",
+                "datum": {
+                    "reagents": {
+                        "holder": null
+                    }
+                },
+                "list": {
+                    "pathogen_nutrition": null
+                },
+                "reagent_state": "SOLID",
+                "data": null,
+                "volume": "0",
+                "transparency": "150",
+                "fluid_r": "0",
+                "fluid_b": "0",
+                "fluid_g": "255",
+                "addiction_prob": "0",
+                "addiction_prob2": "100",
+                "addiction_min": "0",
+                "max_addiction_severity": "HIGH",
+                "dispersal": "4",
+                "volatility": "0",
+                "reacting": "0",
+                "overdose": "0",
+                "depletion_rate": "0.4",
+                "flushing_multiplier": "1",
+                "penetrates_skin": "0",
+                "touch_modifier": "1",
+                "taste": null,
+                "value": "1",
+                "thirst_value": "0",
+                "hunger_value": "0",
+                "hygiene_value": "0",
+                "bladder_value": "0",
+                "energy_value": "0",
+                "blob_damage": "0",
+                "viscosity": "0",
+                "block_slippy": "0",
+                "heat_capacity": "100 ",
+                "blocks_sight_gas": "0",
+                "pierces_outerwear": "0",
+                "stun_resist": "0",
+                "smoke_spread_mod": "0",
+                "minimum_reaction_temperature": "INFINITY",
+                "random_chem_blacklisted": "0",
+                "boiling_point": "T0C + 100",
+                "can_crack": "0",
+                "threshold_volume": null,
+                "threshold": null
+            },
+            "*helldrug": {
+                "name": "cthonium",
+                "id": "chtonium",
+                "description": "***CLASSIFIED. ULTRAVIOLET-CLASS ANOMALOUS MATERIAL. INFORMATION REGARDING THIS REAGENT IS ABOVE YOUR PAY GRADE. QUARANTINE THE SAMPLE IMMEDIATELY AND REPORT THIS INCIDENT TO YOUR HEAD OF SECURITY***",
+                "reagent_state": "LIQUID",
+                "fluid_r": "250",
+                "fluid_b": "250",
+                "fluid_g": "0",
+                "transparency": "40"
+            }
+        }
+    }
+}

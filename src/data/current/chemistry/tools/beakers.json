@@ -1,0 +1,126 @@
+{
+    "obj": {
+        "item": {
+            "reagent_containers": {
+                "glass": {
+                    "beaker": {
+                        "name": "beaker",
+                        "desc": "A beaker. Can hold up to 50 units.",
+                        "icon": "icons/obj/chemical.dmi",
+                        "inhand_image_icon": "icons/mob/inhand/hand_medical.dmi",
+                        "icon_state": "beaker",
+                        "item_state": "beaker",
+                        "initial_volume": "50",
+                        "var": {
+                            "icon_style": "beaker"
+                        },
+                        "rc_flags": "RC_SCALE | RC_VISIBLE | RC_SPECTRO",
+                        "cryoxadone": {
+                            "name": "beaker (cryoxadone)",
+                            "icon_state": "roundflask",
+                            "icon_style": "roundflask",
+                            "initial_reagents": {
+                                "cryoxadone": 40
+                            }
+                        },
+                        "epinephrine": {
+                            "name": "beaker (epinephrine)",
+                            "initial_reagents": "epinephrine"
+                        },
+                        "antitox": {
+                            "name": "beaker (anti-toxin)",
+                            "initial_reagents": "charcoal"
+                        },
+                        "brute": {
+                            "name": "beaker (styptic powder)",
+                            "initial_reagents": "styptic_powder"
+                        },
+                        "burn": {
+                            "name": "beaker (silver sulfadiazine)",
+                            "initial_reagents": "silver_sulfadiazine"
+                        },
+                        "large": {
+                            "name": "large beaker",
+                            "desc": "A large beaker. Can hold up to 100 units.",
+                            "icon_state": "beakerlarge",
+                            "initial_volume": "100",
+                            "icon_style": "beakerlarge",
+                            "epinephrine": {
+                                "name": "epinephrine reserve tank",
+                                "initial_reagents": "epinephrine"
+                            },
+                            "antitox": {
+                                "name": "anti-toxin reserve tank",
+                                "initial_reagents": "charcoal"
+                            },
+                            "brute": {
+                                "name": "styptic powder reserve tank",
+                                "initial_reagents": "styptic_powder"
+                            },
+                            "burn": {
+                                "name": "silver sulfadiazine reserve tank",
+                                "initial_reagents": "silver_sulfadiazine"
+                            }
+                        },
+                        "extractor_tank": {
+                            "name": "reagent extractor tank",
+                            "desc": "A large tank used in the reagent extractors. You probably shouldn't be able to see this!",
+                            "initial_volume": "500"
+                        }
+                    },
+                    "flask": {
+                        "name": "flask",
+                        "desc": "Looks pretty fragile, better not drop this.",
+                        "icon": "icons/obj/chemical.dmi",
+                        "inhand_image_icon": "icons/mob/inhand/hand_medical.dmi",
+                        "icon_state": "eflask",
+                        "item_state": "flask",
+                        "var": {
+                            "icon_style": "eflask",
+                            "smashed": "0",
+                            "shard_amt": "1"
+                        },
+                        "rc_flags": "RC_SPECTRO | RC_FULLNESS | RC_VISIBLE",
+                        "initial_volume": "15",
+                        "round": {
+                            "name": "round flask",
+                            "icon_state": "roundflask",
+                            "icon_style": "roundflask"
+                        },
+                        "black_powder": {
+                            "initial_reagents": "blackpowder"
+                        }
+                    }
+                },
+                "food": {
+                    "drinks": {
+                        "reserve": {
+                            "name": "reserve tank",
+                            "desc": "A specialized reserve tank.",
+                            "icon": "icons/obj/chemical.dmi",
+                            "icon_state": "largebottle",
+                            "w_class": "W_CLASS_NORMAL",
+                            "initial_volume": "400",
+                            "amount_per_transfer_from_this": "25",
+                            "incompatible_with_chem_dispensers": "1",
+                            "flags": "FPRINT | TABLEPASS | OPENCONTAINER",
+                            "rc_flags": "RC_SCALE",
+                            "brute": {
+                                "name": "high capacity styptic powder reserve tank",
+                                "desc": "A high capacitiy reserve tank filled with styptic powder.",
+                                "icon_state": "largebottle-brute",
+                                "initial_reagents": "styptic_powder"
+                            },
+                            "burn": {
+                                "name": "high capacity silver sulfadiazine reserve tank",
+                                "desc": "A high capacity reserve tank filled with silver sulfadiazine.",
+                                "icon_state": "largebottle-burn",
+                                "initial_reagents": "silver_sulfadiazine"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

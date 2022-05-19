@@ -1,0 +1,150 @@
+{
+    "obj": {
+        "item": {
+            "reagent_containers": {
+                "pill": {
+                    "name": "pill",
+                    "desc": "a pill.",
+                    "icon": "icons/obj/items/pills.dmi",
+                    "inhand_image_icon": "icons/mob/inhand/hand_medical.dmi",
+                    "icon_state": "pill0",
+                    "item_state": "pill",
+                    "var": {
+                        "image": {
+                            "color_overlay": {
+                                "rc_flags": "RC_SPECTRO"
+                            }
+                        },
+                        "random_icon": "0",
+                        "color_overlay_alpha": "180"
+                    },
+                    "flags": "NOSPLASH | TABLEPASS",
+                    "rand_pos": "1",
+                    "uranium": {
+                        "name": "Uranium nugget",
+                        "icon_state": "pill22"
+                    },
+                    "antitox": {
+                        "name": "charcoal pill",
+                        "desc": "Neutralizes many common toxins.",
+                        "icon_state": "pill17"
+                    },
+                    "calomel": {
+                        "name": "calomel pill",
+                        "desc": "Can be used to purge impurities, but is highly toxic itself.",
+                        "icon_state": "pill3"
+                    },
+                    "tox": {
+                        "name": "cyanide pill",
+                        "desc": "Highly lethal.",
+                        "icon_state": "pill5"
+                    },
+                    "stox": {
+                        "name": "morphine pill",
+                        "desc": "Used to treat severe pain. Highly addictive.",
+                        "icon_state": "pill8"
+                    },
+                    "salicylic_acid": {
+                        "name": "analgesic pill",
+                        "desc": "A painkiller used to treat minor injuries.",
+                        "icon_state": "pill4"
+                    },
+                    "menthol": {
+                        "name": "menthol pill",
+                        "desc": "This pill looks kinda cool. It's used to treat moderate burns and fevers.",
+                        "icon_state": "pill21"
+                    },
+                    "silver_sulfadiazine": {
+                        "name": "silver sulfadiazine pill",
+                        "desc": "Used to treat burns, but it's not meant to be ingested. Welp.",
+                        "icon_state": "pill11"
+                    },
+                    "epinephrine": {
+                        "name": "epinephrine pill",
+                        "desc": "Used to stabilize patients in crisis.",
+                        "icon_state": "pill20"
+                    },
+                    "salbutamol": {
+                        "name": "salbutamol pill",
+                        "desc": "Used to treat respiratory distress.",
+                        "icon_state": "pill16"
+                    },
+                    "mutadone": {
+                        "name": "mutadone pill",
+                        "desc": "Used to cure genetic abnormalities.",
+                        "icon_state": "pill18"
+                    },
+                    "mannitol": {
+                        "name": "mannitol pill",
+                        "desc": "Used to treat cranial swelling.",
+                        "icon_state": "pill19"
+                    },
+                    "antirad": {
+                        "name": "potassium iodide pill",
+                        "desc": "Used to treat radiation poisoning.",
+                        "icon_state": "pill9"
+                    },
+                    "hairgrownium": {
+                        "name": "\\improper EZ-Hairgrowth pill",
+                        "desc": "The #1 hair growth product on the market! WARNING: Some side effects may occur.",
+                        "icon_state": "pill6"
+                    },
+                    "methamphetamine": {
+                        "name": "methamphetamine pill",
+                        "desc": "Methamphetamine is a highly effective and dangerous stimulant drug.",
+                        "icon_state": "pill9"
+                    },
+                    "crank": {
+                        "name": "crank pill",
+                        "desc": "A cheap and dirty stimulant drug, commonly used by space biker gangs.",
+                        "icon_state": "pill4"
+                    },
+                    "bathsalts": {
+                        "name": "bath salts pill",
+                        "desc": "Sometimes packaged as a refreshing bathwater additive, these crystals are definitely not for human consumption.",
+                        "icon_state": "pill1"
+                    },
+                    "catdrugs": {
+                        "name": "cat drugs pill",
+                        "desc": "Uhhh...",
+                        "icon_state": "pill5"
+                    },
+                    "cyberpunk": {
+                        "name": "cyberpunk pill",
+                        "desc": "A cocktail of illicit designer drugs, who knows what might be in here.",
+                        "random_icon": "1"
+                    },
+                    "vr": {
+                        "icon": "icons/effects/VR.dmi",
+                        "mannitol": {
+                            "name": "mannitol pill",
+                            "desc": "Used to treat cranial swelling.",
+                            "icon_state": "pill1"
+                        },
+                        "antitox": {
+                            "name": "anti-toxins pill",
+                            "desc": "Neutralizes many common toxins.",
+                            "icon_state": "pill2"
+                        },
+                        "salicylic_acid": {
+                            "name": "analgesic pill",
+                            "desc": "Commonly used to treat moderate pain and fevers.",
+                            "icon_state": "pill3"
+                        },
+                        "salbutamol": {
+                            "name": "salbutamol pill",
+                            "desc": "Used to treat respiratory distress.",
+                            "icon_state": "pill4"
+                        }
+                    },
+                    "ipecac": {
+                        "name": "space ipecac pill",
+                        "desc": "Used to induce emesis. In space.",
+                        "icon_state": "pill13",
+                        "initial_volume": "5"
+                    }
+                }
+            }
+        }
+    }
+}

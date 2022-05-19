@@ -1,0 +1,309 @@
+{
+    "datum": {
+        "reagent": {
+            "combustible": {
+                "name": "fire stuff",
+                "phlogiston": {
+                    "name": "phlogiston",
+                    "id": "phlogiston",
+                    "description": "It appears to be liquid fire.",
+                    "reagent_state": "LIQUID",
+                    "fluid_r": "250",
+                    "fluid_b": "0",
+                    "fluid_g": "175",
+                    "volatility": "2",
+                    "transparency": "175",
+                    "var": {
+                        "temp_fire": "4000",
+                        "temp_deviance": "1000",
+                        "size_divisor": "40",
+                        "mob_burning": "33"
+                    },
+                    "hygiene_value": "1",
+                    "viscosity": "0.7",
+                    "firedust": {
+                        "name": "phlogiston dust",
+                        "id": "firedust",
+                        "description": "And this is solid fire. However that works.",
+                        "dispersal": "4",
+                        "temp_fire": "1500",
+                        "temp_deviance": "500",
+                        "transparency": "255",
+                        "size_divisor": "80",
+                        "mob_burning": "15"
+                    }
+                },
+                "napalm_goo": {
+                    "name": "napalm goo",
+                    "id": "napalm_goo",
+                    "description": "A highly flammable jellied fuel.",
+                    "reagent_state": "LIQUID",
+                    "fluid_r": "200",
+                    "fluid_b": "50",
+                    "fluid_g": "100",
+                    "transparency": "150",
+                    "viscosity": "0.8",
+                    "minimum_reaction_temperature": "T0C + 100",
+                    "var": {
+                        "temp_reacted": "0"
+                    },
+                    "penetrates_skin": "1",
+                    "syndicate": {
+                        "name": "syndicate napalm",
+                        "id": "syndicate_napalm",
+                        "description": "Extra sticky, extra burny"
+                    }
+                },
+                "kerosene": {
+                    "name": "kerosene",
+                    "id": "kerosene",
+                    "description": "A substance widely applied as fuel for aviation vehicles and solvent for metal alloys (when heated).",
+                    "reagent_state": "LIQUID",
+                    "fluid_r": "250",
+                    "fluid_g": "250",
+                    "fluid_b": "250",
+                    "transparency": "255",
+                    "viscosity": "0.4",
+                    "volatility": "2",
+                    "minimum_reaction_temperature": "T0C+600"
+                },
+                "thermite": {
+                    "name": "thermite",
+                    "id": "thermite",
+                    "description": "Thermite burns at an incredibly high temperature. Can be used to melt walls.",
+                    "reagent_state": "SOLID",
+                    "fluid_r": "85",
+                    "fluid_g": "0",
+                    "fluid_b": "0",
+                    "transparency": "255",
+                    "volatility": "1.5",
+                    "minimum_reaction_temperature": "T0C+100"
+                },
+                "smokepowder": {
+                    "name": "smoke powder",
+                    "id": "smokepowder",
+                    "description": "Produces smoke when heated.",
+                    "reagent_state": "SOLID",
+                    "fluid_r": "200",
+                    "fluid_g": "200",
+                    "fluid_b": "200",
+                    "transparency": "230",
+                    "minimum_reaction_temperature": "T0C+25",
+                    "var": {
+                        "ignited": "0"
+                    }
+                },
+                "propellant": {
+                    "name": "aerosol propellant",
+                    "id": "propellant",
+                    "description": "Produces a aerosol spray when heated.",
+                    "reagent_state": "SOLID",
+                    "fluid_r": "200",
+                    "fluid_g": "200",
+                    "fluid_b": "255",
+                    "transparency": "230",
+                    "minimum_reaction_temperature": "T0C + 100",
+                    "var": {
+                        "ignited": "FALSE"
+                    }
+                },
+                "sonicpowder": {
+                    "name": "hootingium",
+                    "id": "sonicpowder",
+                    "description": "Produces a loud bang when heated.",
+                    "reagent_state": "SOLID",
+                    "fluid_r": "200",
+                    "fluid_g": "200",
+                    "fluid_b": "200",
+                    "transparency": "230",
+                    "penetrates_skin": "1",
+                    "minimum_reaction_temperature": "T0C+100",
+                    "var": {
+                        "no_fluff": "0"
+                    },
+                    "nofluff": {
+                        "name": "hootingium",
+                        "id": "sonicpowder_nofluff",
+                        "no_fluff": "1"
+                    }
+                },
+                "flashpowder": {
+                    "name": "flash powder",
+                    "id": "flashpowder",
+                    "description": "Produces a bright flash of light when heated.",
+                    "reagent_state": "SOLID",
+                    "fluid_r": "200",
+                    "fluid_g": "200",
+                    "fluid_b": "200",
+                    "transparency": "230",
+                    "penetrates_skin": "1",
+                    "viscosity": "0.5",
+                    "minimum_reaction_temperature": "T0C+100"
+                },
+                "infernite": {
+                    "name": "chlorine triflouride",
+                    "id": "infernite",
+                    "description": "An extremely volatile substance, handle with the utmost care.",
+                    "reagent_state": "LIQUID",
+                    "fluid_r": "255",
+                    "fluid_g": "200",
+                    "fluid_b": "200",
+                    "volatility": "2",
+                    "transparency": "175",
+                    "depletion_rate": "4",
+                    "dispersal": "2",
+                    "hygiene_value": "2",
+                    "viscosity": "0.5"
+                },
+                "foof": {
+                    "name": "FOOF",
+                    "id": "foof",
+                    "description": "Dioxygen Diflouride, a ludicrously powerful oxidizer. Run away.",
+                    "reagent_state": "LIQUID",
+                    "fluid_r": "255",
+                    "fluid_g": "200",
+                    "fluid_b": "200",
+                    "transparency": "175",
+                    "depletion_rate": "1.2",
+                    "viscosity": "0.6",
+                    "volatility": "4"
+                },
+                "thalmerite": {
+                    "name": "pyrosium",
+                    "id": "thalmerite",
+                    "description": "This strange compound seems to slowly heat up all by itself. Very sticky.",
+                    "reagent_state": "LIQUID",
+                    "fluid_r": "100",
+                    "fluid_g": "200",
+                    "fluid_b": "150",
+                    "transparency": "150",
+                    "viscosity": "0.7",
+                    "minimum_reaction_temperature": "1000"
+                },
+                "argine": {
+                    "name": "argine",
+                    "id": "argine",
+                    "description": "This strange material seems to ignite & explode on low temperatures.",
+                    "reagent_state": "LIQUID",
+                    "fluid_r": "50",
+                    "fluid_g": "200",
+                    "fluid_b": "200",
+                    "transparency": "200",
+                    "viscosity": "0.6",
+                    "volatility": "3",
+                    "minimum_reaction_temperature": "-INFINITY"
+                },
+                "sorium": {
+                    "name": "sorium",
+                    "id": "sorium",
+                    "description": "Flammable material that causes a powerful shockwave on detonation.",
+                    "reagent_state": "LIQUID",
+                    "fluid_r": "90",
+                    "fluid_g": "100",
+                    "fluid_b": "200",
+                    "transparency": "200",
+                    "viscosity": "0.6",
+                    "volatility": "1.25",
+                    "minimum_reaction_temperature": "T0C + 200"
+                },
+                "liquiddarkmatter": {
+                    "name": "liquid dark matter",
+                    "id": "ldmatter",
+                    "description": "What has science done ... It's concentrated dark matter in liquid form. And i thought you needed plutonic quarks for that.",
+                    "reagent_state": "LIQUID",
+                    "fluid_r": "33",
+                    "fluid_g": "0",
+                    "fluid_b": "33",
+                    "value": "6",
+                    "viscosity": "0.9",
+                    "volatility": "1.5",
+                    "minimum_reaction_temperature": "T0C+200"
+                },
+                "something": {
+                    "name": "something",
+                    "id": "something",
+                    "description": "What is this thing?  None of the normal tests have been able to determine what exactly this is, just that it is benign.",
+                    "reagent_state": "LIQUID",
+                    "fluid_r": "100",
+                    "fluid_g": "100",
+                    "fluid_b": "100",
+                    "transparency": "250",
+                    "viscosity": "0.2"
+                },
+                "fuel": {
+                    "name": "welding fuel",
+                    "id": "fuel",
+                    "description": "A highly flammable blend of basic hydrocarbons, mostly Acetylene. Useful for both welding and organic chemistry, and can be fortified into a heavier oil.",
+                    "reagent_state": "LIQUID",
+                    "volatility": "1",
+                    "fluid_r": "0",
+                    "fluid_g": "0",
+                    "fluid_b": "0",
+                    "transparency": "230",
+                    "viscosity": "0.2",
+                    "minimum_reaction_temperature": "T0C + 200",
+                    "depletion_rate": "0.6",
+                    "heat_capacity": "5",
+                    "var": {
+                        "max_radius": "7",
+                        "min_radius": "0",
+                        "volume_radius_modifier": "-0.15",
+                        "volume_radius_multiplier": "0.09",
+                        "explosion_threshold": "100",
+                        "min_explosion_radius": "0",
+                        "max_explosion_radius": "4",
+                        "volume_explosion_radius_multiplier": "0.005",
+                        "volume_explosion_radius_modifier": "0",
+                        "caused_fireflash": "0",
+                        "min_req_fluid": "0.10"
+                    }
+                },
+                "blackpowder": {
+                    "name": "black powder",
+                    "id": "blackpowder",
+                    "description": "A dangerous explosive material.",
+                    "reagent_state": "SOLID",
+                    "fluid_r": "0",
+                    "fluid_g": "0",
+                    "fluid_b": "0",
+                    "volatility": "2.5",
+                    "transparency": "255",
+                    "depletion_rate": "0.05",
+                    "penetrates_skin": "1",
+                    "minimum_reaction_temperature": "T0C+200"
+                },
+                "nitrogentriiodide": {
+                    "name": "Nitrogen Triiodide",
+                    "id": "nitrotri_parent",
+                    "description": "A chemical that is stable when in liquid form, but becomes extremely volatile when dry.",
+                    "random_chem_blacklisted": "1",
+                    "reagent_state": "LIQUID",
+                    "penetrates_skin": "1",
+                    "volatility": "2",
+                    "fluid_r": "48",
+                    "fluid_g": "22",
+                    "fluid_b": "64",
+                    "minimum_reaction_temperature": "T0C+100",
+                    "var": {
+                        "is_dry": "0"
+                    },
+                    "wet": {
+                        "id": "nitrotri_wet",
+                        "random_chem_blacklisted": "1",
+                        "volatility": "2",
+                        "viscosity": "0.3"
+                    },
+                    "dry": {
+                        "id": "nitrotri_dry",
+                        "random_chem_blacklisted": "1",
+                        "volatility": "2.5",
+                        "description": "A chemical that is stable when in liquid form, but becomes extremely volatile when dry. This is dry. Uh oh.",
+                        "is_dry": "1",
+                        "reagent_state": "SOLID",
+                        "minimum_reaction_temperature": "-INFINITY"
+                    }
+                }
+            }
+        }
+    }
+}

@@ -14,7 +14,8 @@ basic_recipes = [
     ['Salt (20u)', 'chlorine=10;sodium=10;water=10;'],
     ['Soda Water (10u)', 'carbon=5;oxygen=5;water=5;'],
     ['Cola (20u)', 'carbon=5;oxygen=5;water=5;sugar=10;'],
-    ['Acetaldehyde (30u) *heat', 'chromium=10;oxygen=10;copper=10;ethanol=10;']
+    ['Acetaldehyde (30u) *heat', 'chromium=10;oxygen=10;copper=10;ethanol=10;'],
+    ['Iron Oxide (40u) *heat *acetic', 'iron=10;oxygen=10;sodium=5;chlorine=5;water=5;'],
 ]
 
 utility = [
@@ -28,13 +29,16 @@ acids = [
 ]
 
 stabilized = [
+    ['grenade', 'sulfur=1;oxygen=5;nitrogen=3;copper=1;iron=1;hydrogen=5;phosphorus=2;plasma=2;silver=1;sodium=1;chlorine=1;'],
+    ['lg grenade', 'oxygen=9;nitrogen=11;copper=3;hydrogen=6;silver=6;sodium=6;chlorine=6;'],
+    ['Hell Fire (', 'iron=5;oxygen=10;hydrogen=10;phosphorus=10;plasma=10;sulfur=5;sugar=20;ethanol=10;lithium=10;mercury=10;'],
     ['Stabilizing Agent (10u)', 'iron=5;oxygen=5;hydrogen=5;'],
-    ['Phlogiston* (40u)', 'phosphorus=10;plasma=10;hydrogen=5;sulfur=5;oxygen=5;'],
-    ['Smoke Powder* (30u)', 'potassium=10;sugar=10;phosphorus=10;'],
-    ['Flash Powder *sa(10) (50u)', 'aluminium=10;potassium=10;chlorine=10;sulfur=10;'],
-    ['Hootingium *sa(10) (20u)', 'carbon=3;oxygen=13;water=3;sugar=5;phosphorus=10;'],
-    ['Dark Matter* (40u)', 'carbon=10;plasma=10;radium=10;'],
-    ['Sorium* (40u)', 'mercury=10;carbon=10;nitrogen=10;oxygen=10;'],
+    ['Phlogiston (40u)', 'iron=5;oxygen=5;hydrogen=5;phosphorus=10;plasma=10;hydrogen=5;sulfur=5;oxygen=5;'],
+    ['Smoke Powder (30u)', 'iron=5;oxygen=5;hydrogen=5;potassium=10;sugar=10;phosphorus=10;'],
+    ['Flash Powder (50u)', 'iron=5;oxygen=5;hydrogen=5;aluminium=10;potassium=10;chlorine=10;sulfur=10;'],
+    ['Hootingium (20u)', 'iron=5;oxygen=5;hydrogen=5;carbon=3;oxygen=13;water=3;sugar=5;phosphorus=10;'],
+    ['Dark Matter (40u)', 'iron=5;oxygen=5;hydrogen=5;carbon=10;plasma=10;radium=10;'],
+    ['Sorium (40u)', 'iron=5;oxygen=5;hydrogen=5;mercury=10;carbon=10;nitrogen=10;oxygen=10;'],
 ]
 
 custom = [
@@ -61,10 +65,10 @@ medical_recipes = [
 ]
 
 all_recipes = [
+    *stabilized,
     *basic_recipes,
     *utility,
     *acids,
-    *stabilized,
     ['Cryostylane (30u)', 'nitrogen=10;plasma=10;water=10;'],
     ['Pyrosium (30u)', 'plasma=10;radium=10;phosphorus=10;'],
     ['Space Glue *phenol(10)formaldehyde(10) (50u)', 'oxygen=10;plasma=10;hydrogen=10;'],
@@ -72,15 +76,20 @@ all_recipes = [
     *custom,
     *stimulants,
     *medical_recipes,
-    ['thing', 'chlorine=16;oxygen=10;phosphorus=10;fluorine=10;hydrogen=16;nitrogen=6;'],
-    ['thing therm *wf', 'carbon=1;hydrogen=13;chlorine=12;phosphorus=9;fluorine=9;nitrogen=3;'],
-    ['thing therm2', 'copper=6;nitrogen=6;oxygen=18;'],
+    ['thing', 'chlorine=12;fuel=13;oxygen=12;phosphorus=9;fluorine=9;hydrogen=13;carbon=1;nitrogen=3;'],
     ['boom', 'nitrogen=2;hydrogen=3;oxygen=1;sodium=1;silver=1;'],
     ['lots of boom', 'nitrogen=28;hydrogen=42;oxygen=14;sodium=14;silver=14;'],
+    ['boom *therm', 'nitrogen=3;oxygen=3;copper=1;hydrogen=3;silver=1;sodium=1;chlorine=1;'],
+    ['grenade', 'sulfur=5;oxygen=13;nitrogen=3;copper=1;iron=5;hydrogen=13;phosphorus=10;plasma=10;silver=1;sodium=1;chlorine=1;'],
     ['booma', 'nitrogen=2;hydrogen=3;silver=1;sodium=1;chlorine=1;'],
-    ['boomb', 'nitrogen=1;copper=1;oxygen=3;']
+    ['boomb', 'nitrogen=1;copper=1;oxygen=3;'],
 ]
 
+secrets = [
+    ['Voltagen', 'iron=2;hydrogen=3;oxygen=2;plasma=21;radium=1;carbon=2;'],
+    ['Sarin', 'chlorine=12;fuel=13;oxygen=12;phosphorus=9;fluorine=9;hydrogen=13;carbon=1;nitrogen=3;'],
+    ['Something (40u)', 'iron=10;oxygen=20;hydrogen=10;carbon=20;plasma=10;radium=10;mercury=10;nitrogen=10;'],
+]
 
 def enter_recipes():
     for recipe in all_recipes:

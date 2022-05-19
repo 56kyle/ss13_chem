@@ -1,0 +1,118 @@
+{
+    "obj": {
+        "item": {
+            "reagent_containers": {
+                "syringe": {
+                    "name": "syringe",
+                    "desc": "A hollow device with a metal tip. Used to draw or deposit reagents into containers, and with co-operation, people.",
+                    "icon": "icons/obj/syringe.dmi",
+                    "inhand_image_icon": "icons/mob/inhand/hand_medical.dmi",
+                    "item_state": "syringe_0",
+                    "var": {
+                        "icon_prefix": "syringe",
+                        "amount_per_stage": "-1",
+                        "mode": "S_DRAW"
+                    },
+                    "icon_state": "syringe_0",
+                    "uses_multiple_icon_states": "1",
+                    "initial_volume": "15",
+                    "amount_per_transfer_from_this": "5",
+                    "rc_flags": "RC_SCALE | RC_VISIBLE | RC_SPECTRO",
+                    "hide_attack": "2",
+                    "robot": {
+                        "name": "syringe (mixed)",
+                        "desc": "Contains epinephrine & anti-toxins.",
+                        "initial_reagents": {
+                            "epinephrine": 7,
+                            "charcoal": 8
+                        },
+                        "mode": "S_INJECT"
+                    },
+                    "epinephrine": {
+                        "name": "syringe (epinephrine)",
+                        "desc": "Contains epinephrine - used to stabilize patients.",
+                        "initial_reagents": "epinephrine"
+                    },
+                    "insulin": {
+                        "name": "syringe (insulin)",
+                        "desc": "Contains insulin - used to treat diabetes.",
+                        "initial_reagents": "insulin"
+                    },
+                    "haloperidol": {
+                        "name": "syringe (anti-psychotic)",
+                        "desc": "Contains haloperidol - used for sedation and to counter violent psychosis.",
+                        "initial_reagents": "haloperidol"
+                    },
+                    "antitoxin": {
+                        "name": "syringe (charcoal)",
+                        "desc": "Contains charcoal - used to treat toxins and damage from toxins.",
+                        "initial_reagents": "charcoal"
+                    },
+                    "antiviral": {
+                        "name": "syringe (spaceacillin)",
+                        "desc": "Contains antibacterial agents.",
+                        "initial_reagents": "spaceacillin"
+                    },
+                    "atropine": {
+                        "name": "syringe (atropine)",
+                        "desc": "Contains atropine, a rapid antidote for nerve gas exposure.",
+                        "initial_reagents": "atropine"
+                    },
+                    "heparin": {
+                        "name": "syringe (heparin)",
+                        "desc": "Contains heparin, a blood anticoagulant.",
+                        "initial_reagents": "heparin"
+                    },
+                    "proconvertin": {
+                        "name": "syringe (proconvertin)",
+                        "desc": "Contains proconvertin, a blood coagulant.",
+                        "initial_reagents": "proconvertin"
+                    },
+                    "filgrastim": {
+                        "name": "syringe (filgrastim)",
+                        "desc": "Contains filgrastim, a hematopoiesis stimulant.",
+                        "initial_reagents": "filgrastim"
+                    },
+                    "jenkem": {
+                        "name": "syringe (jenkem)",
+                        "desc": "Contains jenkem, a low quality sewage drug used by no one in the right state of mind.",
+                        "initial_reagents": "jenkem"
+                    },
+                    "krokodil": {
+                        "name": "syringe (krokodil)",
+                        "desc": "Contains krokodil, a sketchy homemade opiate often used by disgruntled Cosmonauts..",
+                        "initial_reagents": "krokodil"
+                    },
+                    "morphine": {
+                        "name": "syringe (morphine)",
+                        "desc": "Contains morphine, a strong but highly addictive opiate painkiller with sedative side effects.",
+                        "initial_reagents": "morphine"
+                    },
+                    "calomel": {
+                        "name": "syringe (calomel)",
+                        "desc": "Contains calomel, which be used to purge impurities, but is highly toxic itself.",
+                        "initial_reagents": "calomel"
+                    },
+                    "synaptizine": {
+                        "name": "syringe (synaptizine)",
+                        "desc": "Contains synaptizine, a mild stimulant to increase alertness.",
+                        "initial_reagents": "synaptizine"
+                    },
+                    "formaldehyde": {
+                        "name": "syringe (embalming fluid)",
+                        "desc": "Contains formaldehyde, a chemical that prevents corpses from decaying.",
+                        "initial_reagents": "formaldehyde"
+                    },
+                    "baster": {
+                        "name": "baster",
+                        "desc": "For adding delicious liquids to food.",
+                        "icon_prefix": "baster",
+                        "icon_state": "baster_0",
+                        "initial_volume": "100",
+                        "amount_per_transfer_from_this": "25"
+                    }
+                }
+            }
+        }
+    }
+}

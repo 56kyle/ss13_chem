@@ -1,0 +1,341 @@
+{
+    "obj": {
+        "machinery": {
+            "chem_dispenser": {
+                "name": "chem dispenser",
+                "desc": "A complicated, soda fountain-like machine that allows the user to dispense basic chemicals for use in recipies.",
+                "density": "1",
+                "anchored": "1",
+                "icon": "icons/obj/chemical.dmi",
+                "icon_state": "dispenser",
+                "var": {
+                    "icon_base": "dispenser",
+                    "health": "400",
+                    "obj": {
+                        "item": {
+                            "beaker": null,
+                            "card": {
+                                "id": {
+                                    "user_id": null
+                                }
+                            }
+                        }
+                    },
+                    "list": {
+                        "dispensable_reagents": "list(",
+                        "accounts": []
+                    },
+                    "glass_path": "/obj/item/reagent_containers/glass",
+                    "glass_name": "beaker",
+                    "dispenser_name": "Chemical",
+                    "datum": {
+                        "reagent_group_account": {
+                            "current_account": null
+                        }
+                    },
+                    "output_target": null,
+                    "dispense_sound": "sound/effects/zzzt.ogg"
+                },
+                "flags": "NOSPLASH | TGUI_INTERACTIVE",
+                "mats": {
+                    "MET-2": 10,
+                    "CON-2": 10,
+                    "miracle": 20
+                },
+                "deconstruct_flags": "DECON_SCREWDRIVER | DECON_WRENCH | DECON_CROWBAR | DECON_WELDER | DECON_WIRECUTTERS | DECON_MULTITOOL",
+                "alcohol": {
+                    "name": "alcohol dispenser",
+                    "desc": "You see a small, fading warning label on the side of the machine:<br>WARNING: Contents artificially produced using industrial ethanol. Not recommended for human consumption.",
+                    "dispensable_reagents": [
+                        "beer",
+                        "cider",
+                        "gin",
+                        "wine",
+                        "champagne",
+                        "rum",
+                        "vodka",
+                        "bourbon",
+                        "vermouth",
+                        "tequila",
+                        "bitters",
+                        "tonic"
+                    ],
+                    "icon_state": "alc_dispenser",
+                    "icon_base": "alc_dispenser",
+                    "glass_path": "/obj/item/reagent_containers/food/drinks",
+                    "glass_name": "bottle",
+                    "dispenser_name": "Alcohol",
+                    "dispense_sound": "sound/misc/pourdrink2.ogg",
+                    "ultra": {
+                        "name": "alcohol dispenser",
+                        "desc": "A heavenly booze dispenser. Makes any drink you want instantly! Cool!",
+                        "dispensable_reagents": [
+                            "bilk",
+                            "beer",
+                            "cider",
+                            "mead",
+                            "wine",
+                            "champagne",
+                            "rum",
+                            "vodka",
+                            "bourbon",
+                            "boorbon",
+                            "beepskybeer",
+                            "moonshine",
+                            "bojack",
+                            "screwdriver",
+                            "bloody_mary",
+                            "bloody_scary",
+                            "snakebite",
+                            "diesel",
+                            "suicider",
+                            "grog",
+                            "port",
+                            "gin",
+                            "vermouth",
+                            "bitters",
+                            "whiskey_sour",
+                            "daiquiri",
+                            "martini",
+                            "v_martini",
+                            "murdini",
+                            "mutini",
+                            "manhattan",
+                            "libre",
+                            "ginfizz",
+                            "gimlet",
+                            "v_gimlet",
+                            "w_russian",
+                            "b_russian",
+                            "irishcoffee",
+                            "cosmo",
+                            "beach",
+                            "gtonic",
+                            "vtonic",
+                            "sonic",
+                            "gpink",
+                            "eraser",
+                            "dbreath",
+                            "squeeze",
+                            "hunchback",
+                            "madmen",
+                            "planter",
+                            "maitai",
+                            "harlow",
+                            "gchronic",
+                            "margarita",
+                            "tequini",
+                            "pfire",
+                            "bull",
+                            "longisland",
+                            "pinacolada",
+                            "longbeach",
+                            "mimosa",
+                            "french75",
+                            "sangria",
+                            "tomcollins",
+                            "peachschnapps",
+                            "moscowmule",
+                            "tequila",
+                            "tequilasunrise",
+                            "paloma",
+                            "mintjulep",
+                            "mojito",
+                            "cremedementhe",
+                            "grasshopper",
+                            "freeze",
+                            "curacao",
+                            "bluelagoon",
+                            "bluehawaiian",
+                            "negroni",
+                            "necroni"
+                        ],
+                        "icon_state": "alc_dispenser",
+                        "icon_base": "alc_dispenser",
+                        "glass_path": "/obj/item/reagent_containers/food/drinks",
+                        "glass_name": "bottle",
+                        "dispenser_name": "Alcohol",
+                        "dispense_sound": "sound/misc/pourdrink2.ogg"
+                    },
+                    "hydro": {
+                        "name": "ULTRA DISPENSER",
+                        "desc": "The most powerful bar dispenser to ever exist.",
+                        "dispensable_reagents": [
+                            "bilk",
+                            "beer",
+                            "cider",
+                            "mead",
+                            "wine",
+                            "champagne",
+                            "rum",
+                            "vodka",
+                            "bourbon",
+                            "boorbon",
+                            "beepskybeer",
+                            "moonshine",
+                            "bojack",
+                            "screwdriver",
+                            "bloody_mary",
+                            "bloody_scary",
+                            "snakebite",
+                            "diesel",
+                            "suicider",
+                            "port",
+                            "gin",
+                            "vermouth",
+                            "bitters",
+                            "whiskey_sour",
+                            "daiquiri",
+                            "martini",
+                            "v_martini",
+                            "murdini",
+                            "manhattan",
+                            "libre",
+                            "ginfizz",
+                            "gimlet",
+                            "v_gimlet",
+                            "w_russian",
+                            "b_russian",
+                            "irishcoffee",
+                            "cosmo",
+                            "beach",
+                            "gtonic",
+                            "vtonic",
+                            "sonic",
+                            "gpink",
+                            "eraser",
+                            "squeeze",
+                            "hunchback",
+                            "madmen",
+                            "planter",
+                            "maitai",
+                            "harlow",
+                            "gchronic",
+                            "margarita",
+                            "tequini",
+                            "pfire",
+                            "bull",
+                            "longisland",
+                            "pinacolada",
+                            "longbeach",
+                            "mimosa",
+                            "french75",
+                            "sangria",
+                            "tomcollins",
+                            "peachschnapps",
+                            "moscowmule",
+                            "tequilasunrise",
+                            "paloma",
+                            "mintjulep",
+                            "mojito",
+                            "cremedementhe",
+                            "grasshopper",
+                            "curacao",
+                            "bluelagoon",
+                            "bluehawaiian",
+                            "negroni",
+                            "necroni",
+                            "cola",
+                            "juice_lime",
+                            "juice_lemon",
+                            "juice_orange",
+                            "juice_cran",
+                            "juice_cherry",
+                            "juice_pineapple",
+                            "juice_tomato",
+                            "coconut_milk",
+                            "sugar",
+                            "water",
+                            "vanilla",
+                            "tea",
+                            "mint"
+                        ]
+                    }
+                },
+                "soda": {
+                    "name": "soda fountain",
+                    "desc": "A soda fountain that definitely does not have a suspicious similarity to the alcohol and chemical dispensers. No sir.",
+                    "dispensable_reagents": [
+                        "cola",
+                        "juice_lime",
+                        "juice_lemon",
+                        "juice_orange",
+                        "juice_cran",
+                        "juice_cherry",
+                        "juice_pineapple",
+                        "juice_tomato",
+                        "coconut_milk",
+                        "sugar",
+                        "water",
+                        "vanilla",
+                        "tea",
+                        "grenadine"
+                    ],
+                    "icon_state": "alc_dispenser",
+                    "icon_base": "alc_dispenser",
+                    "glass_path": "/obj/item/reagent_containers/food/drinks",
+                    "glass_name": "bottle",
+                    "dispenser_name": "Soda",
+                    "dispense_sound": "sound/misc/pourdrink2.ogg"
+                },
+                "chef": {
+                    "name": "kitchen fountain",
+                    "desc": "A soda fountain that definitely does not have a suspicious similarity to the alcohol and chemical dispensers OR the soda fountain. No sir.",
+                    "dispensable_reagents": [
+                        "cola",
+                        "juice_lime",
+                        "juice_lemon",
+                        "juice_orange",
+                        "mint",
+                        "mustard",
+                        "pepper",
+                        "juice_cran",
+                        "juice_cherry",
+                        "juice_pineapple",
+                        "coconut_milk",
+                        "ketchup",
+                        "sugar",
+                        "water",
+                        "vanilla",
+                        "tea",
+                        "chocolate",
+                        "chocolate_milk",
+                        "strawberry_milk"
+                    ],
+                    "icon_state": "alc_dispenser",
+                    "icon_base": "alc_dispenser",
+                    "glass_path": "/obj/item/reagent_containers/food/drinks",
+                    "glass_name": "bottle",
+                    "dispenser_name": "Soda",
+                    "dispense_sound": "sound/effects/splort.ogg"
+                }
+            }
+        }
+    },
+    "datum": {
+        "reagent_group_account": {
+            "var": {
+                "obj": {
+                    "item": {
+                        "card": {
+                            "id": {
+                                "user_id": null
+                            }
+                        }
+                    }
+                },
+                "list": {
+                    "groups": []
+                }
+            }
+        },
+        "reagent_group": {
+            "var": {
+                "name": null,
+                "list": {
+                    "reagents": []
+                }
+            }
+        }
+    }
+}

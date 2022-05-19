@@ -1,0 +1,23 @@
+{
+    "obj": {
+        "item": {
+            "reagent_containers": {
+                "ampoule": {
+                    "name": "ampoule",
+                    "desc": "A chemical-containing ampoule.",
+                    "icon": "icons/obj/chemical.dmi",
+                    "icon_state": "ampoule-0",
+                    "initial_volume": "5",
+                    "flags": "FPRINT | TABLEPASS",
+                    "rc_flags": "RC_SCALE | RC_VISIBLE | RC_SPECTRO",
+                    "var": {
+                        "expended": "FALSE"
+                    },
+                    "smelling_salts": {
+                        "name": "ampoule (smelling salts)"
+                    }
+                }
+            }
+        }
+    }
+}

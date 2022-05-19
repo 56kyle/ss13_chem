@@ -1,0 +1,95 @@
+{
+    "datum": {
+        "reagent": {
+            "organic": {
+                "name": "crude organic fluid",
+                "id": "organic",
+                "description": "An unknown soup of organic chemicals with an oily sheen.",
+                "taste": "earthy",
+                "fluid_r": "20",
+                "fluid_g": "50",
+                "fluid_b": "0",
+                "transparency": "220",
+                "value": "3",
+                "viscosity": "0.8",
+                "hunger_value": "-0.1",
+                "thirst_value": "-0.1",
+                "random_chem_blacklisted": "1",
+                "can_crack": "1",
+                "petroleum": {
+                    "name": "petroleum",
+                    "id": "petroleum",
+                    "description": "A yellowish-black liquid found in geological formations beneath the Earth's surface.",
+                    "taste": "acrid",
+                    "fluid_r": "15",
+                    "fluid_g": "10",
+                    "fluid_b": "0",
+                    "transparency": "220",
+                    "viscosity": "0.9",
+                    "hunger_value": "-0.1",
+                    "thirst_value": "-0.1"
+                },
+                "bitumen": {
+                    "name": "bitumen",
+                    "id": "bitumen",
+                    "description": "A dark, viscous oil rich in sulfur.",
+                    "taste": "brimstone",
+                    "transparency": "250",
+                    "fluid_r": "5",
+                    "fluid_g": "0",
+                    "fluid_b": "10"
+                },
+                "ethylene": {
+                    "name": "ethylene",
+                    "id": "ethylene",
+                    "description": "A colorless flammable gas.",
+                    "taste": "sweet, musky",
+                    "transparency": "5",
+                    "fluid_r": "255",
+                    "fluid_g": "255",
+                    "fluid_b": "255"
+                },
+                "hambrein": {
+                    "name": "hambrein",
+                    "id": "hambrein",
+                    "description": "A colorless, odorless alcohol derrived from hamburgris.",
+                    "taste": "neutral",
+                    "fluid_r": "230",
+                    "fluid_g": "230",
+                    "fluid_b": "230",
+                    "transparency": "50",
+                    "viscosity": "0.3",
+                    "depletion_rate": "0.2"
+                },
+                "hambrinol": {
+                    "name": "hambrinol",
+                    "id": "hambrinol",
+                    "description": "A powerfully musky aromatic compound.",
+                    "taste": "musky",
+                    "fluid_r": "230",
+                    "fluid_g": "215",
+                    "fluid_b": "150",
+                    "transparency": "50",
+                    "viscosity": "0.4",
+                    "depletion_rate": "0.05"
+                },
+                "hambroxide": {
+                    "name": "hambroxide",
+                    "id": "hambroxide",
+                    "description": "An overwhelmingly meaty aromatic compound.",
+                    "taste": "hambery",
+                    "fluid_r": "230",
+                    "fluid_g": "230",
+                    "fluid_b": "230",
+                    "transparency": "100",
+                    "viscosity": "0.3",
+                    "depletion_rate": "0.05",
+                    "overdose": "2",
+                    "var": {
+                        "other_purgative": "hambrinol"
+                    }
+                }
+            }
+        }
+    }
+}
